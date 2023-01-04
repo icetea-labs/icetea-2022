@@ -1,6 +1,18 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "aos/dist/aos.css"
+import "../styles/globals.css"
+// @ts-ignore:next-line
+import AOS from "aos"
+import { useEffect } from "react"
 
-export default function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      disable: "mobile"
+    })
+  }, [])
+
   return <Component {...pageProps} />
 }
+
+export default MyApp
