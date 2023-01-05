@@ -5,26 +5,34 @@
 
 @font-face {
   font-family: "BeVietnamPro";
-  src: url(/fonts/BeVietnamPro-Light.woff) format("woff"), url(/fonts/BeVietnamPro-Light.woff2) format("woff2"),
-    url(/fonts/BeVietnamPro-Light.ttf) format("truetype"), url(/fonts/BeVietnamPro-Light.ttf) format("svg"),
+  src: url(/fonts/BeVietnamPro-Light.ttf) format("woff"),
+    url(/fonts/BeVietnamPro-Light.ttf) format("woff2"),
+    url(/fonts/BeVietnamPro-Light.ttf) format("truetype"),
+    url(/fonts/BeVietnamPro-Light.ttf) format("svg"),
     url(/fonts/BeVietnamPro-Light.ttf) format("embedded-opentype");
 }
 @font-face {
   font-family: "BeVietnamPro Regular";
-  src: url(/fonts/BeVietnamPro-Regular.woff) format("woff"), url(/fonts/BeVietnamPro-Regular.woff2) format("woff2"),
-    url(/fonts/BeVietnamPro-Regular.ttf) format("truetype"), url(/fonts/BeVietnamPro-Regular.ttf) format("svg"),
+  src: url(/fonts/BeVietnamPro-Regular.ttf) format("woff"),
+    url(/fonts/BeVietnamPro-Regular.ttf) format("woff2"),
+    url(/fonts/BeVietnamPro-Regular.ttf) format("truetype"),
+    url(/fonts/BeVietnamPro-Regular.ttf) format("svg"),
     url(/fonts/BeVietnamPro-Regular.ttf) format("embedded-opentype");
 }
 @font-face {
   font-family: "BeVietnamPro Medium";
-  src: url(/fonts/BeVietnamPro-Medium.woff) format("woff"), url(/fonts/BeVietnamPro-Medium.woff2) format("woff2"),
-    url(/fonts/BeVietnamPro-Medium.ttf) format("truetype"), url(/fonts/BeVietnamPro-Medium.ttf) format("svg"),
+  src: url(/fonts/BeVietnamPro-Medium.ttf) format("woff"),
+    url(/fonts/BeVietnamPro-Medium.ttf) format("woff2"),
+    url(/fonts/BeVietnamPro-Medium.ttf) format("truetype"),
+    url(/fonts/BeVietnamPro-Medium.ttf) format("svg"),
     url(/fonts/BeVietnamPro-Medium.ttf) format("embedded-opentype");
 }
 @font-face {
   font-family: "BeVietnamPro Bold";
-  src: url(/fonts/BeVietnamPro-Bold.woff) format("woff"), url(/fonts/BeVietnamPro-Bold.woff2) format("woff2"),
-    url(/fonts/BeVietnamPro-Bold.ttf) format("truetype"), url(/fonts/BeVietnamPro-Bold.ttf) format("svg"),
+  src: url(/fonts/BeVietnamPro-Bold.ttf) format("woff"),
+    url(/fonts/BeVietnamPro-Bold.ttf) format("woff2"),
+    url(/fonts/BeVietnamPro-Bold.ttf) format("truetype"),
+    url(/fonts/BeVietnamPro-Bold.ttf) format("svg"),
     url(/fonts/BeVietnamPro-Bold.ttf) format("embedded-opentype");
 }
 
@@ -34,8 +42,8 @@ body {
   margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, BeVietnamPro, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, BeVietnamPro, sans-serif;
 }
 
 a {
@@ -46,4 +54,8 @@ a {
 * {
   box-sizing: border-box;
   font-family: BeVietnamPro;
+}
+
+p {
+  margin: 0;
 }

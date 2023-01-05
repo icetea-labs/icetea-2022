@@ -23,8 +23,10 @@ module.exports = {
       main: "1440px"
     },
     colors: {
-      main: "#EB522F",
-      teaGray: '#ffffffcc',
+      main: "#9241FE",
+      teaGray: "#ffffffcc",
+      teaBlue: "#00C7F4",
+      teaBlack: "#1A1F27",
       ...colors
     },
     fontSize: {

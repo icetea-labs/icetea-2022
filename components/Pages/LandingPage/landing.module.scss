@@ -2,3 +2,26 @@
   background: url(/images/bg-banner.png);
   background-size: cover;
 }
+
+.bgServices {
+  width: 100%;
+  background: url(/images/bg-services-deco.svg) center center no-repeat;
+}
+
+.bgStats {
+  background: url(/images/bg-stats.png) center top repeat-x,
+    url(/images/bg-stats-deco.svg) right 100% no-repeat;
+}
+
+.cardService {
+  height: 240px;
+  border: 2px solid transparent;
+  opacity: 0.5;
+  transition: 0.25s;
+}
+
+.cardActive {
+  opacity: 1;
+  border: 2px solid #5764cd;
+  background: url(/images/bg-service-active.svg) center center no-repeat;
+}
