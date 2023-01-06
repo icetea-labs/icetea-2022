@@ -4,7 +4,6 @@ import imgTokenNft from "/public/images/services/token.png"
 import imgGame from "/public/images/services/game.png"
 import imgUser from "/public/images/services/user.png"
 
-import imgInitIcetea from "/public/images/services/initiation-icetea-labs.png"
 import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
 import imgIcetea from "/public/images/services/icetea-labs.png"
@@ -83,7 +82,7 @@ export const services: Array<ServiceTypes> = [
       {
         title: "Icetea Labs",
         description: "A leading gaming and metaverse incubator in Asia",
-        thumbnail: imgInitIcetea,
+        thumbnail: imgIcetea,
         url: "https://icetea.io/"
       },
       {
