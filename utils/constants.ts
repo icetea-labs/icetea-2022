@@ -1,8 +1,14 @@
+import { StaticImageData } from "next/image"
 import imgInitiation from "/public/images/services/initiation.png"
 import imgWeb3 from "/public/images/services/web3.png"
 import imgTokenNft from "/public/images/services/token.png"
 import imgGame from "/public/images/services/game.png"
 import imgUser from "/public/images/services/user.png"
+
+import imgEngagement from "/public/images/service-engagement.png"
+import imgGaming from "/public/images/service-gaming.png"
+import imgReputable from "/public/images/service-reputable.png"
+import imgTechnical from "/public/images/service-technical.png"
 
 import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
@@ -12,7 +18,15 @@ import imgGamefi from "/public/images/services/gamefi.png"
 import imgFirebird from "/public/images/services/firebird.png"
 import imgDesport from "/public/images/services/desport.png"
 import imgIfo from "/public/images/services/ifo.png"
-import { StaticImageData } from "next/image"
+
+import logoDesport from "/public/images/logo/logo-desport.png"
+import logoFirebird from "/public/images/logo/logo-firebird.png"
+import logoGamefi from "/public/images/logo/logo-gamefi.png"
+import logoIcetea from "/public/images/logo/logo-icetea.png"
+import logoIfo from "/public/images/logo/logo-ifo.png"
+import logoIlap from "/public/images/logo/logo-ilap.png"
+import logoMirai from "/public/images/logo/logo-mirai.png"
+import logoRedkite from "/public/images/logo/logo-redkite.png"
 
 export const URLS = {
   HOME: "/",
@@ -198,6 +212,103 @@ export type PartnerTypes = {
 //     url:""
 //   }
 // ]
+
+export type ProviderTypes = {
+  services: Array<string>
+  poweredByUri: StaticImageData
+}
+
+export type ServiceDetailTypes = {
+  title: string
+  description: string
+  providers: Array<ProviderTypes>
+  imgUri: StaticImageData
+}
+
+export const serviceDetails: Array<ServiceDetailTypes> = [
+  {
+    title: "Reputable Incubation",
+    description:
+      "We will accompany your project on the journey from building a strategic plan, raising funds, marketing, product development to implementation in real life, providing a clear picture of the status quo to take the next step towards fully harnessing the future potential of your project.",
+    imgUri: imgReputable,
+    providers: [
+      {
+        services: ["Icetea Labs Accelerator Program"],
+        poweredByUri: logoIlap
+      },
+      {
+        services: ["Game Economics & Operational Advisory"],
+        poweredByUri: logoIcetea
+      }
+    ]
+  },
+  {
+    title: "Technical Excellence",
+    description:
+      "We are backed by a network of strategic technology partners with more than 1,200 experienced and qualified programmers as well as a wide range of programming tools and utilities to help blockchain development become simpler and easier than ever.",
+    imgUri: imgTechnical,
+    providers: [
+      {
+        services: [
+          "Security Audit, Pentest & Incident Response",
+          "Blockchain Game and App Development",
+          "Whitelabel",
+          "Taskforce - Community Building",
+          "DeepBlue - Augmented Web3 Content"
+        ],
+        poweredByUri: logoIcetea
+      }
+    ]
+  },
+  {
+    title: "Experienced in Launching",
+    description:
+      "We own one of the most reputable Game Hubs to help the project reach a large community of quality players. Our top-tier launchpads integrate the top popular networks to bring users the best experience and enable diverse projects listed on its platform.",
+    imgUri: imgGaming,
+    providers: [
+      {
+        services: ["Blockchain Infrastructure"],
+        poweredByUri: logoFirebird
+      },
+      {
+        services: ["IDO (Initial DEX Offering)"],
+        poweredByUri: logoRedkite
+      },
+      {
+        services: [
+          "IGO (Initial Gaming Offering)",
+          "INO (Initial NFT Offering)",
+          "Game Hub Listing"
+        ],
+        poweredByUri: logoGamefi
+      }
+    ]
+  },
+  {
+    title: "Proficient in User Engagement",
+    description:
+      "We are going along with potential projects by connecting with our extensive network of KOLs to raise brand awareness and offer our tools and platforms to manage and build communities and players. We have a team of experienced and passionate enthusiasts in marketing who have supported over 130+ projects having a strong foothold in the competitive market.",
+    imgUri: imgEngagement,
+    providers: [
+      {
+        services: ["True Fan Building"],
+        poweredByUri: logoIfo
+      },
+      {
+        services: ["In-game Advertising for Web2 and Web3 Games"],
+        poweredByUri: logoMirai
+      },
+      {
+        services: ["E-sport Tournament Organizing"],
+        poweredByUri: logoDesport
+      },
+      {
+        services: ["GameFi Party (Real Player Growth Hacking System)"],
+        poweredByUri: logoGamefi
+      }
+    ]
+  }
+]
 
 export type SocialItemTypes = {
   label: string
