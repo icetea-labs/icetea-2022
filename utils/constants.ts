@@ -10,7 +10,7 @@ import imgGaming from "/public/images/service-gaming.png"
 import imgReputable from "/public/images/service-reputable.png"
 import imgTechnical from "/public/images/service-technical.png"
 
-// products images
+// services
 import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
 import imgIcetea from "/public/images/services/icetea-labs.png"
@@ -20,7 +20,6 @@ import imgFirebird from "/public/images/services/firebird.png"
 import imgDesport from "/public/images/services/desport.png"
 import imgIfo from "/public/images/services/ifo.png"
 
-// products logo
 import logoDesport from "/public/images/logo/logo-desport.png"
 import logoFirebird from "/public/images/logo/logo-firebird.png"
 import logoGamefi from "/public/images/logo/logo-gamefi.png"
@@ -39,6 +38,12 @@ import logoFilecoin from "/public/images/partners/filecoin.png"
 import logoFuntap from "/public/images/partners/funtap.png"
 import logoHashed from "/public/images/partners/hashed.png"
 import logoPolygon from "/public/images/partners/polygon.png"
+
+// product images
+import productFirebird from "/public/images/products/firebird.png"
+import productGamefi from "/public/images/products/gamefi.png"
+import productRedkite from "/public/images/products/redkite.png"
+import productDesport from "/public/images/products/desport.png"
 
 export const URLS = {
   HOME: "/",
@@ -81,13 +86,65 @@ export const routes: Array<RouteTypes> = [
   }
 ]
 
+export type ProductTypes = {
+  title: string
+  description: string
+  bgUri: string
+  imageUri: StaticImageData
+  url: string
+}
+export const inHouseProducts: Array<ProductTypes> = [
+  {
+    bgUri: "/images/products/bg-firebird.png",
+    description: "A game-dedicated web2-friendly high-performance blockchain",
+    imageUri: productFirebird,
+    title: "Layer 1 Blockchain",
+    url: "https://firebirdchain.com/"
+  },
+  {
+    bgUri: "/images/products/bg-gamefi.png",
+    description: "An all-in-one discovery hub for web3 games and metaverses",
+    imageUri: productGamefi,
+    title: "Gamehub",
+    url: "https://gamefi.org/"
+  },
+  {
+    bgUri: "/images/products/bg-redkite.png",
+    description: "A cutting-edge launchpad and some DeFi/NFTFi features",
+    imageUri: productRedkite,
+    title: "Launchpad & NFT-FI",
+    url: "https://redkitepad.com/"
+  }
+]
+export const ventureProducts: Array<ProductTypes> = [
+  {
+    bgUri: "/images/products/bg-desport.png",
+    description: "A blockchain E-sport platform that help convert traditional gamers to blockchain",
+    imageUri: productDesport,
+    title: "Web3 E-sport platform",
+    url: "https://desports.gg/"
+  }
+]
+export type SubProductTypes = {
+  imageUri: StaticImageData
+  url: string
+  bgUri?: string
+  title?: string
+  description?: string
+}
+export const subsidiaryProducts: Array<SubProductTypes> = [
+  {
+    url: "https://miraistudio.games/",
+    imageUri: logoMirai
+  }
+]
+
 export type ProgramTypes = {
   thumbnail: StaticImageData
   title: string
   description: string
   url: string
 }
-
 export type ServiceTypes = {
   id: number
   title: string
@@ -215,7 +272,6 @@ export type PartnerTypes = {
   imgUri: StaticImageData
   url: string
 }
-
 export const partners: Array<PartnerTypes> = [
   {
     imgUri: logoAnimoca,
@@ -255,14 +311,12 @@ export type ProviderTypes = {
   services: Array<string>
   poweredByUri: StaticImageData
 }
-
 export type ServiceDetailTypes = {
   title: string
   description: string
   providers: Array<ProviderTypes>
   imgUri: StaticImageData
 }
-
 export const serviceDetails: Array<ServiceDetailTypes> = [
   {
     title: "Reputable Incubation",
