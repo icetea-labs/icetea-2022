@@ -1,0 +1,63 @@
+.blogBg {
+    min-height: 480px;
+    background: url(/images/blog/bg-blog-deco.png) no-repeat left top;
+    background-size: 100%;
+}
+
+.blogList {
+    display: grid;
+    margin-top: 30px;
+    gap: 40px 18px;
+    grid-template-columns: 375px 375px 375px;
+}
+
+.htmlContent {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: revert;
+        line-height: revert;
+    }
+}
+
+.social:hover path {
+    fill: #00C7F4;
+}
+
+.social {
+    cursor: pointer;
+}
+
+.blogTypeTag {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media (max-width: 1280px) {
+    .blogBg {
+        min-height: 300px;
+        background-size: 1280px;
+    }
+
+    .blogList {
+        margin-top: 20px;
+        gap: 20px 9px;
+        grid-template-columns: 234px 234px 234px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blogBg {
+        min-height: 300px;
+        background-size: 800px;
+    }
+
+    .blogList {
+        display: block;
+    }
+}

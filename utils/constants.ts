@@ -455,3 +455,17 @@ export const headDefault: HeadDefaultTypes = {
     "The laboratory incubating and nurturing Polkadot projects, the trusted companion of visionary founders.",
   keywords: "icetea, icetea labs, crypto, chain, firebird"
 }
+
+type BlogTypesTypes = {
+  all: string
+  announcement: string
+  rd: string
+  partnership: string
+}
+
+export const blogTypes: BlogTypesTypes = {
+  all: "All",
+  announcement: "Announcement",
+  rd: "R&D",
+  partnership: "Partnership"
+}
