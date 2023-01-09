@@ -2,6 +2,7 @@ import clsx from "clsx"
 import ButtonLink from "../../Base/ButtonLink"
 import ExploreServices from "./ExploreServices"
 import styles from "./landing.module.scss"
+import Partners from "./Partners"
 import Product from "./Product"
 
 const stats = [
@@ -61,6 +62,8 @@ const LadingPage = () => {
       <ExploreServices />
 
       <Product />
+
+      <Partners />
     </div>
   )
 }

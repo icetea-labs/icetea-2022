@@ -10,6 +10,7 @@ import imgGaming from "/public/images/service-gaming.png"
 import imgReputable from "/public/images/service-reputable.png"
 import imgTechnical from "/public/images/service-technical.png"
 
+// products images
 import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
 import imgIcetea from "/public/images/services/icetea-labs.png"
@@ -19,6 +20,7 @@ import imgFirebird from "/public/images/services/firebird.png"
 import imgDesport from "/public/images/services/desport.png"
 import imgIfo from "/public/images/services/ifo.png"
 
+// products logo
 import logoDesport from "/public/images/logo/logo-desport.png"
 import logoFirebird from "/public/images/logo/logo-firebird.png"
 import logoGamefi from "/public/images/logo/logo-gamefi.png"
@@ -27,6 +29,16 @@ import logoIfo from "/public/images/logo/logo-ifo.png"
 import logoIlap from "/public/images/logo/logo-ilap.png"
 import logoMirai from "/public/images/logo/logo-mirai.png"
 import logoRedkite from "/public/images/logo/logo-redkite.png"
+
+// partners
+import logoAlpha from "/public/images/partners/alpha-venture.png"
+import logoAnimoca from "/public/images/partners/animoca.png"
+import logoBnbChain from "/public/images/partners/bnb-chain.png"
+import logoDAO from "/public/images/partners/dao.png"
+import logoFilecoin from "/public/images/partners/filecoin.png"
+import logoFuntap from "/public/images/partners/funtap.png"
+import logoHashed from "/public/images/partners/hashed.png"
+import logoPolygon from "/public/images/partners/polygon.png"
 
 export const URLS = {
   HOME: "/",
@@ -201,17 +213,43 @@ export const services: Array<ServiceTypes> = [
 
 export type PartnerTypes = {
   imgUri: StaticImageData
-  imgHoverUri: StaticImageData
   url: string
 }
 
-// export const partners: Array<PartnerTypes> = [
-//   {
-//     imgUri: ,
-//     imgHoverUri: ,
-//     url:""
-//   }
-// ]
+export const partners: Array<PartnerTypes> = [
+  {
+    imgUri: logoAnimoca,
+    url: "https://www.animocabrands.com/"
+  },
+  {
+    imgUri: logoHashed,
+    url: "https://www.hashed.com/"
+  },
+  {
+    imgUri: logoDAO,
+    url: "https://daomaker.com/"
+  },
+  {
+    imgUri: logoAlpha,
+    url: "https://alphaventuredao.io/"
+  },
+  {
+    imgUri: logoPolygon,
+    url: "https://polygon.technology/"
+  },
+  {
+    imgUri: logoBnbChain,
+    url: "https://www.bnbchain.org/"
+  },
+  {
+    imgUri: logoFilecoin,
+    url: "https://filecoin.io/"
+  },
+  {
+    imgUri: logoFuntap,
+    url: "https://corp.funtap.vn/"
+  }
+]
 
 export type ProviderTypes = {
   services: Array<string>

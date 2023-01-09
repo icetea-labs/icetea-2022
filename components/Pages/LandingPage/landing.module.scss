@@ -25,3 +25,14 @@
   border: 2px solid #5764cd;
   background: url(/images/bg-service-active.svg) center center no-repeat;
 }
+
+.cardPartner {
+  filter: grayscale(1);
+  transition: 0.25s;
+  &:hover {
+    filter: grayscale(0);
+    & > div {
+      background: url(/images/bg-partner-hover.svg) center center no-repeat;
+    }
+  }
+}
