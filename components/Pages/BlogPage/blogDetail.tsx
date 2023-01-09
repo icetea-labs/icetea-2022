@@ -40,7 +40,7 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
       <div className="max-w-[1040px] mx-auto px-[20px]">
         <div className="relative h-[36px] w-full">
-          <BlogTypeTag type={data?.type} className="left-[50%] top-[0px] translate-x-[-50%]" />
+          <BlogTypeTag type={data?.type} className={styles.blogTypeTag} />
         </div>
         <h2 className="mt-[20px] text-center text-[30px] xl:text-[40px]">{data?.title}</h2>
         <p className="mt-[20px] xl:mt-[32px] text-[14px] xl:text-[16px] text-center opacity-[0.6]">
