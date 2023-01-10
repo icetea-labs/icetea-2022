@@ -16,8 +16,18 @@ interface BlogItemProps {
 const BlogHighLight = ({ data }: BlogItemProps) => {
   return (
     <Link href={`${URLS?.BLOG}/${data?.slug}`}>
-      <div className="md:flex hover:bg-[#1A1F27] cursor-pointer gap-[30px] mt-[40px]">
-        <div className="relative w-full md:w-[350px] md:min-w-[350px] h-[200px] xl:w-[520px] xl:min-w-[520px] xl:h-[340px]">
+      <div
+        className={clsx(
+          styles.blogItem,
+          "md:flex hover:bg-[#1A1F27] cursor-pointer gap-[30px] mt-[40px]"
+        )}
+      >
+        <div
+          className={clsx(
+            styles.blogItemImg,
+            "relative w-full md:w-[350px] md:min-w-[350px] h-[200px] xl:w-[520px] xl:min-w-[520px] xl:h-[340px]"
+          )}
+        >
           <Image src={data?.image ? data?.image : "/images/blog/default.png"} alt="" fill />
           <BlogTypeTag type={data?.type} />
         </div>

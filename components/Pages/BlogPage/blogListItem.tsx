@@ -4,6 +4,8 @@ import React from "react"
 import { BlogTypes } from "../../../utils/blogConstants"
 import { URLS } from "../../../utils/constants"
 import BlogTypeTag from "./blogTypeTag"
+import styles from "./blog.module.scss"
+import clsx from "clsx"
 
 interface BlogItemProps {
   data?: BlogTypes
@@ -12,8 +14,8 @@ interface BlogItemProps {
 const BlogItemInList = ({ data }: BlogItemProps) => {
   return (
     <Link href={`${URLS?.BLOG}/${data?.slug}`}>
-      <div className="mb-[20px] h-[100%] md:mb-0 hover:bg-[#1A1F27] cursor-pointer">
-        <div className="relative w-full h-[200px] xl:h-[220px]">
+      <div className={clsx(styles.blogItem, "mb-[20px] h-[100%] md:mb-0 cursor-pointer")}>
+        <div className={clsx(styles.blogItemImg, "relative w-full h-[200px] xl:h-[220px]")}>
           <Image
             src={data?.image ? data?.image : "/images/blog/default.png"}
             className="object-cover"
