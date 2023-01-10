@@ -24,7 +24,7 @@ module.exports = {
     },
     colors: {
       main: "#9241FE",
-      teaGray: "#ffffffcc",
+      teaGray: "#ffffffb3",
       teaBlue: "#00C7F4",
       teaBlack: "#1A1F27",
       ...colors

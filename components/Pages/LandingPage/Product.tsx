@@ -58,11 +58,11 @@ const Product = () => {
   }, [activedNavId])
 
   return (
-    <div className="w-full flex">
+    <div className="w-full flex mt-[120px]">
       <div className="flex flex-col w-full max-w-screen-main mx-auto px-[140px] items-center">
         <div className="flex flex-col max-w-[720px] items-center text-center">
           <p className="text-40/32">Product</p>
-          <span className="text-teaGray mt-2 text-20/28">
+          <span className="text-teaGray mt-3 text-20/28">
             The only Web3 gaming company is building a complete suite of infrastructure-related
             products.
           </span>

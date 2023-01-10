@@ -38,6 +38,7 @@ import logoFilecoin from "/public/images/partners/filecoin.png"
 import logoFuntap from "/public/images/partners/funtap.png"
 import logoHashed from "/public/images/partners/hashed.png"
 import logoPolygon from "/public/images/partners/polygon.png"
+import logoMirai2x from "/public/images/logo/logo-mirai-2x.png"
 
 // product images
 import productFirebird from "/public/images/products/firebird.png"
@@ -135,7 +136,7 @@ export type SubProductTypes = {
 export const subsidiaryProducts: Array<SubProductTypes> = [
   {
     url: "https://miraistudio.games/",
-    imageUri: logoMirai
+    imageUri: logoMirai2x
   }
 ]
 

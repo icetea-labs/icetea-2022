@@ -4,12 +4,12 @@ import Link from "next/link"
 import { partners, PartnerTypes } from "../../../utils/constants"
 import styles from "./landing.module.scss"
 
-const Partners = () => {
+const StrategicPartners = () => {
   return (
     <div className="flex max-w-screen-main mx-auto px-[140px] mt-[120px]">
       <div className="flex flex-col w-full justify-center text-center">
         <p className="text-40/52">Strategic Partners</p>
-        <span className="mt-2 text-teaGray text-20/28">
+        <span className="mt-3 text-teaGray text-20/28">
           We work closely with leading partners to accelerate high-quality games.
         </span>
 
@@ -33,4 +33,4 @@ const Partners = () => {
   )
 }
 
-export default Partners
+export default StrategicPartners
