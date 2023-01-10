@@ -1,0 +1,20 @@
+.bgProduct {
+  min-height: 480px;
+  background: url(/images/bg-portfolio.png) no-repeat 50%;
+  background-size: cover;
+}
+.bgInfo {
+  background: url(/images/bg-about-deco.svg) left 90% no-repeat,
+    url(/images/bg-stats.png) center top repeat-x;
+}
+
+.cardPartner {
+  filter: grayscale(1);
+  transition: 0.25s;
+  &:hover {
+    filter: grayscale(0);
+    & > div {
+      background: url(/images/bg-partner-hover.svg) center center no-repeat;
+    }
+  }
+}

@@ -29,7 +29,7 @@ const ProductPage = () => {
       </div>
       <div className="flex flex-col w-full max-w-screen-main items-center px-[140px]">
         <div className="flex flex-col w-full items-center">
-          <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue uppercase tracking-widest font-bevn700">
+          <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             in house
           </div>
           <div className="flex flex-wrap w-full mt-10 gap-[60px]">
@@ -40,7 +40,7 @@ const ProductPage = () => {
         </div>
 
         <div className="flex flex-col w-full items-center mt-[60px]">
-          <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue uppercase tracking-widest font-bevn700">
+          <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             joint ventures
           </div>
           <div className="flex flex-wrap w-full mt-10 gap-[60px]">
@@ -51,7 +51,7 @@ const ProductPage = () => {
         </div>
 
         <div className="flex flex-col w-full items-center mt-[60px]">
-          <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue uppercase tracking-widest font-bevn700">
+          <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             Subsidiary
           </div>
           <div className="flex flex-wrap w-full mt-10 gap-[60px]">
