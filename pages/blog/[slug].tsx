@@ -7,7 +7,7 @@ import BlogDetailPage from "../../components/Pages/BlogPage/blogDetail"
 import styles from "../../styles/Home.module.css"
 import { blogs, BlogTypes } from "../../utils/blogConstants"
 
-const BlogDetail: NextPage = ({ host }) => {
+const BlogDetail: NextPage = ({ host }: any) => {
   const router = useRouter()
   const [blogDetail, setBlogDetail] = useState<BlogTypes>()
   const [lastestNews, setLastestNews] = useState<BlogTypes[]>()
