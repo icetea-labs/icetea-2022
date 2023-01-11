@@ -26,15 +26,15 @@ const Insight = () => {
   }, [slug])
 
   return (
-    <div className="justify-center">
-      <div className="max-w-[760px] px-[20px] mx-auto text-center mt-[100px]">
+    <div className="justify-center py-[120px]">
+      <div className="max-w-[760px] px-5 mx-auto text-center">
         <p className="text-40/32">Insight</p>
-        <p className="max-w-[720px] mt-2 text-teaGray xl:text-[20px]">
+        <p className="max-w-[720px] mt-3 text-teaGray xl:text-5">
           We jointly research and develop solutions for sustainable in-game economy and mass
           adoption enabling technologies
         </p>
       </div>
-      <div className="max-w-[760px] xl:max-w-[1200px] px-[20px] mx-auto">
+      <div className="max-w-[760px] xl:max-w-[1200px] px-5 mx-auto">
         {lastestNews && !!(lastestNews.length > 0) && (
           <div className={styles.blogList}>
             {lastestNews?.map((blog: BlogTypes, index: number) => {
@@ -45,7 +45,7 @@ const Insight = () => {
       </div>
       <Link
         href={`${URLS.BLOG}`}
-        className="flex mx-auto w-fit mt-[20px] xl:mt-[40px] items-center cursor-pointer hover:scale-[1.1]"
+        className="flex mx-auto w-fit mt-5 xl:mt-10 items-center cursor-pointer hover:tracking-wider duration-300"
       >
         <span className="text-[#00C7F4]">See more</span>
         <Image src={arrowRight} alt="" className="ml-1" />
