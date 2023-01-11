@@ -1,11 +1,13 @@
 import clsx from "clsx"
-import React from "react"
+import { useRef } from "react"
 import styles from "./about.module.scss"
 
-import imgConnected from "/public/images/cultures/connected.png"
-import imgProgressive from "/public/images/cultures/progressive.png"
-import imgInnovative from "/public/images/cultures/innovative.png"
 import Image, { StaticImageData } from "next/image"
+import videojs from "video.js"
+import VideoJS from "../../Base/VideoFrame"
+import imgConnected from "/public/images/cultures/connected.png"
+import imgInnovative from "/public/images/cultures/innovative.png"
+import imgProgressive from "/public/images/cultures/progressive.png"
 
 type CultureTypes = {
   label: string
@@ -28,6 +30,34 @@ const cultures: Array<CultureTypes> = [
 ]
 
 const AboutPage = () => {
+  const playerRef = useRef<any>(null)
+
+  const videoJsOptions = {
+    autoplay: true,
+    controls: true,
+    responsive: true,
+    fluid: true,
+    sources: [
+      {
+        src: "/icetea_lab.mp4",
+        type: "video/mp4"
+      }
+    ]
+  }
+
+  const handlePlayerReady = (player: any) => {
+    playerRef.current = player
+
+    // You can handle player events here, for example:
+    player.on("waiting", () => {
+      videojs.log("player is waiting")
+    })
+
+    player.on("dispose", () => {
+      videojs.log("player will dispose")
+    })
+  }
+
   return (
     <div className="flex flex-col w-full items-center pb-[120px]">
       <div className={clsx(styles.bgAbout, "flex w-full items-center justify-center")}>
@@ -57,7 +87,9 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[1120px] h-[630px] bg-orange-500"></div>
+      <div className="flex w-[1120px] h-[630px] ">
+        <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+      </div>
 
       <div className="flex flex-col mt-[160px] max-w-[1000px]">
         <p className="text-40/52 text-center">

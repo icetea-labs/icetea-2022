@@ -53,7 +53,7 @@ export const URLS = {
   PORTFOLIO: "/portfolio",
   BLOG: "/blog",
   ABOUT: "/about",
-  CAREER: "/career"
+  CAREER: "https://careers.icetea.io/"
 }
 
 export type RouteTypes = {
