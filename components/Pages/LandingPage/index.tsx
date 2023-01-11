@@ -4,6 +4,7 @@ import ExploreServices from "./ExploreServices"
 import styles from "./landing.module.scss"
 import StrategicPartners from "./StrategicPartners"
 import Product from "./Product"
+import Insight from "./Insight"
 
 const stats = [
   {
@@ -64,6 +65,8 @@ const LadingPage = () => {
       <Product />
 
       <StrategicPartners />
+
+      <Insight />
     </div>
   )
 }
