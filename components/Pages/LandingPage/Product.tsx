@@ -82,7 +82,7 @@ const Product = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-wrap w-full pt-10 gap-[60px]">
+          <div className="flex flex-wrap w-full pt-10 gap-[60px] justify-center">
             {productData.map((product: ProductTypes | SubProductTypes, index: number) => (
               <div className="flex" key={index}>
                 {!!product?.bgUri ? (
