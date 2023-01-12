@@ -181,24 +181,38 @@ const PortfolioPage = () => {
         <p className="font-bevn500 text-60/72 text-center">Portfolio</p>
       </div>
       <div
-        className={clsx(styles.bgInfo, "w-full mx-auto flex justify-center pt-[160px] pb-[60px]")}
+        className={clsx(
+          styles.bgInfo,
+          "w-full mx-auto flex justify-center px-10 pt-[60px] md:pt-[160px] pb-[60px]"
+        )}
       >
         <div className="flex flex-col items-center">
-          <p className="text-40/52 text-center max-w-[1000px]">
+          <p className="text-32/40 md:text-40/52 text-center max-w-[1000px]">
             We have proudly supported the success of our partners
           </p>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-screen-main items-center px-[140px]">
-        <div className="mt-10 flex flex-wrap justify-center items-center gap-5">
+      <div className="flex flex-col w-full max-w-screen-main items-center px-8 sm:px-20 lg:px-[140px]">
+        <div
+          className={clsx(
+            "mt-10 grid grid-cols-2 gap-3 justify-center items-center",
+            "sm:flex sm:flex-wrap sm:gap-5"
+          )}
+        >
           {partners.map((partner: PartnerTypes, index: number) => (
-            <div className="flex w-[216px] h-[105px] bg-teaBlack rounded-sm" key={index}>
+            <div
+              className={clsx(
+                "flex w-full h-[80px] bg-teaBlack rounded-sm",
+                "sm:w-[216px] sm:h-[105px]"
+              )}
+              key={index}
+            >
               <Link
                 href={partner.url}
                 target="_blank"
                 className={clsx(styles.cardPartner, "flex w-full h-full")}
               >
-                <div className="w-full h-full flex justify-center items-center">
+                <div className="w-full h-full p-5 flex justify-center items-center">
                   <Image src={partner.imgUri} alt="" />
                 </div>
               </Link>
