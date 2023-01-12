@@ -17,7 +17,7 @@
 .bgAccelerator {
   background: url(/images/bg-accelerator-xs.png) center center no-repeat;
   background-size: contain;
-  @media (min-width: theme("screens.xs")) {
+  @media (min-width: theme("screens.sm")) {
     background: url(/images/bg-accelerator.png) center center no-repeat;
   }
 }

@@ -22,7 +22,7 @@ const StrategicPartners = () => {
           {partners.map((partner: PartnerTypes, index: number) => (
             <div
               className={clsx(
-                "flex bg-teaBlack rounded-sm h-[75px] p-3",
+                "flex bg-teaBlack rounded-sm h-[80px] p-3",
                 "md:w-[275px] md:h-[130px] md:p-0"
               )}
               key={index}
