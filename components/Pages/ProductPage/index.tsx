@@ -18,16 +18,19 @@ const ProductPage = () => {
         <p className="font-bevn500 text-60/72 text-center">Products</p>
       </div>
       <div
-        className={clsx(styles.bgInfo, "w-full mx-auto flex justify-center pt-[160px] pb-[60px]")}
+        className={clsx(
+          styles.bgInfo,
+          "w-full mx-auto flex justify-center pt-[60px] md:pt-[160px] pb-[60px]"
+        )}
       >
-        <div className="flex flex-col items-center">
-          <p className="text-40/52 text-center max-w-[1000px]">
+        <div className="flex flex-col items-center px-8">
+          <p className="text-32/40 md:text-36/40 lg:text-40/52 text-center max-w-[1000px]">
             The only Web3 gaming company is building a complete suite of infrastructure-related
             products.
           </p>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-screen-main items-center px-[140px]">
+      <div className="flex flex-col w-full max-w-screen-main items-center px-8 md:px-20 lg:px-[140px]">
         <div className="flex flex-col w-full items-center">
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             in house
