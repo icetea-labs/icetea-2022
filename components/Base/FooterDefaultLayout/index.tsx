@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import Image from "next/image"
-import { routes, RouteTypes } from "../../../utils/constants"
+import { routes, RouteTypes, URLS } from "../../../utils/constants"
 import GradientBorder from "../GradientBorder"
 import styles from "./footer.module.scss"
 
@@ -12,20 +12,20 @@ import Subcribe from "./Subcribe"
 
 const buyPkfExchanges = [
   {
-    name: "Uniswap",
-    url: "https://app.uniswap.org/#/swap?outputCurrency=0x8B39B70E39Aa811b69365398e0aACe9bee238AEb"
+    name: "Telegram",
+    url: "https://t.me/ILAP_Announcement"
   },
   {
-    name: "Ascendex",
-    url: "https://ascendex.com/en/basic/cashtrade-spottrading/usdt/pkf"
+    name: "Twitter",
+    url: "https://twitter.com/Icetea_Labs"
   },
   {
-    name: "Gate.io",
-    url: "https://www.gate.io/trade/pkf_usdt"
+    name: "Facebook",
+    url: "https://www.facebook.com/icetea.io"
   },
   {
-    name: "Kucoin",
-    url: "https://www.kucoin.com/trade/PKF-USDT"
+    name: "Linkedin",
+    url: "https://www.linkedin.com/company/icetea-labs"
   }
 ]
 
@@ -49,7 +49,7 @@ const FooterDefaultLayout = () => {
             </div>
             <p className="text-sm mt-6 md:mt-3">68 Circular Road, #02-01, Singapore 049422</p>
             <div className="flex gap-3 mt-3">
-              <Link href={"/"} className="flex">
+              <Link href={URLS.SEND_GMAIL} target="_blank" className="flex">
                 <GradientBorder className="rounded-[40px] h-10 px-5 flex items-center">
                   <div className={styles.textGradientBottom}>eg@icetea.io</div>
                   <Image src={arrowRight} alt="" className="ml-1" />

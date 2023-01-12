@@ -5,6 +5,7 @@ import styles from "./landing.module.scss"
 import StrategicPartners from "./StrategicPartners"
 import Product from "./Product"
 import Insight from "./Insight"
+import { URLS } from "../../../utils/constants"
 
 const stats = [
   {
@@ -46,7 +47,7 @@ const LadingPage = () => {
           >
             Bring the true benefit of blockchain technology to everyone
           </p>
-          <ButtonLink href="/#" className="mt-8 mx-auto md:mx-0">
+          <ButtonLink href={URLS.ILAP} className="mt-8 mx-auto md:mx-0" target="_blank">
             Join Accelerator
           </ButtonLink>
         </div>

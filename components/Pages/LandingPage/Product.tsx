@@ -59,7 +59,12 @@ const Product = () => {
 
   return (
     <div className="w-full flex mt-[120px]">
-      <div className="flex flex-col w-full max-w-screen-main mx-auto px-8 md:px-[140px] items-center">
+      <div
+        className={clsx(
+          "flex flex-col w-full max-w-screen-main mx-auto px-8 items-center",
+          "md:px-20 xl:px-[140px]"
+        )}
+      >
         <div className="flex flex-col max-w-[720px] items-center text-center">
           <p className="md:text-40/32 text-32/40">Product</p>
           <span className="text-teaGray mt-3 text-16/20 md:text-20/28">

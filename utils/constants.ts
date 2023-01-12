@@ -45,6 +45,7 @@ import productFirebird from "/public/images/products/firebird.png"
 import productGamefi from "/public/images/products/gamefi.png"
 import productRedkite from "/public/images/products/redkite.png"
 import productDesport from "/public/images/products/desport.png"
+import { HTMLAttributeAnchorTarget } from "react"
 
 export const URLS = {
   HOME: "/",
@@ -53,12 +54,15 @@ export const URLS = {
   PORTFOLIO: "/portfolio",
   BLOG: "/blog",
   ABOUT: "/about",
-  CAREER: "https://careers.icetea.io/"
+  CAREER: "https://careers.icetea.io/",
+  ILAP: "https://ilap.icetea.io/",
+  SEND_GMAIL: "https://mail.google.com/mail/u/0/?fs=1&to=eg@icetea.io&tf=cm"
 }
 
 export type RouteTypes = {
   label: string
   uri: string
+  target?: HTMLAttributeAnchorTarget
 }
 export const routes: Array<RouteTypes> = [
   {
@@ -83,7 +87,8 @@ export const routes: Array<RouteTypes> = [
   },
   {
     label: "Career",
-    uri: URLS.CAREER
+    uri: URLS.CAREER,
+    target: "_blank"
   }
 ]
 

@@ -39,6 +39,7 @@ const HeaderDefaultLayout = () => {
             <Link
               key={index}
               href={item.uri}
+              target={item?.target ?? "_self"}
               className={clsx("hover:tracking-wider duration-500 font-bevn600 text-20/28", {
                 "text-main": asPath === item.uri
               })}
@@ -69,6 +70,7 @@ const HeaderDefaultLayout = () => {
             <Link
               key={index}
               href={item.uri}
+              target={item?.target ?? "_self"}
               className={clsx("hover:tracking-wider duration-500", {
                 "text-main": asPath === item.uri
               })}

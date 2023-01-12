@@ -13,7 +13,7 @@ const CardProduct = (props: CardProductTypes) => {
   const { bgUri, description, imageUri, title, url } = dataCard
 
   return (
-    <div className="flex flex-col items-center md:items-start">
+    <div className="flex flex-col items-center xl:items-start">
       <Link
         href={url}
         target="_blank"
@@ -30,7 +30,7 @@ const CardProduct = (props: CardProductTypes) => {
         <Image src={imageUri} alt="" className="h-[75%] md:max-h-[400px] object-contain" />
       </Link>
       <p className="text-20/28 md:text-28/36 font-bevn600 mt-6 text-center">{title}</p>
-      <p className="text-teaGray mt-2 max-w-[360px] text-center text-14/18 md:text-16/20 md:text-left">
+      <p className="text-teaGray mt-2 max-w-[360px] text-center text-14/18 md:text-16/20 xl:text-left">
         {description}
       </p>
     </div>
