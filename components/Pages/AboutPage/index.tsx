@@ -61,20 +61,28 @@ const AboutPage = () => {
   return (
     <div className="flex flex-col w-full items-center pb-[120px]">
       <div className={clsx(styles.bgAbout, "flex w-full items-center justify-center")}>
-        <p className="font-bevn500 text-60/72 text-center">
+        <p className="font-bevn500 text-40/52 md:text-60/72 text-center">
           About <br /> Icetea Labs
         </p>
       </div>
 
       <div
-        className={clsx(styles.bgInfo, "w-full mx-auto flex justify-center pt-[200px] pb-[60px]")}
+        className={clsx(
+          styles.bgInfo,
+          "w-full mx-auto flex justify-center pt-[60px] md:pt-[200px] pb-[60px]"
+        )}
       >
-        <div className="flex flex-col items-center">
-          <p className="text-40/52 text-center max-w-[1000px]">
+        <div className="flex flex-col items-center px-8 md:px-10">
+          <p className="text-32/40 sm:text-36/40 lg:text-40/52 text-center max-w-[1000px]">
             Icetea Labs – established in 2018 – is now the leading blockchain technology company in
             Asia.
           </p>
-          <div className="flex mt-[62px] space-x-10 text-teaGray">
+          <div
+            className={clsx(
+              "flex flex-col mt-10 text-teaGray text-center space-y-3",
+              "md:space-x-10 md:mt-[62px] md:flex-row md:text-left md:space-y-0"
+            )}
+          >
             <p className="max-w-[400px]">
               With a team of 170+ young dynamic members, we have successfully supported and launched
               130+ projects, especially 2 of the top tier platforms: Red Kite Launchpad and
@@ -87,18 +95,23 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[1120px] h-[630px] ">
+      <div className={clsx("flex w-full max-w-screen-lg px-8 md:px-10", "")}>
         <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
       </div>
 
-      <div className="flex flex-col mt-[160px] max-w-[1000px]">
-        <p className="text-40/52 text-center">
+      <div className="flex flex-col mt-[160px] max-w-[1000px] px-8 md:px-10">
+        <p className="text-32/40 sm:text-36/40 lg:text-40/52 text-center">
           Each individual in Icetea Labs engages and builds a distinct company culture.
         </p>
-        <div className="flex mt-[92px] justify-between px-5">
+        <div
+          className={clsx(
+            "flex flex-col items-center mt-[92px] justify-between px-5 space-y-14",
+            "md:space-y-0 md:flex-row"
+          )}
+        >
           {cultures.map((item: CultureTypes, index: number) => (
             <div
-              className="flex flex-col max-w-[220px] w-full items-center text-center cursor-pointer"
+              className="flex flex-col max-w-[160px] lg:max-w-[220px] w-full items-center text-center cursor-pointer"
               key={index}
             >
               <Image src={item.imgUri} alt="" className={styles.cultureHover} />

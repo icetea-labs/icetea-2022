@@ -4,8 +4,12 @@
   background-size: cover;
 }
 .bgInfo {
-  background: url(/images/bg-about-deco.svg) left 90% no-repeat,
+  background: url(/images/bg-about-deco.svg) 50% 190% no-repeat,
     url(/images/bg-stats.png) center top repeat-x;
+  @media (min-width: theme("screens.xs")) {
+    background: url(/images/bg-about-deco.svg) left 90% no-repeat,
+      url(/images/bg-stats.png) center top repeat-x;
+  }
 }
 .cultureHover {
   &:hover {
