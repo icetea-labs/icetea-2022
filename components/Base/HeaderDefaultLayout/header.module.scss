@@ -1,0 +1,9 @@
+.bgHeaderMobile {
+  background: url(/images/bg-banner-xs.png) bottom center no-repeat;
+  background-size: cover;
+
+  @media (min-width: theme("screens.xs")) {
+    background: url(/images/bg-banner.png);
+    background-size: cover;
+  }
+}

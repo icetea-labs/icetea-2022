@@ -3,7 +3,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useState } from "react"
-import { routes, RouteTypes, SocialItemTypes, socialsData } from "../../../utils/constants"
+import { routes, RouteTypes, URLS } from "../../../utils/constants"
+import styles from "./header.module.scss"
+
 import iconClose from "/public/images/icon-close.svg"
 import iconMenu from "/public/images/icon-menu.svg"
 import logo from "/public/images/logo-text.svg"
@@ -20,32 +22,29 @@ const HeaderDefaultLayout = () => {
     if (!open) return <></>
 
     return (
-      <div className="fixed top-0 left-0 w-full h-screen overflow-y-auto bg-[#04060C] flex flex-col p-5 pb-8 z-50">
+      <div
+        className={clsx(
+          styles.bgHeaderMobile,
+          "fixed top-0 left-0 w-full h-screen overflow-y-auto bg-[#04060C] flex flex-col p-5 pb-8 z-50"
+        )}
+      >
         <div className="flex justify-between">
-          <Image src={logo} alt="" />
+          <Link href={URLS.HOME}>
+            <Image src={logo} alt="" width={192} height={42} />
+          </Link>
           <Image src={iconClose} alt="" onClick={handleOpenHeader} className="cursor-pointer" />
         </div>
-        <div className="flex flex-col gap-6 text-white justify-center w-full text-center text-lg font-semibold mt-10">
+        <div className="flex flex-col gap-8 text-white justify-center w-full text-center mt-20">
           {routes.map((item: RouteTypes, index: number) => (
             <Link
               key={index}
               href={item.uri}
-              className={clsx("hover:tracking-wider duration-500", {
+              className={clsx("hover:tracking-wider duration-500 font-bevn600 text-20/28", {
                 "text-main": asPath === item.uri
               })}
             >
               {item.label}
             </Link>
-          ))}
-        </div>
-        <p className="mt-auto text-main text-center font-semibold uppercase tracking-widest">
-          Community
-        </p>
-        <div className="flex gap-3 mt-4 w-full justify-center">
-          {socialsData.map((item: SocialItemTypes, index: number) => (
-            <a href={item.url} className={clsx("w-10 h-10")} key={index + 1000}>
-              {item.label}
-            </a>
           ))}
         </div>
       </div>
@@ -62,7 +61,7 @@ const HeaderDefaultLayout = () => {
           "pl-5 pr-6"
         )}
       >
-        <Link href="/">
+        <Link href={URLS.HOME}>
           <Image src="/images/logo-text.svg" width={192} height={42} alt="" />
         </Link>
         <div className={clsx("space-x-[60px] hidden", "md:flex")}>

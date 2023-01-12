@@ -19,15 +19,20 @@ const Subcribe = () => {
 
   return (
     <div className={clsx(styles.bgSubscribe)}>
-      <div className="w-full max-w-screen-main mx-auto px-[140px] h-[380px] flex items-center justify-between">
-        <div className="flex flex-col">
-          <span className="text-40/52">Subscribe To Our Newsletter</span>
-          <span className="text-teaGray">
+      <div
+        className={clsx(
+          "w-full max-w-screen-main mx-auto px-8 pt-10 flex flex-col items-center justify-between",
+          "md:px-[140px] md:h-[380px] md:flex-row md:pt-0"
+        )}
+      >
+        <div className="flex flex-col text-center md:text-left">
+          <span className="text-32/40 md:text-40/52">Subscribe To Our Newsletter</span>
+          <span className="text-teaGray mt-3 md:mt-0">
             Subscribe and follow us to get more of the newest updates!
           </span>
         </div>
-        <div className="flex">
-          <GradientBorder className="h-[54px] p-1 pl-5 rounded-full">
+        <div className="flex w-full mt-[70px] md:mt-0 md:w-auto">
+          <GradientBorder className="h-[54px] p-1 pl-5 rounded-full w-full md:w-auto">
             <div className="flex items-center h-full">
               <input
                 type="text"

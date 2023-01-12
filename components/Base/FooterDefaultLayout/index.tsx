@@ -30,13 +30,6 @@ const buyPkfExchanges = [
 ]
 
 const FooterDefaultLayout = () => {
-  // const handleScrollToTop = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth"
-  //   })
-  // }
-
   return (
     <div className="bg-black text-white w-full font-bevn flex flex-col">
       <Subcribe />
@@ -49,12 +42,12 @@ const FooterDefaultLayout = () => {
           "md:px-[140px] md:pt-24 md:text-left"
         )}
       >
-        <div className="w-full flex">
+        <div className="w-full flex flex-col md:flex-row">
           <div className="flex flex-col max-w-full w-full md:max-w-[400px] items-center md:items-start">
             <div className="flex">
               <Image src={logoText} alt="" />
             </div>
-            <p className="text-sm mt-3">68 Circular Road, #02-01, Singapore 049422</p>
+            <p className="text-sm mt-6 md:mt-3">68 Circular Road, #02-01, Singapore 049422</p>
             <div className="flex gap-3 mt-3">
               <Link href={"/"} className="flex">
                 <GradientBorder className="rounded-[40px] h-10 px-5 flex items-center">
@@ -65,10 +58,10 @@ const FooterDefaultLayout = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex mt-auto ml-auto">
+          <div className="md:mt-auto md:ml-auto md:flex grid grid-cols-2 mt-10">
             <div className="flex flex-col max-w-[250px]">
               <p className="font-semibold uppercase">Sitemap</p>
-              <div className="flex flex-col space-y-3 mt-5 text-teaGray">
+              <div className="flex flex-col items-center md:items-start space-y-3 mt-5 text-teaGray">
                 {routes.map((item: RouteTypes, index: number) => (
                   <a
                     key={index + 100}
@@ -82,9 +75,9 @@ const FooterDefaultLayout = () => {
               </div>
             </div>
 
-            <div className="flex flex-col max-w-[250px] ml-40">
+            <div className="flex flex-col max-w-[250px] md:ml-40">
               <p className="font-semibold uppercase">Follow Us</p>
-              <div className="flex flex-col space-y-3 mt-5 text-teaGray">
+              <div className="flex flex-col items-center md:items-start space-y-3 mt-5 text-teaGray">
                 {buyPkfExchanges.map((item: any, index: number) => (
                   <a
                     href={item.url}
@@ -100,7 +93,14 @@ const FooterDefaultLayout = () => {
             </div>
           </div>
         </div>
-        <p className="text-center md:mt-16 mt-3">Copyright © 2022 . All rights reserved.</p>
+        <p
+          className={clsx(
+            "text-center text-14/18 pt-3 mt-3 border-t border-[#ffffff33]",
+            "md:text-16/20 md:mt-16"
+          )}
+        >
+          Copyright © 2022 . All rights reserved.
+        </p>
       </div>
     </div>
   )

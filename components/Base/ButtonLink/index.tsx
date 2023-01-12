@@ -1,12 +1,12 @@
-import React from "react"
 import clsx from "clsx"
 import Link from "next/link"
+import { HTMLAttributeAnchorTarget } from "react"
 import styles from "./buttonLink.module.scss"
 
 type ButtonProps = {
   className?: string
   href: string
-  target?: string
+  target?: HTMLAttributeAnchorTarget
   children: any
 }
 

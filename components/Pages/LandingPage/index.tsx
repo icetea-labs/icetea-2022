@@ -32,29 +32,49 @@ const stats = [
 const LadingPage = () => {
   return (
     <div className="flex flex-col w-full">
-      <div className={clsx(styles.bgBanner, "h-screen pt-20 flex items-center")}>
-        <div className="max-w-screen-main w-full mx-auto pl-[140px]">
-          <p className="text-60/72 font-bevn500 max-w-[720px] m-0">
+      <div
+        className={clsx(styles.bgBanner, "h-screen flex pt-[120px]", "md:pt-20 md:items-center")}
+      >
+        <div
+          className={clsx("max-w-screen-main w-full mx-auto px-12 justify-center", "md:pl-[140px]")}
+        >
+          <p
+            className={clsx(
+              "text-40/52 font-bevn500 max-w-[720px] text-center m-0",
+              "md:text-left md:text-60/72"
+            )}
+          >
             Bring the true benefit of blockchain technology to everyone
           </p>
-          <ButtonLink href="/#" className="mt-8">
+          <ButtonLink href="/#" className="mt-8 mx-auto md:mx-0">
             Join Accelerator
           </ButtonLink>
         </div>
       </div>
 
-      <div className={clsx(styles.bgStats, "w-full mx-auto flex flex-col items-center pt-[200px]")}>
-        <p className="text-48/60 text-center max-w-[1000px]">
+      <div
+        className={clsx(
+          styles.bgStats,
+          "w-full mx-auto flex flex-col items-center pt-[60px]",
+          "md:pt-[200px]"
+        )}
+      >
+        <p className="text-32/40 md:text-48/60 text-center max-w-[1000px] px-12 md:px-0">
           We are the leading game discovery and user engagement layer in{" "}
           <span className="text-main font-bevn700">Southeast Asia</span>.
         </p>
-        <div className="flex mt-20 space-x-[55px]">
+        <div
+          className={clsx(
+            "grid grid-cols-2 mt-10 gap-5 px-[60px]",
+            "md:px-0 md:flex md:space-x-[55px] md:mt-20"
+          )}
+        >
           {stats.map((item: any, index: number) => (
             <div className="flex flex-col" key={index}>
-              <p className="text-56/60 font-bevn600 flex items-start">
+              <p className="md:text-56/60 text-40/52 font-bevn600 flex items-start">
                 {item?.amount} <span className="text-36/40 font-bevn700">+</span>
               </p>
-              <span className="text-teaGray mt-3">{item?.label}</span>
+              <span className="text-teaGray mt-3 text-14/18 md:text-16/20">{item?.label}</span>
             </div>
           ))}
         </div>

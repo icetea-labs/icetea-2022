@@ -6,16 +6,27 @@ import styles from "./landing.module.scss"
 
 const StrategicPartners = () => {
   return (
-    <div className="flex max-w-screen-main mx-auto px-[140px] mt-[120px]">
+    <div className="flex max-w-screen-main mx-auto px-8 md:px-[140px] mt-[120px]">
       <div className="flex flex-col w-full justify-center text-center">
-        <p className="text-40/52">Strategic Partners</p>
-        <span className="mt-3 text-teaGray text-20/28">
+        <p className="text-32/40 md:text-40/52">Strategic Partners</p>
+        <span className="mt-3 text-teaGray text-16/20 md:text-20/28">
           We work closely with leading partners to accelerate high-quality games.
         </span>
 
-        <div className="mt-10 flex flex-wrap justify-center items-center gap-5">
+        <div
+          className={clsx(
+            "mt-10 grid grid-cols-2 justify-center items-center gap-5",
+            "md:flex md:flex-wrap "
+          )}
+        >
           {partners.map((partner: PartnerTypes, index: number) => (
-            <div className="flex w-[275px] h-[130px] bg-teaBlack rounded-sm" key={index}>
+            <div
+              className={clsx(
+                "flex bg-teaBlack rounded-sm h-[75px] p-3",
+                "md:w-[275px] md:h-[130px] md:p-0"
+              )}
+              key={index}
+            >
               <Link
                 href={partner.url}
                 target="_blank"

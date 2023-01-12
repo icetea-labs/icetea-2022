@@ -1,6 +1,11 @@
 .bgBanner {
-  background: url(/images/bg-banner.png);
+  background: url(/images/bg-banner-xs.png) bottom center no-repeat;
   background-size: cover;
+
+  @media (min-width: theme("screens.xs")) {
+    background: url(/images/bg-banner.png);
+    background-size: cover;
+  }
 }
 
 .bgServices {
@@ -10,14 +15,25 @@
 
 .bgStats {
   background: url(/images/bg-stats.png) center top repeat-x,
-    url(/images/bg-stats-deco.svg) right 100% no-repeat;
+    url(/images/bg-stats-deco.svg) 50% 130% no-repeat;
+
+  @media (min-width: theme("screens.xs")) {
+    background: url(/images/bg-stats.png) center top repeat-x,
+      url(/images/bg-stats-deco.svg) right 100% no-repeat;
+  }
 }
 
 .cardService {
-  height: 240px;
+  width: 140px;
+  height: 160px;
   border: 2px solid transparent;
   opacity: 0.5;
   transition: 0.25s;
+
+  @media (min-width: theme("screens.md")) {
+    width: auto;
+    height: 240px;
+  }
 }
 
 .cardActive {
@@ -35,4 +51,13 @@
       background: url(/images/bg-partner-hover.svg) center center no-repeat;
     }
   }
+}
+
+.cardMultiline {
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }

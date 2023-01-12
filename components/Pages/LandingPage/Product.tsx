@@ -59,20 +59,20 @@ const Product = () => {
 
   return (
     <div className="w-full flex mt-[120px]">
-      <div className="flex flex-col w-full max-w-screen-main mx-auto px-[140px] items-center">
+      <div className="flex flex-col w-full max-w-screen-main mx-auto px-8 md:px-[140px] items-center">
         <div className="flex flex-col max-w-[720px] items-center text-center">
-          <p className="text-40/32">Product</p>
-          <span className="text-teaGray mt-3 text-20/28">
+          <p className="md:text-40/32 text-32/40">Product</p>
+          <span className="text-teaGray mt-3 text-16/20 md:text-20/28">
             The only Web3 gaming company is building a complete suite of infrastructure-related
             products.
           </span>
         </div>
-        <div className="mt-10 flex flex-col w-full">
+        <div className="mt-5 md:mt-10 flex flex-col w-full">
           <div className="flex space-x-2 mx-auto">
             {navProduct.map((item: any) => (
               <div
                 className={clsx(
-                  "rounded px-3 py-[6px] uppercase font-bevn700 cursor-pointer",
+                  "flex items-center rounded px-3 py-[6px] uppercase font-bevn700 cursor-pointer text-center text-14/18 md:text-16/20",
                   activedNavId === item?.value ? "bg-teaBlue text-black" : "bg-teaBlack text-white"
                 )}
                 key={item.value}
