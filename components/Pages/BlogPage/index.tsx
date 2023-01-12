@@ -67,7 +67,7 @@ const BlogPage = () => {
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
       <div className="max-w-[760px] xl:max-w-[1200px] px-[20px] mx-auto">
-        <div className="font-bevn500 text-60/72 text-center">Insight</div>
+        <div className="font-bevn500 text-[40px] xl:text-60/72 text-center">Insight</div>
         <BlogHighLight data={blogHighLight} />
         <div className="my-[20px] xl:my-[40px] h-[1px] bg-white opacity-[0.2]" />
         <div className="flex gap-[8px] flex-wrap justify-center md:justify-start">

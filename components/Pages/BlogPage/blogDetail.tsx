@@ -76,7 +76,10 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
               {data?.tags &&
                 data?.tags?.map((item: string, index: number) => {
                   return (
-                    <div key={index} className="px-[12px] py-[6px] bg-[#1A1F27] rounded-[4px]">
+                    <div
+                      key={index}
+                      className="px-[12px] py-[6px] text-[14px] xl:text-[16px] font-bold bg-[#1A1F27] rounded-[4px]"
+                    >
                       {item}
                     </div>
                   )
