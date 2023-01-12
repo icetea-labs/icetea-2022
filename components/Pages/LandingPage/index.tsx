@@ -59,7 +59,7 @@ const LadingPage = () => {
             Join Accelerator
           </ButtonLink>
         </div>
-        <div className="absolute z-0 top-0 left-0">
+        <div className="absolute z-0 top-0 left-0 pointer-events-none">
           <video
             autoPlay
             loop
