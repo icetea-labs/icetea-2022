@@ -23,6 +23,28 @@
   }
 }
 
+.videoMobile {
+  display: none;
+}
+
+.banner {
+  height: calc(100vw *(8 / 16));
+}
+
+@media (max-width: 768px) {
+  .videoMobile {
+    display: block;
+  }
+
+  .videoDesktop {
+    display: none;
+  }
+
+  .banner {
+    height: 182vw;
+  }
+}
+
 .cardService {
   width: 140px;
   height: 160px;
@@ -45,9 +67,11 @@
 .cardPartner {
   filter: grayscale(1);
   transition: 0.25s;
+
   &:hover {
     filter: grayscale(0);
-    & > div {
+
+    &>div {
       background: url(/images/bg-partner-hover.svg) center center no-repeat;
     }
   }

@@ -59,7 +59,7 @@ const HeaderDefaultLayout = () => {
           "absolute -translate-x-1/2 left-1/2 h-20 w-full flex items-center justify-between max-w-screen-main text-white",
           "md:px-[140px]",
           "xs:px-[60px]",
-          "pl-5 pr-6"
+          "pl-5 pr-6 z-[1]"
         )}
       >
         <Link href={URLS.HOME}>
