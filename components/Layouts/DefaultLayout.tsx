@@ -34,6 +34,9 @@ const DefaultLayout = (props: LayoutProps) => {
           key="description"
         />
         <meta property="og:image" content={image || defaultImage} key="image" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="70" />
+        <meta property="og:image:height" content="70" />
         <meta name="keywords" content={defaultKeywords}></meta>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title || defaultTitle} />
