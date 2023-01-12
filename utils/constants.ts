@@ -50,7 +50,7 @@ import { HTMLAttributeAnchorTarget } from "react"
 export const URLS = {
   HOME: "/",
   SERVICES: "/services",
-  PRODUCT: "/product",
+  PRODUCT: "/products",
   PORTFOLIO: "/portfolio",
   BLOG: "/blog",
   ABOUT: "/about",
@@ -70,7 +70,7 @@ export const routes: Array<RouteTypes> = [
     uri: URLS.SERVICES
   },
   {
-    label: "Product",
+    label: "Products",
     uri: URLS.PRODUCT
   },
   {
