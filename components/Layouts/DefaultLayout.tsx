@@ -33,12 +33,12 @@ const DefaultLayout = (props: LayoutProps) => {
           content={description || defaultDescription}
           key="description"
         />
-        {/* <meta property="og:image" content={image || defaultImage} key="image" /> */}
+        <meta property="og:image" content={image || defaultImage} key="image" />
         <meta name="keywords" content={defaultKeywords}></meta>
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title || defaultTitle} />
         <meta name="twitter:description" content={description || defaultDescription} />
-        {/* <meta name="twitter:image" content={image || defaultImage} /> */}
+        <meta name="twitter:image" content={image || defaultImage} />
       </Head>
 
       <HeaderDefaultLayout />
