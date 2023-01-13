@@ -57,7 +57,8 @@ const HeaderDefaultLayout = () => {
       <nav
         className={clsx(
           "absolute -translate-x-1/2 left-1/2 h-20 w-full flex items-center justify-between max-w-screen-main text-white",
-          "md:px-[140px]",
+          "lg:px-[140px]",
+          "md:px-20",
           "xs:px-[60px]",
           "pl-5 pr-6 z-[1]"
         )}
@@ -65,7 +66,8 @@ const HeaderDefaultLayout = () => {
         <Link href={URLS.HOME}>
           <Image src="/images/logo-text.svg" width={192} height={42} alt="" />
         </Link>
-        <div className={clsx("space-x-[60px] hidden", "md:flex")}>
+
+        <div className={clsx("space-x-6 lg:space-x-[60px] hidden", "md:flex")}>
           {routes.map((item: RouteTypes, index: number) => (
             <Link
               key={index}

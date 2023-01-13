@@ -14,12 +14,43 @@
 }
 
 .bgStats {
-  background: url(/images/bg-stats.png) center top repeat-x,
-    url(/images/bg-stats-deco.svg) 50% 130% no-repeat;
+  background: url(/images/bg-stats-deco.svg) 50% 130% no-repeat,
+    url(/images/bg-stats.png) center top repeat-x;
 
   @media (min-width: theme("screens.xs")) {
+    background: url(/images/bg-stats-deco.svg) 100% 130% no-repeat,
+      url(/images/bg-stats.png) center top repeat-x;
+  }
+  @media (min-width: theme("screens.lg")) {
     background: url(/images/bg-stats.png) center top repeat-x,
       url(/images/bg-stats-deco.svg) right 100% no-repeat;
+  }
+}
+
+.slider {
+  width: calc(100vw - 64px);
+  white-space: nowrap;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+  @media (min-width: theme("screens.xs")) {
+    width: calc(100vw - 160px);
+  }
+  @media (min-width: theme("screens.md")) {
+    width: auto;
   }
 }
 
@@ -28,7 +59,7 @@
 }
 
 .banner {
-  height: calc(100vw *(8 / 16));
+  height: calc(100vw * (8 / 16));
 }
 
 @media (max-width: 768px) {
@@ -71,7 +102,7 @@
   &:hover {
     filter: grayscale(0);
 
-    &>div {
+    & > div {
       background: url(/images/bg-partner-hover.svg) center center no-repeat;
     }
   }

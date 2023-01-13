@@ -9,10 +9,22 @@ import arrowRight from "/public/images/arrow-right-blue.svg"
 
 const ExploreServices = () => {
   const [activedService, setActivedService] = useState<ServiceTypes | undefined>(services[0])
+  const [isWidthDownMd, setIsWidthDownMd] = useState<boolean>(false)
+
+  useEffect(() => {
+    setIsWidthDownMd(window.innerWidth <= 900)
+
+    const handleResize = () => {
+      setIsWidthDownMd(window.innerWidth <= 900)
+    }
+    window.addEventListener("resize", handleResize)
+
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (!activedService) return
+      if (!activedService || isWidthDownMd) return
       const length = services.length
       const newService =
         activedService?.id === services[length - 1].id
@@ -22,7 +34,7 @@ const ExploreServices = () => {
     }, 5000)
 
     return () => clearTimeout(timer)
-  }, [activedService])
+  }, [activedService, isWidthDownMd])
 
   const handleActiveCard = (id: number) => {
     const item = services.find((item: ServiceTypes) => item.id === id)
@@ -34,7 +46,7 @@ const ExploreServices = () => {
       <div
         className={clsx(
           "max-w-[1320px] mt-20 px-8 w-full mx-auto bg-black flex flex-col",
-          "md:mt-[170px] md:px-20 py-[100px]"
+          "md:mt-[170px] sm:px-20 py-[100px]"
         )}
       >
         <div
@@ -52,8 +64,9 @@ const ExploreServices = () => {
 
         <div
           className={clsx(
+            styles.slider,
             "md:grid md:grid-cols-5 md:w-full gap-5 mt-10",
-            "flex w-fit overflow-auto box-border"
+            "flex overflow-auto box-border w-screen pb-3"
           )}
         >
           {services.map((item: ServiceTypes) => (
@@ -62,11 +75,12 @@ const ExploreServices = () => {
               className={clsx(
                 styles.cardService,
                 item.id === activedService?.id && styles.cardActive,
-                "flex flex-col items-center md:py-8 cursor-pointer bg-teaBlack pt-2 md:pt-0"
+                "flex flex-col justify-between items-center cursor-pointer bg-teaBlack p-2 whitespace-normal",
+                "md:pt-0 md:py-8"
               )}
               key={item.id}
             >
-              <div className="flex md:flex-1 justify-center px-5 md:p-0">
+              <div className="flex md:flex-1 justify-center px-5 md:p-0 min-w-[140px]">
                 <Image src={item.imgUri} alt="" className="object-contain" />
               </div>
               <p className="text-14/18 md:text-18/24 font-bevn600 mt-2 text-center">{item.title}</p>
@@ -76,7 +90,7 @@ const ExploreServices = () => {
 
         {activedService && (
           <div className="flex flex-col mt-8 md:flex-row md:space-x-8 ">
-            <div className="flex flex-col max-w-[440px] w-full">
+            <div className="flex flex-col md:max-w-[50%] lg:max-w-[440px] w-full ">
               <p className="text-28/36 font-bevn600">{activedService.title}</p>
               <span className="text-teaGray mt-2">{activedService.description}</span>
               <Link href={URLS.SERVICES} className="flex text-18/24 mt-5">

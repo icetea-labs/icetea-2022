@@ -39,7 +39,7 @@ const FooterDefaultLayout = () => {
       <div
         className={clsx(
           "flex flex-col relative w-full max-w-screen-main mx-auto px-7 text-center pt-[60px] mb-3 box-border",
-          "md:px-[140px] md:pt-24 md:text-left"
+          "md:px-20 lg:px-[140px] md:pt-24 md:text-left"
         )}
       >
         <div className="w-full flex flex-col md:flex-row">
