@@ -19,12 +19,11 @@ const CardProduct = (props: CardProductTypes) => {
         target="_blank"
         className={clsx(
           styles.imgHover,
-          "flex justify-center items-end w-full h-full object-contain",
+          "flex justify-center items-end w-full h-full object-contain bg-center bg-contain",
           "md:w-[550px] md:h-[550px]"
         )}
         style={{
-          background: `url(${bgUri}) center center no-repeat`,
-          backgroundSize: "contain"
+          backgroundImage: `url(${bgUri})`
         }}
       >
         <Image src={imageUri} alt="" className="h-[75%] md:max-h-[400px] object-contain" />
