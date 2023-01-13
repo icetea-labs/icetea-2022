@@ -3,7 +3,7 @@ import DefaultLayout from "../../components/Layouts/DefaultLayout"
 import ProductPage from "../../components/Pages/ProductPage"
 import styles from "../../styles/Home.module.css"
 
-const About: NextPage = () => {
+const Products: NextPage = () => {
   return (
     <div className={styles.container}>
       <DefaultLayout title="Icetea Labs">
@@ -13,4 +13,4 @@ const About: NextPage = () => {
   )
 }
 
-export default About
+export default Products

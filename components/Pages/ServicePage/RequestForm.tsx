@@ -26,14 +26,14 @@ const RequestForm = () => {
   }
 
   return (
-    <div className={clsx("w-full pt-20 pb-20 flex justify-center")}>
+    <div className={clsx("w-full md:pt-20 md:pb-20 flex justify-center")}>
       <div
         className={clsx(
           styles.bgRequest,
-          "w-full max-w-screen-main pt-20 pb-20 px-[60px] justify-center"
+          "w-full max-w-screen-main pt-20 md:pb-20 md:px-[60px] justify-center"
         )}
       >
-        <div className="flex flex-col items-center w-full pt-[60px] pb-10 bg-black">
+        <div className="flex flex-col items-center w-full pt-[60px] px-8 md:px-0 pb-10 bg-black">
           <div className="flex flex-col max-w-[500px] w-full items-center">
             <p className="text-center text-40/52">Request us</p>
 

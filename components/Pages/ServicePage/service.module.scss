@@ -4,8 +4,12 @@
   background-size: cover;
 }
 .bgInfo {
-  background: url(/images/bg-about-deco.svg) left -400px no-repeat,
+  background: url(/images/bg-about-deco.svg) 50% -25% no-repeat,
     url(/images/bg-stats.png) center top repeat-x;
+  @media (min-width: theme("screens.md")) {
+    background: url(/images/bg-about-deco.svg) left -400px no-repeat,
+      url(/images/bg-stats.png) center top repeat-x;
+  }
 }
 .bgRequest {
   background: url(/images/bg-request-deco.png) center 30% no-repeat;
@@ -29,6 +33,9 @@
 }
 .serviceList {
   & > div:nth-child(odd) {
-    flex-direction: row;
+    flex-direction: column-reverse;
+    @media (min-width: theme("screens.md")) {
+      flex-direction: row;
+    }
   }
 }
