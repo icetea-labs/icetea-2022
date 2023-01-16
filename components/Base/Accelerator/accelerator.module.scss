@@ -1,0 +1,15 @@
+.textGradientRight {
+  background: linear-gradient(to right, #b67dff 0%, #33beff 100%);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.bgAccelerator {
+  background: url(/images/bg-accelerator-xs.png) center center no-repeat;
+  background-size: contain;
+  @media (min-width: theme("screens.sm")) {
+    background: url(/images/bg-accelerator.png) center center no-repeat;
+  }
+}

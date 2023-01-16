@@ -6,33 +6,8 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.textGradientRight {
-  background: linear-gradient(to right, #b67dff 0%, #33beff 100%);
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
 
-.bgAccelerator {
-  background: url(/images/bg-accelerator-xs.png) center center no-repeat;
+.bgFooter {
+  background: url(/images/bg-footer.png) bottom right no-repeat;
   background-size: contain;
-  @media (min-width: theme("screens.sm")) {
-    background: url(/images/bg-accelerator.png) center center no-repeat;
-  }
-}
-
-.bgSubscribe {
-  background: url(/images/bg-subscribe.png) center center repeat-x;
-}
-
-.btnSubcribe {
-  border-radius: 50%;
-  cursor: pointer;
-  width: 46px;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
 }

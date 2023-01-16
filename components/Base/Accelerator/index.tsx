@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import { URLS } from "../../../utils/constants"
 import ButtonLink from "../ButtonLink"
-import styles from "./footer.module.scss"
+import styles from "./accelerator.module.scss"
 
 const Accelerator = () => {
   return (

@@ -1,13 +1,17 @@
+import clsx from "clsx"
+import Accelerator from "../../Base/Accelerator"
+import Subcribe from "../../Base/Subcribe"
 import ExploreServices from "./ExploreServices"
 import HomeBanner from "./HomeBanner"
 import Insight from "./Insight"
+import styles from "./landing.module.scss"
 import Product from "./Product"
 import Statictics from "./Statictics"
 import StrategicPartners from "./StrategicPartners"
 
 const LadingPage = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className={clsx(styles.bgLanding, "flex flex-col w-full")}>
       <HomeBanner />
 
       <Statictics />
@@ -19,6 +23,10 @@ const LadingPage = () => {
       <StrategicPartners />
 
       <Insight />
+
+      <Subcribe />
+
+      <Accelerator />
     </div>
   )
 }

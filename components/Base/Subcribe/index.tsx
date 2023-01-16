@@ -2,7 +2,7 @@ import clsx from "clsx"
 import Image from "next/image"
 import { ChangeEvent, useState } from "react"
 import GradientBorder from "../GradientBorder"
-import styles from "./footer.module.scss"
+import styles from "./subcribe.module.scss"
 
 import arrowRight from "/public/images/arrow-right.svg"
 

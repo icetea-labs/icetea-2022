@@ -1,0 +1,14 @@
+.bgSubscribe {
+  background: url(/images/bg-subscribe.png) center center repeat-x;
+}
+
+.btnSubcribe {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+}
