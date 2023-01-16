@@ -26,7 +26,7 @@ const ProductPage = () => {
         <div className="flex flex-col items-center px-8">
           <p className="text-32/40 md:text-36/40 lg:text-40/52 text-center max-w-[1000px]">
             The only Web3 gaming company is building a complete suite of infrastructure-related
-            products.
+            products
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@ const ProductPage = () => {
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             in house
           </div>
-          <div className="flex flex-wrap w-full mt-10 gap-[60px]">
+          <div className="flex flex-wrap w-full mt-10 gap-[60px] justify-center">
             {inHouseProducts.map((product: ProductTypes, index: number) => (
               <CardProduct dataCard={product} key={index} />
             ))}
@@ -46,7 +46,7 @@ const ProductPage = () => {
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             joint ventures
           </div>
-          <div className="flex flex-wrap w-full mt-10 gap-[60px]">
+          <div className="flex flex-wrap w-full mt-10 gap-[60px] justify-center">
             {ventureProducts.map((product: ProductTypes, index: number) => (
               <CardProduct dataCard={product} key={index} />
             ))}
@@ -57,7 +57,7 @@ const ProductPage = () => {
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             Subsidiary
           </div>
-          <div className="flex flex-wrap w-full mt-10 gap-[60px]">
+          <div className="flex flex-wrap w-full mt-10 gap-[60px] justify-center">
             {subsidiaryProducts.map((product: SubProductTypes, index: number) => (
               <div className="flex w-[275px] h-[130px] bg-teaBlack rounded-sm" key={index}>
                 <Link href={product.url} target="_blank" className={clsx("flex w-full h-full")}>

@@ -69,7 +69,7 @@ const Product = () => {
           <p className="md:text-40/32 text-32/40">Product</p>
           <span className="text-teaGray mt-3 text-16/20 md:text-20/28">
             The only Web3 gaming company is building a complete suite of infrastructure-related
-            products.
+            products
           </span>
         </div>
         <div className="mt-5 md:mt-10 flex flex-col w-full">

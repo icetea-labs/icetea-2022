@@ -9,6 +9,7 @@ import arrowRight from "/public/images/arrow-right-blue.svg"
 
 const ExploreServices = () => {
   const [activedService, setActivedService] = useState<ServiceTypes | undefined>(services[0])
+  const [isReading, setIsReading] = useState<boolean>(false)
   const [isWidthDownMd, setIsWidthDownMd] = useState<boolean>(false)
 
   useEffect(() => {
@@ -24,7 +25,7 @@ const ExploreServices = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (!activedService || isWidthDownMd) return
+      if (!activedService || isReading || isWidthDownMd) return
       const length = services.length
       const newService =
         activedService?.id === services[length - 1].id
@@ -34,7 +35,7 @@ const ExploreServices = () => {
     }, 5000)
 
     return () => clearTimeout(timer)
-  }, [activedService, isWidthDownMd])
+  }, [activedService, isWidthDownMd, isReading])
 
   const handleActiveCard = (id: number) => {
     const item = services.find((item: ServiceTypes) => item.id === id)
@@ -89,7 +90,11 @@ const ExploreServices = () => {
         </div>
 
         {activedService && (
-          <div className="flex flex-col mt-8 md:flex-row md:space-x-8 ">
+          <div
+            className="flex flex-col mt-8 md:flex-row md:space-x-8"
+            onMouseEnter={() => setIsReading(true)}
+            onMouseLeave={() => setIsReading(false)}
+          >
             <div className="flex flex-col md:max-w-[50%] lg:max-w-[440px] w-full ">
               <p className="text-28/36 font-bevn600">{activedService.title}</p>
               <span className="text-teaGray mt-2">{activedService.description}</span>
