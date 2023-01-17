@@ -1,22 +1,23 @@
 import clsx from "clsx"
 import Image from "next/image"
+import { ProviderTypes, serviceDetails, ServiceDetailTypes } from "../../../utils/constants"
+import Accelerator from "../../Base/Accelerator"
+import Subcribe from "../../Base/Subcribe"
 import RequestForm from "./RequestForm"
 import styles from "./service.module.scss"
 
-import { ProviderTypes, serviceDetails, ServiceDetailTypes } from "../../../utils/constants"
-
 const ServicePage = () => {
   return (
-    <div className="flex flex-col w-full items-center md:pb-[120px]">
-      <div className={clsx(styles.bgService, "flex w-full items-center justify-center")}>
-        <p className="font-bevn500 text-60/72 text-center">Service</p>
+    <div className={clsx(styles.bgService, "flex flex-col w-full items-center")}>
+      <div className={clsx(styles.bgBanner, "flex w-full items-center justify-center")}>
+        <p className="font-bevn500 text-60/72 text-center">Services</p>
       </div>
 
       <div className={clsx(styles.bgInfo, "w-full")}>
         <div
           className={clsx(
             styles.serviceList,
-            "w-full max-w-[1040px] mx-auto flex flex-col justify-center pb-[60px]",
+            "w-full max-w-[1040px] mx-auto flex flex-col justify-center",
             "px-8 pt-20 space-y-20",
             "md:pt-[200px] lg:space-y-[120px]"
           )}
@@ -67,6 +68,10 @@ const ServicePage = () => {
       </div>
 
       <RequestForm />
+
+      <Subcribe />
+
+      <Accelerator />
     </div>
   )
 }

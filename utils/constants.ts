@@ -86,7 +86,7 @@ export const routes: Array<RouteTypes> = [
     uri: URLS.ABOUT
   },
   {
-    label: "Career",
+    label: "Careers",
     uri: URLS.CAREER,
     target: "_blank"
   }
@@ -125,7 +125,8 @@ export const inHouseProducts: Array<ProductTypes> = [
 export const ventureProducts: Array<ProductTypes> = [
   {
     bgUri: "/images/products/bg-desport.png",
-    description: "A blockchain E-sport platform that help convert traditional gamers to blockchain",
+    description:
+      "A blockchain E-sport platform that helps convert traditional gamers to blockchain",
     imageUri: productDesport,
     title: "Web3 E-sport platform",
     url: "https://desports.gg/"
@@ -221,7 +222,7 @@ export const services: Array<ServiceTypes> = [
       },
       {
         title: "Red Kite",
-        description: "Launch hand-picked projects and help them shine. ",
+        description: "Launch hand-picked projects and help them shine",
         thumbnail: imgRedkite,
         url: "https://redkitepad.com/"
       }
@@ -260,7 +261,7 @@ export const services: Array<ServiceTypes> = [
       {
         title: "Desport",
         description:
-          "The first Esports platform with integrated blockchain technology and play-to-earn model built for gamers around the world.",
+          "The first Esports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
         thumbnail: imgDesport,
         url: "https://desports.gg/"
       },

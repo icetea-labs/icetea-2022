@@ -18,7 +18,7 @@ const Subcribe = () => {
   }
 
   return (
-    <div className={clsx(styles.bgSubscribe)}>
+    <div className={clsx(styles.bgSubscribe, "w-full")}>
       <div
         className={clsx(
           "w-full max-w-screen-main mx-auto px-8 pt-10 flex flex-col items-center justify-between",

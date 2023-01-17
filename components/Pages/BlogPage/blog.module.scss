@@ -1,7 +1,8 @@
 .blogBg {
   min-height: 480px;
-  background: url(/images/blog/bg-blog-deco.png) no-repeat left top;
-  background-size: 100%;
+  background: url(/images/blog/bg-blog-deco.png) no-repeat left top,
+    url(/images/bg-subscribe-deco.png) right 88% no-repeat;
+  background-size: 100% contain;
 }
 
 .blogList {

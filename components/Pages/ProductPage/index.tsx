@@ -8,15 +8,18 @@ import {
   subsidiaryProducts,
   ventureProducts
 } from "../../../utils/constants"
+import Accelerator from "../../Base/Accelerator"
 import CardProduct from "../../Base/CardProduct"
+import Subcribe from "../../Base/Subcribe"
 import styles from "./product.module.scss"
 
 const ProductPage = () => {
   return (
-    <div className="flex flex-col w-full items-center justify-center pb-[120px]">
-      <div className={clsx(styles.bgProduct, "flex w-full items-center justify-center")}>
+    <div className={clsx(styles.bgProduct, "flex flex-col w-full items-center justify-center")}>
+      <div className={clsx(styles.bgBanner, "flex w-full items-center justify-center")}>
         <p className="font-bevn500 text-60/72 text-center">Products</p>
       </div>
+
       <div
         className={clsx(
           styles.bgInfo,
@@ -30,7 +33,8 @@ const ProductPage = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-screen-main items-center px-8 md:px-20 lg:px-[140px]">
+
+      <div className="flex flex-col w-full max-w-screen-main items-center px-8 pb-[120px] md:px-20 lg:px-[140px]">
         <div className="flex flex-col w-full items-center">
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             in house
@@ -70,6 +74,10 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
+
+      <Subcribe />
+
+      <Accelerator />
     </div>
   )
 }

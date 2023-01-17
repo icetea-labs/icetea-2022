@@ -1,13 +1,14 @@
 import clsx from "clsx"
-import React, { useEffect, useState } from "react"
-import styles from "./blog.module.scss"
-import { blogs, BlogTypes } from "../../../utils/blogConstants"
 import Image from "next/image"
-import { blogTypes } from "../../../utils/constants"
 import Link from "next/link"
-import { URLS } from "../../../utils/constants"
-import BlogTypeTag from "./blogTypeTag"
+import { useEffect, useState } from "react"
+import { blogs, BlogTypes } from "../../../utils/blogConstants"
+import { blogTypes, URLS } from "../../../utils/constants"
+import Accelerator from "../../Base/Accelerator"
+import Subcribe from "../../Base/Subcribe"
+import styles from "./blog.module.scss"
 import BlogItemInList from "./blogListItem"
+import BlogTypeTag from "./blogTypeTag"
 
 interface BlogItemProps {
   data?: BlogTypes
@@ -66,7 +67,7 @@ const BlogPage = () => {
 
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
-      <div className="max-w-[760px] xl:max-w-[1200px] px-[20px] mx-auto">
+      <div className="max-w-[760px] xl:max-w-[1200px] px-[20px] mx-auto pb-[120px]">
         <div className="font-bevn500 text-[40px] xl:text-60/72 text-center">Insight</div>
         <BlogHighLight data={blogHighLight} />
         <div className="my-[20px] xl:my-[40px] h-[1px] bg-white opacity-[0.2]" />
@@ -96,6 +97,10 @@ const BlogPage = () => {
           </div>
         )}
       </div>
+
+      <Subcribe />
+
+      <Accelerator />
     </div>
   )
 }

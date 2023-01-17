@@ -3,7 +3,7 @@ import styles from "./landing.module.scss"
 
 const stats = [
   {
-    label: "Combined Community",
+    label: "Combined Communities",
     amount: "5M"
   },
   {

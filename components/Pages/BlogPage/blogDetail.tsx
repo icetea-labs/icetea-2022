@@ -70,7 +70,10 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
                 content={`${host}${URLS.BLOG}/${data?.slug}`}
               />
             </div>
-            <div className={styles.htmlContent} dangerouslySetInnerHTML={{ __html: content }} />
+            <div
+              className={clsx(styles.htmlContent, "text-16/28")}
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
             <div className="mt-[30px] flex gap-[8px] uppercase items-center flex-wrap">
               <span className="pr-[20px]">Tags</span>
               {data?.tags &&

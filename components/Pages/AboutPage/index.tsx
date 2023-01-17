@@ -8,6 +8,8 @@ import VideoJS from "../../Base/VideoFrame"
 import imgConnected from "/public/images/cultures/connected.png"
 import imgInnovative from "/public/images/cultures/innovative.png"
 import imgProgressive from "/public/images/cultures/progressive.png"
+import Accelerator from "../../Base/Accelerator"
+import Subcribe from "../../Base/Subcribe"
 
 type CultureTypes = {
   label: string
@@ -59,8 +61,8 @@ const AboutPage = () => {
   }
 
   return (
-    <div className="flex flex-col w-full items-center pb-[120px]">
-      <div className={clsx(styles.bgAbout, "flex w-full items-center justify-center")}>
+    <div className={clsx(styles.bgAbout, "flex flex-col w-full items-center")}>
+      <div className={clsx(styles.bgBanner, "flex w-full items-center justify-center")}>
         <p className="font-bevn500 text-40/52 md:text-60/72 text-center">
           About <br /> Icetea Labs
         </p>
@@ -75,7 +77,7 @@ const AboutPage = () => {
         <div className="flex flex-col items-center px-8 md:px-10">
           <p className="text-32/40 sm:text-36/40 lg:text-40/52 text-center max-w-[1000px]">
             Icetea Labs – established in 2018 – is now the leading blockchain technology company in
-            Asia.
+            Asia
           </p>
           <div
             className={clsx(
@@ -86,7 +88,7 @@ const AboutPage = () => {
             <p className="max-w-[400px]">
               With a team of 170+ young dynamic members, we have successfully supported and launched
               130+ projects, especially 2 of the top tier platforms: Red Kite Launchpad and
-              GameFi.org Game hub
+              GameFi.org Game hub.
             </p>
             <p className="max-w-[400px]">
               Icetea Labs develop an ecosystem growth including potential projects with the ambition
@@ -95,13 +97,14 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+
       <div className={clsx("flex w-full max-w-screen-lg px-8 md:px-10", "")}>
         <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
       </div>
 
-      <div className="flex flex-col mt-[160px] max-w-[1000px] px-8 md:px-10">
+      <div className="flex flex-col mt-[160px] max-w-[1000px] px-8 md:px-10 pb-[120px]">
         <p className="text-32/40 sm:text-36/40 lg:text-40/52 text-center">
-          Each individual in Icetea Labs engages and builds a distinct company culture.
+          Each individual in Icetea Labs engages and builds a distinct company culture
         </p>
         <div
           className={clsx(
@@ -120,6 +123,10 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
+
+      <Subcribe />
+
+      <Accelerator />
     </div>
   )
 }

@@ -22,7 +22,7 @@ const buyPkfExchanges = [
     url: "https://www.facebook.com/icetea.io"
   },
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     url: "https://www.linkedin.com/company/icetea-labs"
   }
 ]

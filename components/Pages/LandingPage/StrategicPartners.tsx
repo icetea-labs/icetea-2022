@@ -10,7 +10,7 @@ const StrategicPartners = () => {
       <div className="flex flex-col w-full justify-center text-center">
         <p className="text-32/40 md:text-40/52">Strategic Partners</p>
         <span className="mt-3 text-teaGray text-16/20 md:text-20/28">
-          We work closely with leading partners to accelerate high-quality games.
+          We work closely with leading partners to accelerate high-quality games
         </span>
 
         <div

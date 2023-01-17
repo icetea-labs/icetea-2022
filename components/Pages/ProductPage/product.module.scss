@@ -1,7 +1,10 @@
-.bgProduct {
+.bgBanner {
   min-height: 480px;
   background: url(/images/bg-about.png) no-repeat 50%;
   background-size: cover;
+}
+.bgProduct {
+  background: url(/images/bg-subscribe-deco.png) right 88% no-repeat;
 }
 .bgInfo {
   background: url(/images/bg-about-deco.svg) 50% 90% no-repeat,
