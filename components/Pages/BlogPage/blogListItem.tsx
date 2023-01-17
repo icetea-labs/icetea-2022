@@ -1,11 +1,11 @@
+import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
+import { displayDateTimeFormat } from "../../../utils"
 import { BlogTypes } from "../../../utils/blogConstants"
 import { URLS } from "../../../utils/constants"
-import BlogTypeTag from "./blogTypeTag"
 import styles from "./blog.module.scss"
-import clsx from "clsx"
+import BlogTypeTag from "./blogTypeTag"
 
 interface BlogItemProps {
   data?: BlogTypes
@@ -14,7 +14,7 @@ interface BlogItemProps {
 const BlogItemInList = ({ data }: BlogItemProps) => {
   return (
     <Link href={`${URLS?.BLOG}/${data?.slug}`}>
-      <div className={clsx(styles.blogItem, "mb-[20px] h-[100%] md:mb-0 cursor-pointer")}>
+      <div className={clsx(styles.blogItem, "mb-10 h-full md:mb-0 cursor-pointer")}>
         <div className={clsx(styles.blogItemImg, "relative w-full h-[200px] xl:h-[220px]")}>
           <Image
             src={data?.image ? data?.image : "/images/blog/default.png"}
@@ -24,11 +24,11 @@ const BlogItemInList = ({ data }: BlogItemProps) => {
           />
           <BlogTypeTag type={data?.type} />
         </div>
-        <h2 className="mt-[5px] xl:mt-[9px] text-[16px] xl:text-[20px] xl:leading-[28px] font-[600] text-ellipse text-2-line">
+        <h2 className="mt-[5px] xl:mt-[9px] xl:text-20/28 font-bevn600 text-ellipse text-2-line">
           {data?.title}
         </h2>
-        <p className="opacity-[0.6] font-bold text-[14px] mt-[5px] xl:text-[16px] xl:mt-[8px]">
-          {data?.date}
+        <p className="opacity-60 font-bold text-14/18 uppercase tracking-widest mt-[5px] xl:text-16/20 xl:mt-2">
+          {displayDateTimeFormat(data?.date)}
         </p>
       </div>
     </Link>

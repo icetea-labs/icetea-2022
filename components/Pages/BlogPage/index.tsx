@@ -2,6 +2,7 @@ import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { displayDateTimeFormat } from "../../../utils"
 import { blogs, BlogTypes } from "../../../utils/blogConstants"
 import { blogTypes, URLS } from "../../../utils/constants"
 import Accelerator from "../../Base/Accelerator"
@@ -17,7 +18,7 @@ interface BlogItemProps {
 const BlogHighLight = ({ data }: BlogItemProps) => {
   return (
     <Link href={`${URLS?.BLOG}/${data?.slug}`}>
-      <div className={clsx(styles.blogItem, "md:flex cursor-pointer gap-[30px] mt-[40px]")}>
+      <div className={clsx(styles.blogItem, "md:flex cursor-pointer gap-[30px] mt-10")}>
         <div
           className={clsx(
             styles.blogItemImg,
@@ -27,14 +28,12 @@ const BlogHighLight = ({ data }: BlogItemProps) => {
           <Image src={data?.image ? data?.image : "/images/blog/default.png"} alt="" fill />
           <BlogTypeTag type={data?.type} />
         </div>
-        <div>
-          <h2 className="text-[20px] xl:text-[28px]">{data?.title}</h2>
-          <p className="mt-[6px] text-[14px] xl:text-[16px] xl:mt-[12px] opacity-[0.6]">
-            {data?.date}
+        <div className="pt-5">
+          <h2 className="text-20/28 xl:text-28/36 font-bevn600">{data?.title}</h2>
+          <p className="mt-[6px] uppercase text-14/24 xl:text-16/20 font-bevn700 tracking-widest xl:mt-3 text-teaGray">
+            {displayDateTimeFormat(data?.date)}
           </p>
-          <p className="mt-[6px] text-[14px] xl:text-[16px] xl:mt-[20px] opacity-[0.6]">
-            {data?.intro}
-          </p>
+          <p className="mt-[6px] text-14/24 xl:text-16/28 xl:mt-5 text-teaGray">{data?.intro}</p>
         </div>
       </div>
     </Link>
@@ -67,19 +66,19 @@ const BlogPage = () => {
 
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
-      <div className="max-w-[760px] xl:max-w-[1200px] px-[20px] mx-auto pb-[120px]">
-        <div className="font-bevn500 text-[40px] xl:text-60/72 text-center">Insight</div>
+      <div className="max-w-[760px] xl:max-w-[1200px] px-5 mx-auto pb-[120px]">
+        <div className="font-bevn500 text-40/52 xl:text-60/72 text-center">Insight</div>
         <BlogHighLight data={blogHighLight} />
-        <div className="my-[20px] xl:my-[40px] h-[1px] bg-white opacity-[0.2]" />
-        <div className="flex gap-[8px] flex-wrap justify-center md:justify-start">
+        <div className="my-5 xl:my-10 h-[1px] bg-white opacity-20" />
+        <div className="flex gap-2 flex-wrap justify-center uppercase tracking-widest md:justify-start">
           {blogTypesTypes?.map((type: string, index: number) => {
             return (
               <div
                 key={index}
                 className={clsx(
-                  "px-[12px] py-[6px] text-[14px] xl:text-[16px] bg-[#1A1F27] rounded-[4px] font-bold hover:bg-[#00C7F4] hover:text-black cursor-pointer",
+                  "px-3 py-[6px] text-14/18 xl:text-16/20 bg-[#1A1F27] rounded font-bold hover:bg-[#00C7F4] hover:text-black cursor-pointer",
                   {
-                    "bg-[#00C7F4] text-black": tagSelect === type
+                    "bg-teaBlue text-black": tagSelect === type
                   }
                 )}
                 onClick={() => setTagSelect(type)}

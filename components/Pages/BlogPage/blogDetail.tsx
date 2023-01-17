@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import React, { useEffect, useState } from "react"
+import { displayDateTimeFormat } from "../../../utils"
 import { BlogTypes } from "../../../utils/blogConstants"
 import { URLS } from "../../../utils/constants"
 import styles from "./blog.module.scss"
@@ -38,13 +39,13 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
 
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
-      <div className="max-w-[1040px] mx-auto px-[20px]">
-        <div className="relative h-[36px] w-full">
+      <div className="max-w-[1040px] mx-auto px-5">
+        <div className="relative h-9 w-full">
           <BlogTypeTag type={data?.type} className={styles.blogTypeTag} />
         </div>
-        <h2 className="mt-[20px] text-center text-[30px] xl:text-[40px]">{data?.title}</h2>
-        <p className="mt-[20px] xl:mt-[32px] text-[14px] xl:text-[16px] text-center opacity-[0.6]">
-          {data?.date}
+        <h2 className="mt-5 text-center text-32/40 xl:text-40/52">{data?.title}</h2>
+        <p className="mt-5 xl:mt-8 text-14/18 xl:text-16/24 text-center uppercase text-teaGray tracking-widest font-bevn700">
+          {displayDateTimeFormat(data?.date)}
         </p>
         <div className="relative">
           <div className="max-w-[800px] mx-auto mt-[30px] xl:mt-[56px]">
@@ -74,14 +75,14 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
               className={clsx(styles.htmlContent, "text-16/28")}
               dangerouslySetInnerHTML={{ __html: content }}
             />
-            <div className="mt-[30px] flex gap-[8px] uppercase items-center flex-wrap">
-              <span className="pr-[20px]">Tags</span>
+            <div className="mt-[30px] flex gap-2 uppercase items-center flex-wrap">
+              <span className="pr-5">Tags</span>
               {data?.tags &&
                 data?.tags?.map((item: string, index: number) => {
                   return (
                     <div
                       key={index}
-                      className="px-[12px] py-[6px] text-[14px] xl:text-[16px] font-bold bg-[#1A1F27] rounded-[4px]"
+                      className="px-[12px] py-[6px] text-14/18 xl:text-16/24 tracking-widest font-bold bg-[#1A1F27] rounded-[4px]"
                     >
                       {item}
                     </div>
@@ -92,7 +93,7 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
         </div>
       </div>
       <div>
-        <h2 className="mt-[100px] text-center text-[40px]">Latest News</h2>
+        <h2 className="mt-[100px] text-center text-40/52">Latest News</h2>
         <div className="max-w-[760px] xl:max-w-[1200px] px-[20px] mx-auto">
           {lastestNews && !!(lastestNews.length > 0) && (
             <div className={styles.blogList}>
