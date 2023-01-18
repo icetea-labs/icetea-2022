@@ -22,31 +22,33 @@ const HeaderDefaultLayout = () => {
     if (!open) return <></>
 
     return (
-      <div
-        className={clsx(
-          styles.bgHeaderMobile,
-          "fixed top-0 left-0 w-full h-screen overflow-y-auto bg-[#04060C] flex flex-col p-5 pb-8 z-50"
-        )}
-      >
-        <div className="flex justify-between">
-          <Link href={URLS.HOME}>
-            <Image src={logo} alt="" width={192} height={42} />
-          </Link>
-          <Image src={iconClose} alt="" onClick={handleOpenHeader} className="cursor-pointer" />
-        </div>
-        <div className="flex flex-col gap-8 text-white justify-center w-full text-center mt-20">
-          {routes.map((item: RouteTypes, index: number) => (
-            <Link
-              key={index}
-              href={item.uri}
-              target={item?.target ?? "_self"}
-              className={clsx("hover:tracking-wider duration-500 font-bevn600 text-20/28", {
-                "text-main": asPath === item.uri
-              })}
-            >
-              {item.label}
+      <div className="bg-[#04060C] flex w-full h-screen">
+        <div
+          className={clsx(
+            styles.bgHeaderMobile,
+            "fixed top-0 left-0 w-full h-full overflow-y-auto flex flex-col p-5 pb-8 z-50"
+          )}
+        >
+          <div className="flex justify-between">
+            <Link href={URLS.HOME}>
+              <Image src={logo} alt="" width={192} height={42} />
             </Link>
-          ))}
+            <Image src={iconClose} alt="" onClick={handleOpenHeader} className="cursor-pointer" />
+          </div>
+          <div className="flex flex-col gap-8 text-white justify-center w-full text-center mt-20">
+            {routes.map((item: RouteTypes, index: number) => (
+              <Link
+                key={index}
+                href={item.uri}
+                target={item?.target ?? "_self"}
+                className={clsx("hover:tracking-wider duration-500 font-bevn600 text-20/28", {
+                  "text-main": asPath === item.uri
+                })}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     )
@@ -64,7 +66,7 @@ const HeaderDefaultLayout = () => {
         )}
       >
         <Link href={URLS.HOME}>
-          <Image src="/images/logo-text.svg" width={192} height={42} alt="" />
+          <Image src={logo} width={192} height={42} alt="" />
         </Link>
 
         <div className={clsx("space-x-6 lg:space-x-[60px] hidden", "md:flex")}>
