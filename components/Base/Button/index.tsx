@@ -1,9 +1,10 @@
-import React from "react"
+import React, { MouseEventHandler } from "react"
 import clsx from "clsx"
 
 type ButtonProps = {
   className?: string
   children: any
+  onClick?: MouseEventHandler<HTMLDivElement>
 }
 
 const buttonStyles = {
@@ -13,15 +14,12 @@ const buttonStyles = {
 }
 
 const Button = (props: ButtonProps) => {
-  const { className = "", children } = props
+  const { className = "", children, onClick } = props
 
   return (
     <div
-      className={clsx(
-        buttonStyles.button,
-        buttonStyles.hoverAnimated,
-        className
-      )}
+      className={clsx(buttonStyles.button, buttonStyles.hoverAnimated, className)}
+      onClick={onClick && onClick}
     >
       {children}
     </div>

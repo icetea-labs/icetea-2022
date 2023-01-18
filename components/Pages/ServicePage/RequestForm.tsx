@@ -1,7 +1,8 @@
 import clsx from "clsx"
 import { ChangeEvent, useState } from "react"
-import ButtonLink from "../../Base/ButtonLink"
+import Button from "../../Base/Button"
 import styles from "./service.module.scss"
+import SubmitedDialog from "./SubmitedDialog"
 
 type FormDataTypes = {
   name: string
@@ -10,19 +11,28 @@ type FormDataTypes = {
   content: string
 }
 
+const defaultFormData = {
+  content: "",
+  email: "",
+  name: "",
+  serviceType: ""
+}
+
 const RequestForm = () => {
-  const [formData, setFormData] = useState<FormDataTypes>({
-    content: "",
-    email: "",
-    name: "",
-    serviceType: ""
-  })
+  const [openDialog, setOpenDialog] = useState<boolean>(false)
+  const [formData, setFormData] = useState<FormDataTypes>(defaultFormData)
 
   const handleChangeFormData = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [event.target.name]: event.target.value
     })
+  }
+
+  const handleSubmit = () => {
+    console.log("submit", formData)
+    setOpenDialog(true)
+    setFormData(defaultFormData)
   }
 
   return (
@@ -78,12 +88,17 @@ const RequestForm = () => {
               />
             </div>
 
-            <ButtonLink href="/" className="mt-11 text-18/24 px-[60px]">
+            <Button
+              onClick={handleSubmit}
+              className={clsx(styles.btnSubmit, "mt-11 text-18/24 px-[60px] font-bevn600")}
+            >
               Submit
-            </ButtonLink>
+            </Button>
           </div>
         </div>
       </div>
+
+      <SubmitedDialog isOpen={openDialog} handleClose={() => setOpenDialog(false)} />
     </div>
   )
 }
