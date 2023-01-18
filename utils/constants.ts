@@ -165,7 +165,7 @@ export const services: Array<ServiceTypes> = [
     id: 1,
     title: "Initiation",
     description:
-      "We support potential startups with our extensive network of mentors and partners to build a market-fit products, fundraising and brand awareness.",
+      "We support potential startups with our extensive network of mentors and partners to build market-fit products, fundraising and brand awareness.",
     detailUrl: "",
     imgUri: imgInitiation,
     programs: [

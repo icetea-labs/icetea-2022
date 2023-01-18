@@ -58,8 +58,8 @@ const ExploreServices = () => {
         >
           <span className="md:text-40/52 text-32/40">Explore Our Services</span>
           <span className="md:text-20/28 text-16/20 text-teaGray max-w-[690px]">
-            As a leader, we own an ecosystem to support projects in every stage of the project life
-            cycle
+            As a leader, we own an ecosystem to support projects in every stage of the product
+            lifecycle
           </span>
         </div>
 

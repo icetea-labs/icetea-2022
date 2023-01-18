@@ -3,12 +3,12 @@ import styles from "./landing.module.scss"
 
 const stats = [
   {
-    label: "Combined Communities",
+    label: "Combined-communities Users",
     amount: "5M"
   },
   {
     label: "KYC-verified Users",
-    amount: "200"
+    amount: "200K"
   },
   {
     label: "Game in Connections",
