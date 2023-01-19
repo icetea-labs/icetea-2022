@@ -111,7 +111,7 @@ export const inHouseProducts: Array<ProductTypes> = [
     bgUri: "/images/products/bg-gamefi.png",
     description: "An all-in-one discovery hub for web3 games and metaverses",
     imageUri: productGamefi,
-    title: "Gamehub",
+    title: "Game Hub",
     url: "https://gamefi.org/"
   },
   {
@@ -125,10 +125,9 @@ export const inHouseProducts: Array<ProductTypes> = [
 export const ventureProducts: Array<ProductTypes> = [
   {
     bgUri: "/images/products/bg-desport.png",
-    description:
-      "A blockchain E-sport platform that helps convert traditional gamers to blockchain",
+    description: "A blockchain eSports platform that helps convert to Web3's",
     imageUri: productDesport,
-    title: "Web3 E-sport platform",
+    title: "Web3 eSports Platform",
     url: "https://desports.gg/"
   }
 ]
@@ -254,14 +253,14 @@ export const services: Array<ServiceTypes> = [
     id: 5,
     title: "User Engagement",
     description:
-      "Icetea Labs supports e-sport tournaments & leaderboards and integrates in-game advertising and content creation to support the creator economy. \nBesides, we do joint research with strategic partners to co-build a sustainable web3 game and metaverse.",
+      "Icetea Labs supports eSports tournaments & leaderboards and integrates in-game advertising and content creation to support the creator economy. \nBesides, we do joint research with strategic partners to co-build a sustainable web3 game and metaverse.",
     detailUrl: "",
     imgUri: imgUser,
     programs: [
       {
         title: "Desport",
         description:
-          "The first Esports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
+          "The first eSports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
         thumbnail: imgDesport,
         url: "https://desports.gg/"
       },
@@ -398,7 +397,7 @@ export const serviceDetails: Array<ServiceDetailTypes> = [
         poweredByUri: logoMirai
       },
       {
-        services: ["E-sport Tournament Organizing"],
+        services: ["eSports Tournament Organizing"],
         poweredByUri: logoDesport
       },
       {

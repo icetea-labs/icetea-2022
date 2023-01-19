@@ -104,7 +104,7 @@ const AboutPage = () => {
 
       <div className="flex flex-col mt-[160px] max-w-[1000px] px-8 md:px-10 pb-[120px]">
         <p className="text-32/40 sm:text-36/40 lg:text-40/52 text-center">
-          Each individual in Icetea Labs engages and builds a distinct company culture
+          We engage and build the truly unique company culture together
         </p>
         <div
           className={clsx(

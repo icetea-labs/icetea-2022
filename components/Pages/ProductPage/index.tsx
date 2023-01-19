@@ -28,7 +28,7 @@ const ProductPage = () => {
       >
         <div className="flex flex-col items-center px-8">
           <p className="text-32/40 md:text-36/40 lg:text-40/52 text-center max-w-[1000px]">
-            The only Web3 gaming company is building a complete suite of infrastructure-related
+            The only Web3 gaming company building a complete suite of infrastructure-related
             products
           </p>
         </div>

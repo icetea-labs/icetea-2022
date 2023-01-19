@@ -68,7 +68,7 @@ const Product = () => {
         <div className="flex flex-col max-w-[720px] items-center text-center">
           <p className="md:text-40/32 text-32/40">Product</p>
           <span className="text-teaGray mt-3 text-16/20 md:text-20/28">
-            The only Web3 gaming company is building a complete suite of infrastructure-related
+            The only Web3 gaming company building a complete suite of infrastructure-related
             products
           </span>
         </div>
