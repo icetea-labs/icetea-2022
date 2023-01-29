@@ -66,7 +66,7 @@ const Product = () => {
         )}
       >
         <div className="flex flex-col max-w-[720px] items-center text-center">
-          <p className="md:text-40/32 text-32/40">Product</p>
+          <p className="md:text-40/32 text-32/40">Products</p>
           <span className="text-teaGray mt-3 text-16/20 md:text-20/28">
             The only Web3 gaming company building a complete suite of infrastructure-related
             products

@@ -229,7 +229,7 @@ export const services: Array<ServiceTypes> = [
   },
   {
     id: 4,
-    title: "Game Discoveries",
+    title: "Game Discovery",
     description:
       "By building the infrastructure and decentralized publishing platform, we support web3 games to build player bases through a Game hub with 400+ games and 200K eKYC verified users.",
     detailUrl: "",
@@ -258,7 +258,7 @@ export const services: Array<ServiceTypes> = [
     imgUri: imgUser,
     programs: [
       {
-        title: "Desport",
+        title: "DESports",
         description:
           "The first eSports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
         thumbnail: imgDesport,
