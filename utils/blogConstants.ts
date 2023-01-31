@@ -20,6 +20,50 @@ export const blogs: Array<BlogTypes> = [
   {
     id: "1",
     type: "Announcement",
+    title:
+      "Icetea Labs and Chainlink Labs Partnership - Linking the Next Billions of Gamers to Web3",
+    slug: "monthly-report-insights-november-2022",
+    date: "Tues 01/31/2023",
+    image: "/images/news/icetea_chainlabs.png",
+    hashtags: [],
+    short_intro: "",
+    intro: "",
+    html: true,
+    content: [
+      "<p>We are thrilled to announce Icetea Labs has partnered with Chainlink Labs to accelerate the next golden generations of Web3 games. From the starting point, both sides share the same vision on the future of blockchain in general and, in particular, web3 gaming. Blockchain&rsquo;s potential benefits to the gaming industry are undeniable, but hurdles mean large-scale adoption could take years. We are determined to foster the growth of the space, providing a comprehensive ecosystem for founders and teams to develop their products and bring actual value to dedicated users.&nbsp;</p>",
+      "<p><br></p>",
+      "<p>Icetea Labs has been trusted and reached out by hundreds of early-stage founders throughout the years for its credential incubation, investment, and top-tier launchpads services. The company&apos;s offerings will evolve to uncover and develop a range of missing solutions, aiming to become the go-to layer for game discovery and user engagement.&nbsp;To do this, Icetea Labs has formed partnerships with many notable names for its&nbsp;Accelerator Program, designed to give emerging Web3 startups the support and guidance they need to succeed.</p>",
+      "<p><br></p>",
+      "<p>Through the partnership with Chainlink Labs, Icetea Labs&apos; expanding network of startups will have access to secure and reliable access to off-chain data capacity and many other mission-critical infrastructures for connecting to all of the world&rsquo;s computation, APIs, and enterprise backends. For instance, Chainlink VRF (Verifiable Random Function) enables converting digital asset prices to USD when users mint and transact on marketplaces is tremendously helpful in building blockchain games and NFTs. Chainlink Labs is also committed to providing some selected startups with enhanced marketing support and potentially being the bridge between startups and any interested investor or business partners in its network.</p>",
+      "<p><br></p>",
+      "<p>Icetea Labs and Chainlink Labs express openness to explore further collaboration, including but not limited to working together on educational research, accelerators, seminars, and conferences. Ultimately this contributes to creating a supportive environment for promising new web3 builders and also raises the general public&apos;s awareness of the industry&rsquo;s value.&nbsp;</p>",
+      "<p><br></p>",
+      "<p>In conclusion, the Icetea Labs and Chainlink Labs strategic partnership will enable us to accelerate our efforts in providing support covering the entire lifecycle of games and gamified projects. As a result, together, we can both directly and indirectly revolutionize the gaming industry using blockchain technology and, at the same time, bring decentralization closer to mass adoption.&nbsp;</p>",
+      "<p><br></p>",
+      "<p><br></p>",
+      "<h3>About Icetea Labs</h3>",
+      "<p><br></p>",
+      "<p>Icetea Labs is Asia&rsquo;s leading Web3 Incubator and powerhouse specializing in the game discovery and user engagement. Icetea Labs has its full-lifecycle ecosystem of infrastructure layers and launchpad services, which allows the firm not only to invest and incubate early-stage startups but also to offer a platform for these companies to launch and grow their community. Our mission is to connect and engage the next billion gamers with Web3 games.&nbsp;</p>",
+      "<p><br></p>",
+      "<p><br></p>",
+      "<h3>About Chainlink Labs</h3>",
+      "<p><br></p>",
+      "<p>Chainlink Labs is the leading provider of secure and reliable open-source blockchain oracle solutions, enhancing smart contracts by connecting them to a wide range of off-chain data sources and computations, such as asset prices, web APIs, loT devices, payment systems, and more. We are dedicated to the development and integration of Chainlink as the standard decentralized oracle framework used by smart contracts across any blockchain.&nbsp;</p>",
+      "<p><br></p>",
+      "<h3>Chainlink</h3>",
+      "<p><br></p>",
+      "<p>Chainlink is the industry-standard Web3 services platform that has enabled trillions of dollars in transaction volume across DeFi, insurance, gaming, NFTs, and other major industries. As the leading decentralized oracle network, Chainlink enables developers to build feature-rich Web3 applications with seamless access to real-world data and off-chain computation across any blockchain and provides global enterprises with a universal gateway to all blockchains. Learn more about Chainlink by visiting chain.link or reading the developer documentation at docs.chain.link. To discuss an integration, reach out to an expert</p>",
+      "<p><br></p>",
+      "<p><br></p>"
+    ],
+    link: [],
+    tags: ["Accelerator", "Web3"],
+    show: true,
+    highlight: false
+  },
+  {
+    id: "2",
+    type: "Announcement",
     title: "MONTHLY REPORT INSIGHTS - NOVEMBER 2022",
     slug: "monthly-report-insights-november-2022",
     date: "Mon 12/05/2022",
@@ -169,7 +213,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: true
   },
   {
-    id: "2",
+    id: "3",
     type: "Announcement",
     title: "STARTUP STORY: 15 MINUTES WITH THE REPRESENTATIVES FROM YOOLDO | TROUBLE PUNK",
     slug: "startup-story-15-minutes-with-the-respresentatives-from-yooldo-trouble-punk",
@@ -195,7 +239,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "3",
+    id: "4",
     type: "Announcement",
     title: "ILAP CYBER MONDAY GRANTS",
     slug: "ilap-cyber-monday-grants",
@@ -244,7 +288,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "4",
+    id: "5",
     type: "Announcement",
     title: "Startup Story: 15 minutes with representatives of Hashbon Pass",
     slug: "startup-story-15-minutes-with-representatives-of-hashbonpass",
@@ -272,7 +316,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "5",
+    id: "6",
     type: "Announcement",
     title: "Startup Story: 15 minutes with Teddy Phan - the CEO of Eternal Glory",
     slug: "startup-story-15-minutes-with-teddy-phan-the-ceo-of-eternal-glory",
@@ -298,7 +342,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "6",
+    id: "7",
     type: "Announcement",
     title: "ICETEA LABS ECOSYSTEM - OCTOBER REPORT",
     slug: "icetea-labs-ecosystem-october-report",
@@ -467,7 +511,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "7",
+    id: "8",
     type: "Announcement",
     title: "Startup Story: 15 minutes with Julio Kosta - the Founder of Victory Point",
     slug: "startup-story-15-minutes-with-julio-kosta-the-founder-of-victory-point",
@@ -494,7 +538,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "8",
+    id: "9",
     type: "Announcement",
     title: "Introducing the Icetea Labs accelerator program",
     slug: "introducing-the-icetea-labs-accelerator-program",
@@ -550,7 +594,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "9",
+    id: "10",
     type: "Announcement",
     title: "Hashed And Icetea Labs Join Forces Towards A Common Goal In GameFi And Metaverse",
     slug: "hashed-and-icetea-labs-join-forces-towards-a-common-goal-in-gamefi-and-metaverse",
@@ -578,7 +622,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "10",
+    id: "11",
     type: "Partnership",
     title: "Why We Invest: Solice - The first VR metaverse platform on Solana",
     slug: "why-we-invest-solice-the-first-vr-metaverse-platform-on-solana",
@@ -609,7 +653,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "11",
+    id: "12",
     type: "Announcement",
     title:
       "Icetea Labs Partners with Filecoin for Greater Decentralization and Asset Integrity in Open Metaverse",
@@ -638,7 +682,7 @@ export const blogs: Array<BlogTypes> = [
     highlight: false
   },
   {
-    id: "12",
+    id: "13",
     type: "Announcement",
     title: "INTRODUCING 06 FINALISTS IN ILAP - AUTUMN 2022 COHORT",
     slug: "introducing-06-finalists-in-ilap-autumn-2022-cohort",
