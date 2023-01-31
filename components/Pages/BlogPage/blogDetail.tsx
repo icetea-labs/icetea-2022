@@ -2,8 +2,7 @@
 import clsx from "clsx"
 import dynamic from "next/dynamic"
 import Link from "next/link"
-import { useRouter } from "next/router"
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useMemo, useState } from "react"
 import { displayDateTimeFormat } from "../../../utils"
 import { BlogTypes } from "../../../utils/blogConstants"
 import { URLS } from "../../../utils/constants"
@@ -19,7 +18,6 @@ interface Props {
 }
 
 const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
-  const router = useRouter()
   const [content, setContent] = useState<string>("")
 
   const CopyClipboard = dynamic(() => import("./social").then((mod) => mod.LinkIcon), {
@@ -36,6 +34,11 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
     }
   }, [data?.content])
 
+  const urlToShare = useMemo(() => {
+    if (typeof window === "undefined") return ""
+    return `${window?.location?.host}${URLS.BLOG}/${data?.slug}`
+  }, [data])
+
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
       <div className="max-w-[1040px] mx-auto px-5">
@@ -50,28 +53,28 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
           <div className="max-w-[800px] mx-auto mt-[30px] xl:mt-[56px]">
             <div className="lg:absolute flex mb-[20px] flex-wrap lg:grid gap-[20px] left-0 top-0">
               <Link
-                href={`https://t.me/share?url=${host}${URLS.BLOG}/${data?.slug}`}
+                href={`https://t.me/share?url=${urlToShare}`}
                 title="Share on Telegram"
                 target={"_blank"}
               >
                 <Telegram className={styles.social} />
               </Link>
               <Link
-                href={`https://twitter.com/intent/tweet?text=${host}${URLS.BLOG}/${data?.slug}`}
+                href={`https://twitter.com/intent/tweet?text=${urlToShare}`}
                 title="Share on Twitter"
                 target={"_blank"}
               >
                 <Twitter className={styles.social} />
               </Link>
               <Link
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${host}${URLS.BLOG}/${data?.slug}`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${urlToShare}`}
                 title="Share on LinkedIn"
                 target={"_blank"}
               >
                 <LinkedIn className={styles.social} />
               </Link>
               <Link
-                href={`https://www.facebook.com/sharer/sharer.php?u=${host}${URLS.BLOG}/${data?.slug}`}
+                href={`https://www.facebook.com/sharer/sharer.php?u=${urlToShare}`}
                 title="Share on Facebook"
                 target={"_blank"}
               >
