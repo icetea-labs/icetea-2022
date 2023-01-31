@@ -30,7 +30,7 @@ export const blogs: Array<BlogTypes> = [
     intro: "",
     html: true,
     content: [
-      '<p><img src="/images/news/icetea_chainlabs.png" width="100%" ></p>',
+      '<p><img src="/images/news/banner_icetea_chainlink.jpg" width="100%" ></p>',
       "<p><br></p>",
       "<p>We are thrilled to announce Icetea Labs has partnered with Chainlink Labs to accelerate the next golden generations of Web3 games. From the starting point, both sides share the same vision on the future of blockchain in general and, in particular, web3 gaming. Blockchain&rsquo;s potential benefits to the gaming industry are undeniable, but hurdles mean large-scale adoption could take years. We are determined to foster the growth of the space, providing a comprehensive ecosystem for founders and teams to develop their products and bring actual value to dedicated users.&nbsp;</p>",
       "<p><br></p>",

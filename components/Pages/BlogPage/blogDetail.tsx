@@ -35,7 +35,6 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
       setContent(contentResult)
     }
   }, [data?.content])
-  console.log(host)
 
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
@@ -50,17 +49,29 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
         <div className="relative">
           <div className="max-w-[800px] mx-auto mt-[30px] xl:mt-[56px]">
             <div className="lg:absolute flex mb-[20px] flex-wrap lg:grid gap-[20px] left-0 top-0">
-              <Telegram className={styles.social} />
               <Link
-                href={`https://twitter.com/intent/tweet?text=Hashed%20and%20Icetea%20Labs%20forge%20a%20strategic%20partnership%20https%3A%2F%2Ficetea.io%2Fnew%2${data?.slug}`}
-                title="Share on Facebook"
+                href={`https://t.me/share?url=${host}${URLS.BLOG}/${data?.slug}`}
+                title="Share on Telegram"
+                target={"_blank"}
+              >
+                <Telegram className={styles.social} />
+              </Link>
+              <Link
+                href={`https://twitter.com/intent/tweet?text=${host}${URLS.BLOG}/${data?.slug}`}
+                title="Share on Twitter"
                 target={"_blank"}
               >
                 <Twitter className={styles.social} />
               </Link>
-              <LinkedIn className={styles.social} />
               <Link
-                href={`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ficetea.io%2Fnew%2${data?.slug}`}
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${host}${URLS.BLOG}/${data?.slug}`}
+                title="Share on LinkedIn"
+                target={"_blank"}
+              >
+                <LinkedIn className={styles.social} />
+              </Link>
+              <Link
+                href={`https://www.facebook.com/sharer/sharer.php?u=${host}${URLS.BLOG}/${data?.slug}`}
                 title="Share on Facebook"
                 target={"_blank"}
               >
