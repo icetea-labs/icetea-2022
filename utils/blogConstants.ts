@@ -22,7 +22,7 @@ export const blogs: Array<BlogTypes> = [
     type: "Announcement",
     title:
       "Icetea Labs and Chainlink Labs Partnership - Linking the Next Billions of Gamers to Web3",
-    slug: "monthly-report-insights-november-2022",
+    slug: "icetea-labs-and-chainlink-labs-partnership",
     date: "Tues 01/31/2023",
     image: "/images/news/icetea_chainlabs.png",
     hashtags: [],
@@ -30,6 +30,8 @@ export const blogs: Array<BlogTypes> = [
     intro: "",
     html: true,
     content: [
+      '<p><img src="/images/news/icetea_chainlabs.png" width="100%" ></p>',
+      "<p><br></p>",
       "<p>We are thrilled to announce Icetea Labs has partnered with Chainlink Labs to accelerate the next golden generations of Web3 games. From the starting point, both sides share the same vision on the future of blockchain in general and, in particular, web3 gaming. Blockchain&rsquo;s potential benefits to the gaming industry are undeniable, but hurdles mean large-scale adoption could take years. We are determined to foster the growth of the space, providing a comprehensive ecosystem for founders and teams to develop their products and bring actual value to dedicated users.&nbsp;</p>",
       "<p><br></p>",
       "<p>Icetea Labs has been trusted and reached out by hundreds of early-stage founders throughout the years for its credential incubation, investment, and top-tier launchpads services. The company&apos;s offerings will evolve to uncover and develop a range of missing solutions, aiming to become the go-to layer for game discovery and user engagement.&nbsp;To do this, Icetea Labs has formed partnerships with many notable names for its&nbsp;Accelerator Program, designed to give emerging Web3 startups the support and guidance they need to succeed.</p>",
