@@ -41,7 +41,10 @@ const HomeBanner = () => {
           className={clsx(styles.videoMobile, "")}
           poster="/images/home/video_preview_mobile.png"
         >
-          <source src="/videos/BG_Mobile_1.mp4" type="video/mp4" />
+          <source
+            src="https://d1j2c9jkfhu70p.cloudfront.net/icetea/videos/BG_Mobile_1.mp4"
+            type="video/mp4"
+          />
         </video>
         <video
           autoPlay
@@ -51,7 +54,10 @@ const HomeBanner = () => {
           className={clsx(styles.videoDesktop, "")}
           poster="/images/home/video_preview.png"
         >
-          <source src="/videos/BG_PC_1.mp4" type="video/mp4" />
+          <source
+            src="https://d1j2c9jkfhu70p.cloudfront.net/icetea/videos/BG_PC_1.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
     </div>

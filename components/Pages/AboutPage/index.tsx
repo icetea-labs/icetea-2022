@@ -41,7 +41,7 @@ const AboutPage = () => {
     fluid: true,
     sources: [
       {
-        src: "/icetea_lab.mp4",
+        src: "https://d1j2c9jkfhu70p.cloudfront.net/icetea/videos/icetea_lab.mp4",
         type: "video/mp4"
       }
     ]
