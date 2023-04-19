@@ -18,6 +18,48 @@ export interface BlogTypes {
 
 export const blogs: Array<BlogTypes> = [
   {
+    id: "199",
+    type: "Announcement",
+    title:
+      "Icetea Labs Collaborate with Good Games Guild to Co-incubate ArbiPad - The Next Generation Arbitrum-zkSync Based Launchpad",
+    slug: "icetea-labs-and-collaborate-with-good-games-guild-to-co-incubate-arbipad",
+    date: "Tues 04/18/2023",
+    image: "/images/news/good_games_guild.png",
+    hashtags: [],
+    short_intro: "",
+    intro: "",
+    html: true,
+    content: [
+      '<p><img src="/images/news/good_games_guild.png" width="100%" ></p>',
+      "<p><br></p>",
+      "<p>We are thrilled to announce that Icetea Labs has joined forces with Good Games Guild to co-incubate a new launchpad built on Arbitrum and zkSync, ArbiPad. Through this partnership, we will together provide ArbiPad extensive support to offer the community a project with enhanced features and an optimal user experience.</p>",
+      "<p><br></p>",
+      "<p>ArbiPad is an innovative platform that launches the greatest tokenized projects created by Good Games Guild. Leveraging the advantages of Arbitrum and zkSync, it has a low-cost, stable, efficient, and high-security ecosystem. </p>",
+      "<p><br></p>",
+      "<p>ArbiPad aims to provide a unique launchpad experience for blockchain projects, allowing them to access the benefits of both scaling solutions. With transparency and a fair distribution system, ArbiPad can connect the biggest crypto project and the global community to become a leading launchpad in the Arbitrum and zkSync ecosystems. </p>",
+      "<p><br></p>",
+      "<i>Learn more about ArbiPad: </i>",
+      '<p><a href="https://arbipadcom.medium.com/">Medium</a> | <a href="https://twitter.com/arbipadcom">Twitter</a> | <a href="https://t.me/arbipadchat">Telegram chat</a> | <a href="https://t.me/arbipadnews">Telegram announcement channel</a></p>',
+      "<p><br></p>",
+      "<p>Realizing the potential possibilities of ArbiPad, Icetea Labs and Good Games Guild have decided to co-incubate this project. With considerable experience in the blockchain field, we will comprehensively support ArbiPad in building technical infrastructure and business development plans, giving advice on growing marketing, community, and many more. </p>",
+      "<p><br></p>",
+      "<p><b>About Good Games Guild</b></p>",
+      "<p>Good Games Guild is a Gaming Hub that The Good Games Guild is a gaming hub that aspires to construct the biggest virtual world economy by sponsoring millions of play-to-earn gamers, ,investing in play-to-earn games along with their in-game assets, and developing tools that will enhance the future of gaming and metaverse. </p>",
+      "<p><br></p>",
+      "<p>With more than 300,000 communities around the world, Good Games has become a movement and network of gamers, builders and investors. </p>",
+      "<p><br></p>",
+      "<p><i>Learn more about Good Games Guild: </i></p>",
+      '<p><a href="https://goodgamesguild.com/">Website</a> | <a href="https://discord.gg/x47U9qkR5K">Discord</a> | <a href="https://twitter.com/goodgamesguild">Twitter</a> | <a href="https://t.me/GoodGamesGuildChat">Telegram</a> | <a href="https://medium.com/@goodgamesguild">Medium</a> | <a href="https://www.instagram.com/goodgamesguild/">Instagram</a></p>',
+      "<p><br></p>",
+      "<p><b>About Icetea Labs</b></p>",
+      "<p>Icetea Labs is Asia’s leading Web3 Incubator and powerhouse specializing in the game discovery and user engagement. Icetea Labs has its full-lifecycle ecosystem of infrastructure layers and launchpad services, which allows the firm not only to invest and incubate early-stage startups but also to offer a platform for these companies to launch and grow their community. Our mission is to connect and engage the next billion gamers with Web3 games. </p>"
+    ],
+    link: [],
+    tags: ["Partnership", "Incubation"],
+    show: true,
+    highlight: false
+  },
+  {
     id: "1",
     type: "Announcement",
     title:
