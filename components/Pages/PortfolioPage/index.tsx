@@ -40,6 +40,7 @@ import logoUnfettered from "/public/images/portfolio/unfettered.png"
 import logoWam from "/public/images/portfolio/wam.png"
 import logoWarena from "/public/images/portfolio/warena.png"
 import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
+import logoMonsterra from "/public/images/portfolio/monsterra.png"
 
 const partners: Array<PartnerTypes> = [
   {
@@ -69,6 +70,10 @@ const partners: Array<PartnerTypes> = [
   {
     imgUri: logoSidus,
     url: "https://sidusheroes.com/"
+  },
+  {
+    imgUri: logoMonsterra,
+    url: "https://monsterra.io/"
   },
   {
     imgUri: logoRog,
