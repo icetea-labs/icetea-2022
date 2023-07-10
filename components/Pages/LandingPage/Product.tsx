@@ -23,10 +23,10 @@ const navProduct = [
     value: productValue.IN_HOUSE,
     label: "in house"
   },
-  {
-    value: productValue.VENTURE,
-    label: "joint ventures"
-  },
+  // {
+  //   value: productValue.VENTURE,
+  //   label: "joint ventures"
+  // },
   {
     value: productValue.SUBSIDIARY,
     label: "subsidiary"
@@ -41,9 +41,9 @@ const Product = () => {
     const getData = () => {
       let newData = []
       switch (activedNavId) {
-        case productValue.VENTURE:
-          newData = [...ventureProducts]
-          break
+        // case productValue.VENTURE:
+        //   newData = [...ventureProducts]
+        //   break
         case productValue.SUBSIDIARY:
           newData = [...subsidiaryProducts]
           break
@@ -99,7 +99,7 @@ const Product = () => {
                       target="_blank"
                       className={clsx(cardStyles.cardPartner, "flex w-full h-full")}
                     >
-                      <div className="w-full h-full flex justify-center items-center">
+                      <div className="w-full h-full flex justify-center items-center px-5">
                         <Image src={product.imageUri} alt="" />
                       </div>
                     </Link>

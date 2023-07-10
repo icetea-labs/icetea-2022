@@ -46,7 +46,7 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-full items-center mt-[60px]">
+        {/* <div className="flex flex-col w-full items-center mt-[60px]">
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
             joint ventures
           </div>
@@ -55,7 +55,7 @@ const ProductPage = () => {
               <CardProduct dataCard={product} key={index} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col w-full items-center mt-[60px]">
           <div className="flex w-fit px-3 py-[6px] rounded bg-teaBlue text-black uppercase tracking-widest font-bevn700">
@@ -65,7 +65,7 @@ const ProductPage = () => {
             {subsidiaryProducts.map((product: SubProductTypes, index: number) => (
               <div className="flex w-[275px] h-[130px] bg-teaBlack rounded-sm" key={index}>
                 <Link href={product.url} target="_blank" className={clsx("flex w-full h-full")}>
-                  <div className="w-full h-full flex justify-center items-center">
+                  <div className="w-full h-full flex justify-center items-center px-5">
                     <Image src={product.imageUri} alt="" />
                   </div>
                 </Link>

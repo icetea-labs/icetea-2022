@@ -39,6 +39,7 @@ import logoFuntap from "/public/images/partners/funtap.png"
 import logoHashed from "/public/images/partners/hashed.png"
 import logoPolygon from "/public/images/partners/polygon.png"
 import logoMirai2x from "/public/images/logo/logo-mirai-2x.png"
+import logoIceteaSoftware from "/public/images/logo/logo-icetea-software.svg"
 
 // product images
 import productFirebird from "/public/images/products/firebird.png"
@@ -142,6 +143,10 @@ export const subsidiaryProducts: Array<SubProductTypes> = [
   {
     url: "https://miraistudio.games/",
     imageUri: logoMirai2x
+  },
+  {
+    url: "https://www.icetea-software.com/",
+    imageUri: logoIceteaSoftware
   }
 ]
 
