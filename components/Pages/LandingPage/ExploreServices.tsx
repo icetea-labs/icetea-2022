@@ -11,6 +11,7 @@ const ExploreServices = () => {
   const [activedService, setActivedService] = useState<ServiceTypes | undefined>(services[0])
   const [isReading, setIsReading] = useState<boolean>(false)
   const [isWidthDownMd, setIsWidthDownMd] = useState<boolean>(false)
+  const [isHover, setIsHover] = useState<boolean>(false)
 
   useEffect(() => {
     setIsWidthDownMd(window.innerWidth <= 900)
@@ -24,6 +25,7 @@ const ExploreServices = () => {
   }, [])
 
   useEffect(() => {
+    if (isHover) return
     const timer = setTimeout(() => {
       if (!activedService || isReading || isWidthDownMd) return
       const length = services.length
@@ -35,11 +37,12 @@ const ExploreServices = () => {
     }, 5000)
 
     return () => clearTimeout(timer)
-  }, [activedService, isWidthDownMd, isReading])
+  }, [activedService, isWidthDownMd, isReading, isHover])
 
   const handleActiveCard = (id: number) => {
     const item = services.find((item: ServiceTypes) => item.id === id)
     setActivedService(item)
+    !isHover && setIsHover(true)
   }
 
   return (
@@ -73,6 +76,7 @@ const ExploreServices = () => {
           {services.map((item: ServiceTypes) => (
             <div
               onMouseEnter={() => handleActiveCard(item.id)}
+              onMouseLeave={() => setIsHover(false)}
               className={clsx(
                 styles.cardService,
                 item.id === activedService?.id && styles.cardActive,

@@ -14,11 +14,12 @@ import imgTechnical from "/public/images/service-technical.png"
 import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
 import imgIcetea from "/public/images/services/icetea-labs.png"
+import imgIceteaSoftware from "/public/images/services/its.png"
 import imgRedkite from "/public/images/services/redkite.png"
 import imgGamefi from "/public/images/services/gamefi.png"
-import imgFirebird from "/public/images/services/firebird.png"
-import imgDesport from "/public/images/services/desport.png"
-import imgIfo from "/public/images/services/ifo.png"
+// import imgFirebird from "/public/images/services/firebird.png"
+// import imgDesport from "/public/images/services/desport.png"
+import DMission from "/public/images/services/DMission.png"
 
 import logoDesport from "/public/images/logo/logo-desport.png"
 import logoFirebird from "/public/images/logo/logo-firebird.png"
@@ -28,6 +29,7 @@ import logoIfo from "/public/images/logo/logo-ifo.png"
 import logoIlap from "/public/images/logo/logo-ilap.png"
 import logoMirai from "/public/images/logo/logo-mirai.png"
 import logoRedkite from "/public/images/logo/logo-redkite.png"
+import logoDmission from "/public/images/logo/logo-dmission.svg"
 
 // partners
 import logoAlpha from "/public/images/partners/alpha-venture.png"
@@ -42,7 +44,7 @@ import logoMirai2x from "/public/images/logo/logo-mirai-2x.png"
 import logoIceteaSoftware from "/public/images/logo/logo-icetea-software.svg"
 
 // product images
-import productFirebird from "/public/images/products/firebird.png"
+import productTaskfi from "/public/images/products/taskFi-cover.png"
 import productGamefi from "/public/images/products/gamefi.png"
 import productRedkite from "/public/images/products/redkite.png"
 import productDesport from "/public/images/products/desport.png"
@@ -102,13 +104,6 @@ export type ProductTypes = {
 }
 export const inHouseProducts: Array<ProductTypes> = [
   {
-    bgUri: "/images/products/bg-firebird.png",
-    description: "A game-dedicated web2-friendly high-performance blockchain",
-    imageUri: productFirebird,
-    title: "Layer 1 Blockchain",
-    url: "https://firebirdchain.com/"
-  },
-  {
     bgUri: "/images/products/bg-gamefi.png",
     description: "An all-in-one discovery hub for web3 games and metaverses",
     imageUri: productGamefi,
@@ -121,6 +116,13 @@ export const inHouseProducts: Array<ProductTypes> = [
     imageUri: productRedkite,
     title: "Launchpad & NFT-FI",
     url: "https://redkitepad.com/"
+  },
+  {
+    bgUri: "/images/products/taskFi-background.png",
+    description: "A revolutionary work protocol for next generation freelancers",
+    imageUri: productTaskfi,
+    title: "Decentralized Work Protocol",
+    url: "https://taskfi.ai/"
   }
 ]
 export const ventureProducts: Array<ProductTypes> = [
@@ -174,8 +176,8 @@ export const services: Array<ServiceTypes> = [
     imgUri: imgInitiation,
     programs: [
       {
-        title: "Icetea Labs",
-        description: "A leading gaming and metaverse incubator in Asia",
+        title: "Icetea Labs Incubator",
+        description: "The leading Web3 gaming Incubator and Enabler in SEA",
         thumbnail: imgIcetea,
         url: "https://icetea.io/"
       },
@@ -190,28 +192,6 @@ export const services: Array<ServiceTypes> = [
   },
   {
     id: 2,
-    title: "Web3 Development",
-    description:
-      "We provide tech experts and professional developers who have been forced to turn our client's ideas into reality. Our experience in Blockchain-related development have enabled innovative digital transformation for our clients of any size.",
-    detailUrl: "",
-    imgUri: imgWeb3,
-    programs: [
-      {
-        title: "Mirai Studio",
-        description: "Masters In Reality And Imagination",
-        thumbnail: imgMirai,
-        url: "https://miraistudio.games/"
-      },
-      {
-        title: "Icetea Labs",
-        description: "Bring the true benefit of blockchain technology to everyone",
-        thumbnail: imgIcetea,
-        url: "https://icetea.io/"
-      }
-    ]
-  },
-  {
-    id: 3,
     title: "Token & NFT Launch",
     description:
       "We launch fully vetted projects on 2 of the top tier platforms: RedKite launchpad and Gamefi.org Game hub, helping them to reach a high quality audience of millions.",
@@ -233,6 +213,28 @@ export const services: Array<ServiceTypes> = [
     ]
   },
   {
+    id: 3,
+    title: "Web3 Development",
+    description:
+      "We provide tech experts and professional developers who have been forced to turn our client's ideas into reality. Our experience in Blockchain-related development have enabled innovative digital transformation for our clients of any size.",
+    detailUrl: "",
+    imgUri: imgWeb3,
+    programs: [
+      {
+        title: "Mirai Studio",
+        description: "Masters In Reality And Imagination",
+        thumbnail: imgMirai,
+        url: "https://miraistudio.games/"
+      },
+      {
+        title: "Icetea Software",
+        description: "Deliver Bespoke Solutions With Expertise",
+        thumbnail: imgIceteaSoftware,
+        url: "https://www.icetea-software.com/"
+      }
+    ]
+  },
+  {
     id: 4,
     title: "Game Discovery",
     description:
@@ -245,35 +247,36 @@ export const services: Array<ServiceTypes> = [
         description: "A one-stop destination for web3 gaming",
         thumbnail: imgGamefi,
         url: "https://gamefi.org/"
-      },
-      {
-        title: "Firebird",
-        description: "Build scalable and frictionless Web3 games with Firebird",
-        thumbnail: imgFirebird,
-        url: "https://firebirdchain.com/"
       }
+      // {
+      //   title: "Firebird",
+      //   description: "Build scalable and frictionless Web3 games with Firebird",
+      //   thumbnail: imgFirebird,
+      //   url: "https://firebirdchain.com/"
+      // }
     ]
   },
   {
     id: 5,
     title: "User Engagement",
     description:
-      "Icetea Labs supports eSports tournaments & leaderboards and integrates in-game advertising and content creation to support the creator economy. \nBesides, we do joint research with strategic partners to co-build a sustainable web3 game and metaverse.",
+      "Icetea Labs supports leaderboards and integrates in-game advertising and content creation to support the creator economy. Besides, we do joint research with strategic partners to co-build a sustainable web3 game and metaverse.",
     detailUrl: "",
     imgUri: imgUser,
     programs: [
+      // {
+      //   title: "DESports",
+      //   description:
+      //     "The first eSports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
+      //   thumbnail: imgDesport,
+      //   url: "https://desports.gg/"
+      // },
       {
-        title: "DESports",
+        title: "DMission",
         description:
-          "The first eSports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
-        thumbnail: imgDesport,
-        url: "https://desports.gg/"
-      },
-      {
-        title: "Initial Fan Offering (IFO)",
-        description: "Where project tokens awarded to the real fans!",
-        thumbnail: imgIfo,
-        url: "https://ifo.icetea.io/"
+          "DMission is a decentralized community-building & user-engagement platform which connects users to web3 apps & games through engaging and creative campaigns. The DMission beta got 3.5M page views and 200k participants.",
+        thumbnail: DMission,
+        url: "https://dmission.me/"
       }
     ]
   }
@@ -394,21 +397,21 @@ export const serviceDetails: Array<ServiceDetailTypes> = [
     imgUri: imgEngagement,
     providers: [
       {
-        services: ["True Fan Building"],
-        poweredByUri: logoIfo
+        services: ["Mission Tool for Community and User Growth Hacking"],
+        poweredByUri: logoDmission
       },
       {
         services: ["In-game Advertising for Web2 and Web3 Games"],
         poweredByUri: logoMirai
-      },
-      {
-        services: ["eSports Tournament Organizing"],
-        poweredByUri: logoDesport
-      },
-      {
-        services: ["GameFi Party (Real Player Growth Hacking System)"],
-        poweredByUri: logoGamefi
       }
+      // {
+      //   services: ["eSports Tournament Organizing"],
+      //   poweredByUri: logoDesport
+      // },
+      // {
+      //   services: ["GameFi Party (Real Player Growth Hacking System)"],
+      //   poweredByUri: logoGamefi
+      // }
     ]
   }
 ]
