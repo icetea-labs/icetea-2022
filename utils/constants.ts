@@ -274,7 +274,7 @@ export const services: Array<ServiceTypes> = [
       {
         title: "DMission",
         description:
-          "DMission is a decentralized community-building & user-engagement platform which connects users to web3 apps & games through engaging and creative campaigns. The DMission beta got 3.5M page views and 200k participants.",
+          "Decentralized community-building & user-engagement platform which connects users to web3 apps & games through engaging and creative campaigns.",
         thumbnail: DMission,
         url: "https://dmission.me/"
       }
