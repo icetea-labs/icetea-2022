@@ -1,13 +1,12 @@
 import clsx from "clsx"
-import Accelerator from "../../Base/Accelerator"
 import Subcribe from "../../Base/Subcribe"
 import ExploreServices from "./ExploreServices"
 import HomeBanner from "./HomeBanner"
-import Insight from "./Insight"
 import styles from "./landing.module.scss"
-import Product from "./Product"
 import Statictics from "./Statictics"
 import StrategicPartners from "./StrategicPartners"
+import Startup from "./Startup"
+import OurPortfolio from "./OurPortfolio"
 
 const LadingPage = () => {
   return (
@@ -16,17 +15,15 @@ const LadingPage = () => {
 
       <Statictics />
 
-      <ExploreServices />
+      <Startup />
 
-      <Product />
+      <ExploreServices />
 
       <StrategicPartners />
 
-      <Insight />
+      <OurPortfolio />
 
       <Subcribe />
-
-      <Accelerator />
     </div>
   )
 }

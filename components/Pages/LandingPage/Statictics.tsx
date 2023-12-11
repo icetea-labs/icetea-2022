@@ -3,10 +3,6 @@ import styles from "./landing.module.scss"
 
 const stats = [
   {
-    label: "Combined-communities Users",
-    amount: "5M"
-  },
-  {
     label: "KYC-verified Users",
     amount: "200K"
   },
@@ -27,6 +23,7 @@ const stats = [
 const Statictics = () => {
   return (
     <div
+      id="statictics"
       className={clsx(
         styles.bgStats,
         "w-full mx-auto flex flex-col items-center pt-[60px]",

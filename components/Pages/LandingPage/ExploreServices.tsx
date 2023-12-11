@@ -46,10 +46,10 @@ const ExploreServices = () => {
   }
 
   return (
-    <div className={styles.bgServices}>
+    <div id="services" className={styles.bgServices}>
       <div
         className={clsx(
-          "max-w-[1320px] mt-20 px-8 w-full mx-auto bg-black flex flex-col",
+          "max-w-[1320px] pt-20 px-8 w-full mx-auto bg-black flex flex-col",
           "md:mt-[170px] sm:px-20 py-[100px]"
         )}
       >
@@ -61,7 +61,7 @@ const ExploreServices = () => {
         >
           <span className="md:text-40/52 text-32/40">Explore Our Services</span>
           <span className="md:text-20/28 text-16/20 text-teaGray max-w-[690px]">
-            As a leader, we own an ecosystem to support projects in every stage of the product
+            We own an ecosystem to support projects in every stage of the product
             lifecycle
           </span>
         </div>

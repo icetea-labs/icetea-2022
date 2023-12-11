@@ -1,14 +1,17 @@
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import { partners, PartnerTypes } from "../../../utils/constants"
+import { PartnerTypes, ourPortfolio } from "../../../utils/constants"
 import styles from "./landing.module.scss"
 
-const StrategicPartners = () => {
+const OurPortfolio = () => {
   return (
-    <div id="partners" className="flex max-w-screen-main mx-auto px-8 md:px-[140px] pt-[120px]">
+    <div id="portfolio" className="flex max-w-screen-main mx-auto px-8 md:px-[140px] pt-[120px]">
       <div className="flex flex-col w-full justify-center text-center">
-        <p className="text-32/40 md:text-40/52">Strategic Partners</p>
+        <p className="text-32/40 md:text-40/52">Our Portfolio</p>
+        <span className="mt-3 text-teaGray text-16/20 md:text-20/28">
+          Most are direct investments but some are though partners
+        </span>
 
         <div
           className={clsx(
@@ -16,11 +19,11 @@ const StrategicPartners = () => {
             "md:flex md:flex-wrap "
           )}
         >
-          {partners.map((partner: PartnerTypes, index: number) => (
+          {ourPortfolio.map((partner: PartnerTypes, index: number) => (
             <div
               className={clsx(
-                "flex bg-teaBlack rounded-sm h-[80px] p-3",
-                "md:w-[275px] md:h-[130px] md:p-0"
+                "flex w-full h-[80px] bg-teaBlack rounded-sm",
+                "sm:w-[216px] sm:h-[105px]"
               )}
               key={index}
             >
@@ -29,7 +32,7 @@ const StrategicPartners = () => {
                 target="_blank"
                 className={clsx(styles.cardPartner, "flex w-full h-full")}
               >
-                <div className="w-full h-full flex justify-center items-center">
+                <div className="w-full h-full p-5 flex justify-center items-center">
                   <Image src={partner.imgUri} alt="" />
                 </div>
               </Link>
@@ -41,4 +44,4 @@ const StrategicPartners = () => {
   )
 }
 
-export default StrategicPartners
+export default OurPortfolio

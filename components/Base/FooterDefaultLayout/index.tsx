@@ -10,10 +10,6 @@ import logoText from "/public/images/logo-text.svg"
 
 const buyPkfExchanges = [
   {
-    name: "Telegram",
-    url: "https://t.me/ILAP_Announcement"
-  },
-  {
     name: "Twitter",
     url: "https://twitter.com/Icetea_Labs"
   },
@@ -26,6 +22,12 @@ const buyPkfExchanges = [
     url: "https://www.linkedin.com/company/icetea-labs"
   }
 ]
+
+const scrollIntoViewById = (id: any) => {
+  if (typeof document !== "undefined") {
+    document?.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+}
 
 const FooterDefaultLayout = () => {
   return (
@@ -46,7 +48,7 @@ const FooterDefaultLayout = () => {
               <div className="flex gap-3 mt-3">
                 <Link href={URLS.SEND_GMAIL} target="_blank" className="flex">
                   <GradientBorder className="rounded-[40px] h-10 px-5 flex items-center">
-                    <div className={styles.textGradientBottom}>eg@icetea.io</div>
+                    <div className={styles.textGradientBottom}>recruitment@icetea.io</div>
                     <Image src={arrowRight} alt="" className="ml-1" />
                   </GradientBorder>
                 </Link>
@@ -58,14 +60,13 @@ const FooterDefaultLayout = () => {
                 <p className="font-semibold uppercase">Sitemap</p>
                 <div className="flex flex-col items-center md:items-start space-y-3 mt-5 text-teaGray">
                   {routes.map((item: RouteTypes, index: number) => (
-                    <a
+                    <div
                       key={index + 100}
-                      href={item.uri}
-                      rel="noreferrer"
-                      className="w-full max-w-[120px] hover:text-white hover:underline"
+                      className="w-full max-w-[120px] hover:text-white cursor-pointer"
+                      onClick={() => scrollIntoViewById(item?.target)}
                     >
                       {item.label}
-                    </a>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -94,7 +95,7 @@ const FooterDefaultLayout = () => {
               "md:text-16/20 md:mt-16"
             )}
           >
-            Copyright © 2022 . All rights reserved.
+            Copyright © Icetea Labs, 2024
           </p>
         </div>
       </div>

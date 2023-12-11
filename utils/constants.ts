@@ -42,6 +42,15 @@ import logoHashed from "/public/images/partners/hashed.png"
 import logoPolygon from "/public/images/partners/polygon.png"
 import logoMirai2x from "/public/images/logo/logo-mirai-2x.png"
 import logoIceteaSoftware from "/public/images/logo/logo-icetea-software.svg"
+import logoChainlink from "/public/images/partners/chainlink.svg"
+import logoKlaytn from "/public/images/partners/klaytn.svg"
+
+//startup
+import logoGameFi from "/public/images/startup/gamefi.svg"
+import logoRedKite from "/public/images/startup/redkite.svg"
+import logoDMission from "/public/images/startup/DMission.png"
+import logoTaskfi from "/public/images/startup/TaskFi.png"
+import logoDLancer from "/public/images/startup/Dlancer.png"
 
 // product images
 import productTaskfi from "/public/images/products/taskFi-cover.png"
@@ -49,6 +58,44 @@ import productGamefi from "/public/images/products/gamefi.png"
 import productRedkite from "/public/images/products/redkite.png"
 import productDesport from "/public/images/products/desport.png"
 import { HTMLAttributeAnchorTarget } from "react"
+
+// partner logo
+import logoAspo from "/public/images/portfolio/aspo.png"
+import logoBlocktopia from "/public/images/portfolio/blocktopia.png"
+import logoDarkFrontiers from "/public/images/portfolio/dark-frontiers.png"
+import logoDerace from "/public/images/portfolio/derace.png"
+import logoDreamsQuest from "/public/images/portfolio/dreams-quest.png"
+import logoErtha from "/public/images/portfolio/ertha.png"
+import logoFaraLand from "/public/images/portfolio/fara-land.png"
+import logoFroyo from "/public/images/portfolio/froyo.png"
+import logoFtribe from "/public/images/portfolio/ftribe.png"
+import logoFury from "/public/images/portfolio/fury.png"
+import logoGoldFever from "/public/images/portfolio/gold-fever.png"
+import logoGunstar from "/public/images/portfolio/gunstar.png"
+import logoHeroesEmpire from "/public/images/portfolio/heroes-empire.png"
+import logoKryptomoon from "/public/images/portfolio/kryptomoon.png"
+import logoLabel from "/public/images/portfolio/label.png"
+import logoMetagods from "/public/images/portfolio/metagods.png"
+import logoMetawars from "/public/images/portfolio/metawars.png"
+import logoMonkeyBall from "/public/images/portfolio/monkey-ball.png"
+import logoMyMasterWar from "/public/images/portfolio/my-master-war.png"
+import logoNftTrade from "/public/images/portfolio/nft-trade.png"
+import logoPlacewar from "/public/images/portfolio/placewar.png"
+import logoPlanetSandbox from "/public/images/portfolio/planetsandbox.png"
+import logoProjectSeed from "/public/images/portfolio/project-seed.png"
+import logoRog from "/public/images/portfolio/rog.png"
+import logoShopnext from "/public/images/portfolio/shopnext.png"
+import logoSidus from "/public/images/portfolio/sidus.png"
+import logoSinVerse from "/public/images/portfolio/sin-verse.png"
+import logoSolice from "/public/images/portfolio/solice.png"
+import logoTitanHunters from "/public/images/portfolio/titan-hunters.png"
+import logoUnfettered from "/public/images/portfolio/unfettered.png"
+import logoWam from "/public/images/portfolio/wam.png"
+import logoWarena from "/public/images/portfolio/warena.png"
+import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
+import logoMonsterra from "/public/images/portfolio/monsterra.png"
+import logoClay from "/public/images/portfolio/clay.png"
+import logoIntMax from "/public/images/portfolio/IntMax.svg"
 
 export const URLS = {
   HOME: "/",
@@ -59,39 +106,59 @@ export const URLS = {
   ABOUT: "/about",
   CAREER: "https://careers.icetea.io/",
   ILAP: "https://ilap.icetea.io/",
-  SEND_GMAIL: "https://mail.google.com/mail/u/0/?fs=1&to=eg@icetea.io&tf=cm"
+  SEND_GMAIL: "https://mail.google.com/mail/u/0/?fs=1&to=recruitment@icetea.io&tf=cm"
 }
 
 export type RouteTypes = {
   label: string
   uri: string
-  target?: HTMLAttributeAnchorTarget
+  target?: HTMLAttributeAnchorTarget | string
 }
 export const routes: Array<RouteTypes> = [
+  // {
+  //   label: "Services",
+  //   uri: URLS.SERVICES
+  // },
+  // {
+  //   label: "Products",
+  //   uri: URLS.PRODUCT
+  // },
+  // {
+  //   label: "Portfolio",
+  //   uri: URLS.PORTFOLIO
+  // },
+  // {
+  //   label: "Blog",
+  //   uri: URLS.BLOG
+  // },
+  // {
+  //   label: "About",
+  //   uri: URLS.ABOUT
+  // },
+  // {
+  //   label: "Careers",
+  //   uri: URLS.CAREER,
+  //   target: "_blank"
+  // }
   {
     label: "Services",
-    uri: URLS.SERVICES
+    uri: "",
+    target: "services"
   },
   {
-    label: "Products",
-    uri: URLS.PRODUCT
+    label: "Startups",
+    uri: "",
+    target: "startups"
+  },
+  {
+    label: "Partners",
+    uri: "",
+    target: "partners"
   },
   {
     label: "Portfolio",
-    uri: URLS.PORTFOLIO
-  },
-  {
-    label: "Blog",
-    uri: URLS.BLOG
-  },
-  {
-    label: "About",
-    uri: URLS.ABOUT
-  },
-  {
-    label: "Careers",
-    uri: URLS.CAREER,
-    target: "_blank"
+    uri: "",
+    target: "portfolio"
   }
 ]
 
@@ -286,6 +353,29 @@ export type PartnerTypes = {
   imgUri: StaticImageData
   url: string
 }
+
+export const startups: Array<PartnerTypes> = [
+  {
+    imgUri: logoTaskfi,
+    url: "https://taskfi.io/"
+  },
+  {
+    imgUri: logoDLancer,
+    url: "https://dlancer.io/"
+  },
+  {
+    imgUri: logoGameFi,
+    url: "https://gamefi.org/"
+  },
+  {
+    imgUri: logoDMission,
+    url: "https://dmission.me/"
+  },
+  {
+    imgUri: logoRedKite,
+    url: "https://redkitepad.com/#/"
+  }
+]
 export const partners: Array<PartnerTypes> = [
   {
     imgUri: logoAnimoca,
@@ -299,9 +389,17 @@ export const partners: Array<PartnerTypes> = [
     imgUri: logoDAO,
     url: "https://daomaker.com/"
   },
+  // {
+  //   imgUri: logoAlpha,
+  //   url: "https://alphaventuredao.io/"
+  // },
   {
-    imgUri: logoAlpha,
-    url: "https://alphaventuredao.io/"
+    imgUri: logoChainlink,
+    url: "https://chain.link/"
+  },
+  {
+    imgUri: logoKlaytn,
+    url: "https://klaytn.foundation/"
   },
   {
     imgUri: logoPolygon,
@@ -318,6 +416,153 @@ export const partners: Array<PartnerTypes> = [
   {
     imgUri: logoFuntap,
     url: "https://corp.funtap.vn/"
+  }
+]
+
+export const ourPortfolio: Array<PartnerTypes> = [
+  {
+    imgUri: logoFury,
+    url: "https://www.eof.gg/"
+  },
+  {
+    imgUri: logoUnfettered,
+    url: "https://theunfettered.io/"
+  },
+  {
+    imgUri: logoErtha,
+    url: "https://ertha.io/"
+  },
+  {
+    imgUri: logoFroyo,
+    url: "https://froyo.games/"
+  },
+  {
+    imgUri: logoSolice,
+    url: "https://solice.io/"
+  },
+  {
+    imgUri: logoBlocktopia,
+    url: "https://www.bloktopia.com/"
+  },
+  {
+    imgUri: logoSidus,
+    url: "https://sidusheroes.com/"
+  },
+  {
+    imgUri: logoMonsterra,
+    url: "https://monsterra.io/"
+  },
+  {
+    imgUri: logoRog,
+    url: "https://rmg.io/"
+  },
+  {
+    imgUri: logoLabel,
+    url: "https://label.community/"
+  },
+  {
+    imgUri: logoMonkeyBall,
+    url: "https://www.monkeyball.com/"
+  },
+  {
+    imgUri: logoGoldFever,
+    url: "https://goldfever.io/"
+  },
+  {
+    imgUri: logoMetawars,
+    url: "https://metawars.gg/"
+  },
+  {
+    imgUri: logoMetagods,
+    url: "https://metagods.gg/"
+  },
+  {
+    imgUri: logoWonderHero,
+    url: "https://www.wonderhero.io/"
+  },
+  {
+    imgUri: logoProjectSeed,
+    url: "https://projectseed.io/"
+  },
+  {
+    imgUri: logoDreamsQuest,
+    url: "https://dreams.quest/"
+  },
+  {
+    imgUri: logoDerace,
+    url: "https://derace.com/"
+  },
+  {
+    imgUri: logoDarkFrontiers,
+    url: "https://www.darkfrontiers.com/"
+  },
+  {
+    imgUri: logoNftTrade,
+    url: "https://nftrade.com/"
+  },
+  {
+    imgUri: logoFaraLand,
+    url: "https://faraland.io/"
+  },
+  {
+    imgUri: logoWarena,
+    url: "https://www.warena.io/"
+  },
+  {
+    imgUri: logoTitanHunters,
+    url: "https://www.titanhunters.io/"
+  },
+  {
+    imgUri: logoMyMasterWar,
+    url: "https://mymasterwar.com/"
+  },
+  {
+    imgUri: logoSinVerse,
+    url: "https://www.sin-city.io/home"
+  },
+  {
+    imgUri: logoWam,
+    url: "https://wam.app/"
+  },
+  {
+    imgUri: logoAspo,
+    url: "https://aspo.world/"
+  },
+  {
+    imgUri: logoPlacewar,
+    url: "https://placewar.io/#/"
+  },
+  {
+    imgUri: logoHeroesEmpire,
+    url: "https://heroesempires.com/"
+  },
+  {
+    imgUri: logoFtribe,
+    url: "https://f2nft.games/"
+  },
+  {
+    imgUri: logoGunstar,
+    url: "https://gunstar.io/"
+  },
+  {
+    imgUri: logoKryptomoon,
+    url: "https://kryptomon.co/"
+  },
+  {
+    imgUri: logoShopnext,
+    url: "https://shopnext.io/"
+  },
+  {
+    imgUri: logoPlanetSandbox,
+    url: "https://planetsandbox.io/"
+  },
+  {
+    imgUri: logoClay,
+    url: "https://www.claynation.io/"
+  },
+  {
+    imgUri: logoIntMax,
+    url: "https://intmax.io/"
   }
 ]
 
