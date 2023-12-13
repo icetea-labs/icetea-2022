@@ -18,6 +18,15 @@ const HeaderDefaultLayout = () => {
     setOpen((prevState) => !prevState)
   }
 
+  const scrollIntoViewById = (id: any) => {
+    if (typeof document !== "undefined") {
+      document?.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+      if (open) {
+        setOpen(false)
+      }
+    }
+  }
+
   const renderHeaderMobile = () => {
     if (!open) return <></>
 
@@ -37,16 +46,13 @@ const HeaderDefaultLayout = () => {
           </div>
           <div className="flex flex-col gap-8 text-white justify-center w-full text-center mt-20">
             {routes.map((item: RouteTypes, index: number) => (
-              <Link
+              <div
                 key={index}
-                href={item.uri}
-                target={item?.target ?? "_self"}
-                className={clsx("hover:tracking-wider duration-500 font-bevn600 text-20/28", {
-                  "text-main": asPath === item.uri
-                })}
+                onClick={() => scrollIntoViewById(item?.target)}
+                className="hover:tracking-wider duration-500 cursor-pointer"
               >
                 {item.label}
-              </Link>
+              </div>
             ))}
           </div>
         </div>
@@ -58,8 +64,8 @@ const HeaderDefaultLayout = () => {
     <>
       <nav
         className={clsx(
-          "absolute -translate-x-1/2 left-1/2 h-20 w-full flex items-center justify-between max-w-screen-main text-white",
-          "lg:px-[140px]",
+          "fixed -translate-x-1/2 left-1/2 h-20 w-full flex items-center justify-between max-w-screen-main text-white",
+          "lg:px-[140px] backdrop-blur-xl z-20 rounded-2xl",
           "md:px-20",
           "xs:px-[60px]",
           "pl-5 pr-6 z-[1]"
@@ -71,16 +77,13 @@ const HeaderDefaultLayout = () => {
 
         <div className={clsx("space-x-6 lg:space-x-[60px] hidden", "md:flex")}>
           {routes.map((item: RouteTypes, index: number) => (
-            <Link
+            <div
               key={index}
-              href={item.uri}
-              target={item?.target ?? "_self"}
-              className={clsx("hover:tracking-wider duration-500", {
-                "text-main": asPath === item.uri
-              })}
+              onClick={() => scrollIntoViewById(item?.target)}
+              className="hover:tracking-wider duration-500 cursor-pointer"
             >
               {item.label}
-            </Link>
+            </div>
           ))}
         </div>
         <div className={clsx("block cursor-pointer", "md:hidden")} onClick={handleOpenHeader}>
