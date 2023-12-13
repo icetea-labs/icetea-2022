@@ -31,7 +31,7 @@ const Statictics = () => {
         "lg:pt-[200px]"
       )}
     >
-      <p className="text-32/40 md:text-40/52 lg:text-48/60 text-center max-w-[1000px] px-12 md:px-0">
+      <p className="text-24/32 md:text-40/52 lg:text-48/60 text-center max-w-[1000px] px-12 md:px-0">
         We build the leading game discovery and user engagement layer in{" "}
         <span className="text-main font-bevn700">Southeast Asia</span>
       </p>
