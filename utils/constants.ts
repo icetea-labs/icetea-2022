@@ -94,7 +94,7 @@ import logoSidus from "/public/images/portfolio/sidus.png"
 // import logoWarena from "/public/images/portfolio/warena.png"
 // import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
 // import logoMonsterra from "/public/images/portfolio/monsterra.png"
-import logoClay from "/public/images/portfolio/clay.png"
+import logoClay from "/public/images/portfolio/clay.svg"
 import logoIntMax from "/public/images/portfolio/IntMax.svg"
 import logoAether from "/public/images/portfolio/aether.png"
 import logoWicrypt from "/public/images/portfolio/wicrypt.png"
@@ -481,7 +481,7 @@ export const ourPortfolio: Array<PartnerTypes> = [
   {
     imgUri: logoDarkFrontiers,
     url: "https://www.darkfrontiers.com/"
-  },
+  }
   //{
   //  imgUri: logoLabel,
   //  url: "https://label.community/"
