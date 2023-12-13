@@ -257,7 +257,7 @@ export const services: Array<ServiceTypes> = [
       {
         title: "Icetea Labs Accelerator Program",
         description:
-          "08-week accelerator program that helps Web3 Startups in building a product-market",
+          "08-week accelerator program that helps Web3 Startups in building a product-market fit",
         thumbnail: imgIlap,
         url: "https://ilap.icetea.io/"
       }
@@ -272,7 +272,7 @@ export const services: Array<ServiceTypes> = [
     imgUri: imgTokenNft,
     programs: [
       {
-        title: "GameFi",
+        title: "GameFi.org",
         description: "A one-stop destination for web3 gaming",
         thumbnail: imgGamefi,
         url: "https://gamefi.org/"
@@ -316,7 +316,7 @@ export const services: Array<ServiceTypes> = [
     imgUri: imgGame,
     programs: [
       {
-        title: "GameFi",
+        title: "GameFi.org",
         description: "A one-stop destination for web3 gaming",
         thumbnail: imgGamefi,
         url: "https://gamefi.org/"
