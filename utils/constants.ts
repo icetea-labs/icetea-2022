@@ -60,47 +60,47 @@ import productDesport from "/public/images/products/desport.png"
 import { HTMLAttributeAnchorTarget } from "react"
 
 // partner logo
-import logoAspo from "/public/images/portfolio/aspo.png"
+// import logoAspo from "/public/images/portfolio/aspo.png"
 import logoBlocktopia from "/public/images/portfolio/blocktopia.png"
 import logoDarkFrontiers from "/public/images/portfolio/dark-frontiers.png"
 import logoDerace from "/public/images/portfolio/derace.png"
-import logoDreamsQuest from "/public/images/portfolio/dreams-quest.png"
-import logoErtha from "/public/images/portfolio/ertha.png"
-import logoFaraLand from "/public/images/portfolio/fara-land.png"
-import logoFroyo from "/public/images/portfolio/froyo.png"
-import logoFtribe from "/public/images/portfolio/ftribe.png"
+// import logoDreamsQuest from "/public/images/portfolio/dreams-quest.png"
+// import logoErtha from "/public/images/portfolio/ertha.png"
+// import logoFaraLand from "/public/images/portfolio/fara-land.png"
+// import logoFroyo from "/public/images/portfolio/froyo.png"
+// import logoFtribe from "/public/images/portfolio/ftribe.png"
 import logoFury from "/public/images/portfolio/fury.png"
-import logoGoldFever from "/public/images/portfolio/gold-fever.png"
-import logoGunstar from "/public/images/portfolio/gunstar.png"
-import logoHeroesEmpire from "/public/images/portfolio/heroes-empire.png"
-import logoKryptomoon from "/public/images/portfolio/kryptomoon.png"
-import logoLabel from "/public/images/portfolio/label.png"
-import logoMetagods from "/public/images/portfolio/metagods.png"
-import logoMetawars from "/public/images/portfolio/metawars.png"
-import logoMonkeyBall from "/public/images/portfolio/monkey-ball.png"
-import logoMyMasterWar from "/public/images/portfolio/my-master-war.png"
-import logoNftTrade from "/public/images/portfolio/nft-trade.png"
-import logoPlacewar from "/public/images/portfolio/placewar.png"
-import logoPlanetSandbox from "/public/images/portfolio/planetsandbox.png"
-import logoProjectSeed from "/public/images/portfolio/project-seed.png"
-import logoRog from "/public/images/portfolio/rog.png"
-import logoShopnext from "/public/images/portfolio/shopnext.png"
+// import logoGoldFever from "/public/images/portfolio/gold-fever.png"
+// import logoGunstar from "/public/images/portfolio/gunstar.png"
+// import logoHeroesEmpire from "/public/images/portfolio/heroes-empire.png"
+// import logoKryptomoon from "/public/images/portfolio/kryptomoon.png"
+// import logoLabel from "/public/images/portfolio/label.png"
+// import logoMetagods from "/public/images/portfolio/metagods.png"
+// import logoMetawars from "/public/images/portfolio/metawars.png"
+// import logoMonkeyBall from "/public/images/portfolio/monkey-ball.png"
+// import logoMyMasterWar from "/public/images/portfolio/my-master-war.png"
+// import logoNftTrade from "/public/images/portfolio/nft-trade.png"
+// import logoPlacewar from "/public/images/portfolio/placewar.png"
+// import logoPlanetSandbox from "/public/images/portfolio/planetsandbox.png"
+// import logoProjectSeed from "/public/images/portfolio/project-seed.png"
+// import logoRog from "/public/images/portfolio/rog.png"
+// import logoShopnext from "/public/images/portfolio/shopnext.png"
 import logoSidus from "/public/images/portfolio/sidus.png"
-import logoSinVerse from "/public/images/portfolio/sin-verse.png"
-import logoSolice from "/public/images/portfolio/solice.png"
-import logoTitanHunters from "/public/images/portfolio/titan-hunters.png"
-import logoUnfettered from "/public/images/portfolio/unfettered.png"
-import logoWam from "/public/images/portfolio/wam.png"
-import logoWarena from "/public/images/portfolio/warena.png"
-import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
-import logoMonsterra from "/public/images/portfolio/monsterra.png"
+// import logoSinVerse from "/public/images/portfolio/sin-verse.png"
+// import logoSolice from "/public/images/portfolio/solice.png"
+// import logoTitanHunters from "/public/images/portfolio/titan-hunters.png"
+// import logoUnfettered from "/public/images/portfolio/unfettered.png"
+// import logoWam from "/public/images/portfolio/wam.png"
+// import logoWarena from "/public/images/portfolio/warena.png"
+// import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
+// import logoMonsterra from "/public/images/portfolio/monsterra.png"
 import logoClay from "/public/images/portfolio/clay.png"
 import logoIntMax from "/public/images/portfolio/IntMax.svg"
 import logoAether from "/public/images/portfolio/aether.png"
 import logoWicrypt from "/public/images/portfolio/wicrypt.png"
 import logoPolytrade from "/public/images/portfolio/polytrade.svg"
 import logoWinr from "/public/images/portfolio/winr.svg"
-import logoPrism from "/public/images/portfolio/prism.png"
+// import logoPrism from "/public/images/portfolio/prism.png"
 import logoUnkjd from "/public/images/portfolio/unkjd.png"
 
 export const URLS = {
@@ -470,38 +470,38 @@ export const ourPortfolio: Array<PartnerTypes> = [
     imgUri: logoDerace,
     url: "https://derace.com/"
   },
-  {
-    imgUri: logoPrism,
-    url: "https://www.prism.rmg.io/"
-  },
-  {
-    imgUri: logoFroyo,
-    url: "https://froyo.games/"
-  },
+  //{
+  //  imgUri: logoPrism,
+  //  url: "https://www.prism.rmg.io/"
+  //},
+  //{
+  //  imgUri: logoFroyo,
+  //  url: "https://froyo.games/"
+  //},
   {
     imgUri: logoDarkFrontiers,
     url: "https://www.darkfrontiers.com/"
   },
-  {
-    imgUri: logoLabel,
-    url: "https://label.community/"
-  },
-  {
-    imgUri: logoWam,
-    url: "https://wam.app/"
-  },
-  {
-    imgUri: logoKryptomoon,
-    url: "https://kryptomon.co/"
-  },
-  {
-    imgUri: logoMonsterra,
-    url: "https://monsterra.io/"
-  },
-  {
-    imgUri: logoFaraLand,
-    url: "https://faraland.io/"
-  }
+  //{
+  //  imgUri: logoLabel,
+  //  url: "https://label.community/"
+  //},
+  //{
+  //  imgUri: logoWam,
+  //  url: "https://wam.app/"
+  //},
+  //{
+  //  imgUri: logoKryptomoon,
+  //  url: "https://kryptomon.co/"
+  //},
+  //{
+  //  imgUri: logoMonsterra,
+  //  url: "https://monsterra.io/"
+  //},
+  //{
+  //  imgUri: logoFaraLand,
+  //  url: "https://faraland.io/"
+  //}
 
   ////////////////////////////////
   // {
