@@ -10,7 +10,7 @@ const Startup = () => {
       <div className="flex flex-col w-full justify-center text-center">
         <p className="text-32/40 md:text-40/52">Our Startups</p>
         <span className="mt-3 text-teaGray text-16/20 md:text-20/28">
-          The only Web3 gaming company building a complete suite of infrastructure-related products
+          As a venture builder, we build 1~2 world-class web3 startups every year
         </span>
 
         <div
