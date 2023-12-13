@@ -273,7 +273,7 @@ export const services: Array<ServiceTypes> = [
     programs: [
       {
         title: "GameFi.org",
-        description: "A one-stop destination for web3 gaming",
+        description: "World No1 Web3 Gaming Launchpad",
         thumbnail: imgGamefi,
         url: "https://gamefi.org/"
       },
