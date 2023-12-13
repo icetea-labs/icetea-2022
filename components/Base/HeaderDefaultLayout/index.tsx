@@ -27,6 +27,15 @@ const HeaderDefaultLayout = () => {
     }
   }
 
+  const scrollIntoViewMobileById = (id: any) => {
+    if (typeof document !== "undefined") {
+      document?.getElementById(id)?.scrollIntoView(true)
+      if (open) {
+        setOpen(false)
+      }
+    }
+  }
+
   const renderHeaderMobile = () => {
     if (!open) return <></>
 
@@ -48,7 +57,7 @@ const HeaderDefaultLayout = () => {
             {routes.map((item: RouteTypes, index: number) => (
               <div
                 key={index}
-                onClick={() => scrollIntoViewById(item?.target)}
+                onClick={() => scrollIntoViewMobileById(item?.target)}
                 className="hover:tracking-wider duration-500 cursor-pointer"
               >
                 {item.label}
@@ -65,7 +74,7 @@ const HeaderDefaultLayout = () => {
       <nav
         className={clsx(
           "fixed -translate-x-1/2 left-1/2 h-20 w-full flex items-center justify-between max-w-screen-main text-white",
-          "lg:px-[140px] backdrop-blur-xl z-20 rounded-2xl",
+          "lg:px-[140px] backdrop-blur-xl z-[100] rounded-2xl",
           "md:px-20",
           "xs:px-[60px]",
           "pl-5 pr-6 z-[1]"

@@ -141,14 +141,14 @@ export const routes: Array<RouteTypes> = [
   //   target: "_blank"
   // }
   {
-    label: "Services",
-    uri: "",
-    target: "services"
-  },
-  {
     label: "Startups",
     uri: "",
     target: "startups"
+  },
+  {
+    label: "Services",
+    uri: "",
+    target: "services"
   },
   {
     label: "Partners",
