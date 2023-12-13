@@ -428,7 +428,7 @@ export const partners: Array<PartnerTypes> = [
 export const ourPortfolio: Array<PartnerTypes> = [
   {
     imgUri: logoClay,
-    url: "https://www.claynation.io/"
+    url: "https://claystack.com/"
   },
   {
     imgUri: logoIntMax,
