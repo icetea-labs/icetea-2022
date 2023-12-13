@@ -77,7 +77,7 @@ const HeaderDefaultLayout = () => {
           "lg:px-[140px] backdrop-blur-xl z-[100] rounded-2xl",
           "md:px-20",
           "xs:px-[60px]",
-          "pl-5 pr-6 z-[1]"
+          "pl-5 pr-6"
         )}
       >
         <Link href={URLS.HOME}>

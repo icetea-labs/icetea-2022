@@ -96,6 +96,12 @@ import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
 import logoMonsterra from "/public/images/portfolio/monsterra.png"
 import logoClay from "/public/images/portfolio/clay.png"
 import logoIntMax from "/public/images/portfolio/IntMax.svg"
+import logoAether from "/public/images/portfolio/aether.png"
+import logoWicrypt from "/public/images/portfolio/wicrypt.png"
+import logoPolytrade from "/public/images/portfolio/polytrade.svg"
+import logoWinr from "/public/images/portfolio/winr.svg"
+import logoPrism from "/public/images/portfolio/prism.png"
+import logoUnkjd from "/public/images/portfolio/unkjd.png"
 
 export const URLS = {
   HOME: "/",
@@ -421,149 +427,171 @@ export const partners: Array<PartnerTypes> = [
 
 export const ourPortfolio: Array<PartnerTypes> = [
   {
-    imgUri: logoFury,
-    url: "https://www.eof.gg/"
-  },
-  {
-    imgUri: logoUnfettered,
-    url: "https://theunfettered.io/"
-  },
-  {
-    imgUri: logoErtha,
-    url: "https://ertha.io/"
-  },
-  {
-    imgUri: logoFroyo,
-    url: "https://froyo.games/"
-  },
-  {
-    imgUri: logoSolice,
-    url: "https://solice.io/"
-  },
-  {
-    imgUri: logoBlocktopia,
-    url: "https://www.bloktopia.com/"
-  },
-  {
-    imgUri: logoSidus,
-    url: "https://sidusheroes.com/"
-  },
-  {
-    imgUri: logoMonsterra,
-    url: "https://monsterra.io/"
-  },
-  {
-    imgUri: logoRog,
-    url: "https://rmg.io/"
-  },
-  {
-    imgUri: logoLabel,
-    url: "https://label.community/"
-  },
-  {
-    imgUri: logoMonkeyBall,
-    url: "https://www.monkeyball.com/"
-  },
-  {
-    imgUri: logoGoldFever,
-    url: "https://goldfever.io/"
-  },
-  {
-    imgUri: logoMetawars,
-    url: "https://metawars.gg/"
-  },
-  {
-    imgUri: logoMetagods,
-    url: "https://metagods.gg/"
-  },
-  {
-    imgUri: logoWonderHero,
-    url: "https://www.wonderhero.io/"
-  },
-  {
-    imgUri: logoProjectSeed,
-    url: "https://projectseed.io/"
-  },
-  {
-    imgUri: logoDreamsQuest,
-    url: "https://dreams.quest/"
-  },
-  {
-    imgUri: logoDerace,
-    url: "https://derace.com/"
-  },
-  {
-    imgUri: logoDarkFrontiers,
-    url: "https://www.darkfrontiers.com/"
-  },
-  {
-    imgUri: logoNftTrade,
-    url: "https://nftrade.com/"
-  },
-  {
-    imgUri: logoFaraLand,
-    url: "https://faraland.io/"
-  },
-  {
-    imgUri: logoWarena,
-    url: "https://www.warena.io/"
-  },
-  {
-    imgUri: logoTitanHunters,
-    url: "https://www.titanhunters.io/"
-  },
-  {
-    imgUri: logoMyMasterWar,
-    url: "https://mymasterwar.com/"
-  },
-  {
-    imgUri: logoSinVerse,
-    url: "https://www.sin-city.io/home"
-  },
-  {
-    imgUri: logoWam,
-    url: "https://wam.app/"
-  },
-  {
-    imgUri: logoAspo,
-    url: "https://aspo.world/"
-  },
-  {
-    imgUri: logoPlacewar,
-    url: "https://placewar.io/#/"
-  },
-  {
-    imgUri: logoHeroesEmpire,
-    url: "https://heroesempires.com/"
-  },
-  {
-    imgUri: logoFtribe,
-    url: "https://f2nft.games/"
-  },
-  {
-    imgUri: logoGunstar,
-    url: "https://gunstar.io/"
-  },
-  {
-    imgUri: logoKryptomoon,
-    url: "https://kryptomon.co/"
-  },
-  {
-    imgUri: logoShopnext,
-    url: "https://shopnext.io/"
-  },
-  {
-    imgUri: logoPlanetSandbox,
-    url: "https://planetsandbox.io/"
-  },
-  {
     imgUri: logoClay,
     url: "https://www.claynation.io/"
   },
   {
     imgUri: logoIntMax,
     url: "https://intmax.io/"
+  },
+  {
+    imgUri: logoAether,
+    url: "https://aethergames.io/"
+  },
+  {
+    imgUri: logoSidus,
+    url: "https://sidusheroes.com/"
+  },
+  {
+    imgUri: logoFury,
+    url: "https://www.eof.gg/"
+  },
+  {
+    imgUri: logoWicrypt,
+    url: "https://wicrypt.com/"
+  },
+  {
+    imgUri: logoPolytrade,
+    url: "https://www.polytrade.finance/"
+  },
+  {
+    imgUri: logoWinr,
+    url: "https://winr.games/"
+  },
+  {
+    imgUri: logoBlocktopia,
+    url: "https://www.bloktopia.com/"
+  },
+  {
+    imgUri: logoUnkjd,
+    url: "https://unkjd.games/public_alpha"
+  },
+  {
+    imgUri: logoDerace,
+    url: "https://derace.com/"
+  },
+  {
+    imgUri: logoPrism,
+    url: "https://www.prism.rmg.io/"
+  },
+  {
+    imgUri: logoFroyo,
+    url: "https://froyo.games/"
+  },
+  {
+    imgUri: logoDarkFrontiers,
+    url: "https://www.darkfrontiers.com/"
+  },
+  {
+    imgUri: logoLabel,
+    url: "https://label.community/"
+  },
+  {
+    imgUri: logoWam,
+    url: "https://wam.app/"
+  },
+  {
+    imgUri: logoKryptomoon,
+    url: "https://kryptomon.co/"
+  },
+  {
+    imgUri: logoMonsterra,
+    url: "https://monsterra.io/"
+  },
+  {
+    imgUri: logoFaraLand,
+    url: "https://faraland.io/"
   }
+
+  ////////////////////////////////
+  // {
+  //   imgUri: logoUnfettered,
+  //   url: "https://theunfettered.io/"
+  // },
+  // {
+  //   imgUri: logoErtha,
+  //   url: "https://ertha.io/"
+  // },
+  // {
+  //   imgUri: logoSolice,
+  //   url: "https://solice.io/"
+  // },
+  // {
+  //   imgUri: logoRog,
+  //   url: "https://rmg.io/"
+  // },
+  // {
+  //   imgUri: logoGoldFever,
+  //   url: "https://goldfever.io/"
+  // },
+  // {
+  //   imgUri: logoMetawars,
+  //   url: "https://metawars.gg/"
+  // },
+  // {
+  //   imgUri: logoMetagods,
+  //   url: "https://metagods.gg/"
+  // },
+  // {
+  //   imgUri: logoWonderHero,
+  //   url: "https://www.wonderhero.io/"
+  // },
+  // {
+  //   imgUri: logoProjectSeed,
+  //   url: "https://projectseed.io/"
+  // },
+  // {
+  //   imgUri: logoDreamsQuest,
+  //   url: "https://dreams.quest/"
+  // },
+  // {
+  //   imgUri: logoNftTrade,
+  //   url: "https://nftrade.com/"
+  // },
+  // {
+  //   imgUri: logoWarena,
+  //   url: "https://www.warena.io/"
+  // },
+  // {
+  //   imgUri: logoTitanHunters,
+  //   url: "https://www.titanhunters.io/"
+  // },
+  // {
+  //   imgUri: logoMyMasterWar,
+  //   url: "https://mymasterwar.com/"
+  // },
+  // {
+  //   imgUri: logoSinVerse,
+  //   url: "https://www.sin-city.io/home"
+  // },
+  // {
+  //   imgUri: logoAspo,
+  //   url: "https://aspo.world/"
+  // },
+  // {
+  //   imgUri: logoPlacewar,
+  //   url: "https://placewar.io/#/"
+  // },
+  // {
+  //   imgUri: logoHeroesEmpire,
+  //   url: "https://heroesempires.com/"
+  // },
+  // {
+  //   imgUri: logoFtribe,
+  //   url: "https://f2nft.games/"
+  // },
+  // {
+  //   imgUri: logoGunstar,
+  //   url: "https://gunstar.io/"
+  // },
+  // {
+  //   imgUri: logoShopnext,
+  //   url: "https://shopnext.io/"
+  // },
+  // {
+  //   imgUri: logoPlanetSandbox,
+  //   url: "https://planetsandbox.io/"
+  // }
 ]
 
 export type ProviderTypes = {
