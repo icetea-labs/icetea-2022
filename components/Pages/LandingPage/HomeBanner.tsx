@@ -29,7 +29,7 @@ const HomeBanner = () => {
             "md:text-left lg:text-60/72 lg:max-w-[720px]"
           )}
         >
-          Work, Play, Breath Fully Onchain
+          Work, Play, Breathe Fully Onchain
         </p>
         <button
           style={{ background: "linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%)" }}
