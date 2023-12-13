@@ -632,8 +632,7 @@ export const serviceDetails: Array<ServiceDetailTypes> = [
           "Security Audit, Pentest & Incident Response",
           "Blockchain Game and App Development",
           "Whitelabel",
-          "Taskforce - Community Building",
-          "DeepBlue - Augmented Web3 Content"
+          "Community Building",
         ],
         poweredByUri: logoIcetea
       }
@@ -645,10 +644,10 @@ export const serviceDetails: Array<ServiceDetailTypes> = [
       "We own one of the most reputable Game Hubs to help the project reach a large community of quality players. Our top-tier launchpads integrate the top popular networks to bring users the best experience and enable diverse projects listed on its platform.",
     imgUri: imgGaming,
     providers: [
-      {
-        services: ["Blockchain Infrastructure"],
-        poweredByUri: logoFirebird
-      },
+      //{
+      //  services: ["Blockchain Infrastructure"],
+      //  poweredByUri: logoFirebird
+      //},
       {
         services: ["IDO (Initial DEX Offering)"],
         poweredByUri: logoRedkite
@@ -672,10 +671,10 @@ export const serviceDetails: Array<ServiceDetailTypes> = [
       {
         services: ["Mission Tool for Community and User Growth Hacking"],
         poweredByUri: logoDmission
-      },
-      {
-        services: ["In-game Advertising for Web2 and Web3 Games"],
-        poweredByUri: logoMirai
+      //},
+      //{
+      //  services: ["In-game Advertising for Web2 and Web3 Games"],
+      //  poweredByUri: logoMirai
       }
       // {
       //   services: ["eSports Tournament Organizing"],
