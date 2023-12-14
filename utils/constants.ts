@@ -103,7 +103,7 @@ import logoPolytrade from "/public/images/portfolio/polytrade.svg"
 import logoWinr from "/public/images/portfolio/winr.svg"
 // import logoPrism from "/public/images/portfolio/prism.png"
 import logoUnkjd from "/public/images/portfolio/unkjd.png"
-import logoShare from "/public/images/portfolio/share.svg"
+import logoShare from "/public/images/portfolio/share.png"
 
 export const URLS = {
   HOME: "/",
@@ -399,7 +399,7 @@ export const partners: Array<PartnerTypes> = [
   },
   {
     imgUri: logoMorningstar,
-    url: "https://www.morningstar.com/"
+    url: "https://morningstar.ventures/"
   },
   {
     imgUri: logoChainlink,
