@@ -10,7 +10,7 @@ const OurPortfolio = () => {
       <div className="flex flex-col w-full justify-center text-center">
         <p className="text-32/40 md:text-40/52">Our Portfolio</p>
         <span className="mt-3 text-teaGray text-16/20 md:text-20/28">
-          Most are direct investments but some are though partners
+          Most are direct investments but some are through partners
         </span>
 
         <div
