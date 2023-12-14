@@ -59,7 +59,7 @@ const ExploreServices = () => {
             "md:space-y-3 md:space-x-8 md:flex-row md:text-left"
           )}
         >
-          <span className="md:text-40/52 text-32/40">Explore Our Services</span>
+          <span className="md:text-40/52 text-32/40">Our Services</span>
           <span className="md:text-20/28 text-16/20 text-teaGray max-w-[690px]">
             We own an ecosystem to support projects in every stage of the product
             lifecycle

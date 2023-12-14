@@ -3,15 +3,15 @@ import styles from "./landing.module.scss"
 
 const stats = [
   {
-    label: "KYC-verified Users",
+    label: "KYCed Users",
     amount: "200K"
   },
   {
-    label: "Games in Connection",
+    label: "Games Onboarded",
     amount: "400"
   },
   {
-    label: "Web3 Startups Launched",
+    label: "Projects Launched",
     amount: "130"
   },
   {
@@ -32,8 +32,8 @@ const Statictics = () => {
       )}
     >
       <p className="text-24/32 md:text-40/52 lg:text-48/60 text-center max-w-[1000px] px-5 lg:px-12 md:px-0">
-        We build the leading game discovery and user engagement layer in{" "}
-        <span className="text-main font-bevn700">Southeast Asia</span>
+        Icetea Labs is a leading{" "}
+        <span className="text-main font-bevn700">Web3 Venture Builder</span> in Southeast Asia
       </p>
       <div
         className={clsx(
