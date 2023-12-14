@@ -44,13 +44,14 @@ import logoMirai2x from "/public/images/logo/logo-mirai-2x.png"
 import logoIceteaSoftware from "/public/images/logo/logo-icetea-software.svg"
 import logoChainlink from "/public/images/partners/chainlink.svg"
 import logoKlaytn from "/public/images/partners/klaytn.svg"
+import logoMorningstar from "/public/images/partners/morningstar.svg"
 
 //startup
 import logoGameFi from "/public/images/startup/gamefi.svg"
 import logoRedKite from "/public/images/startup/redkite.svg"
-import logoDMission from "/public/images/startup/DMission.png"
+import logoDMission from "/public/images/startup/DMission.svg"
 import logoTaskfi from "/public/images/startup/TaskFi.png"
-import logoDLancer from "/public/images/startup/Dlancer.png"
+import logoDLancer from "/public/images/startup/Dlancer.svg"
 
 // product images
 import productTaskfi from "/public/images/products/taskFi-cover.png"
@@ -102,6 +103,7 @@ import logoPolytrade from "/public/images/portfolio/polytrade.svg"
 import logoWinr from "/public/images/portfolio/winr.svg"
 import logoPrism from "/public/images/portfolio/prism.png"
 import logoUnkjd from "/public/images/portfolio/unkjd.png"
+import logoShare from "/public/images/portfolio/share.svg"
 
 export const URLS = {
   HOME: "/",
@@ -395,10 +397,10 @@ export const partners: Array<PartnerTypes> = [
     imgUri: logoDAO,
     url: "https://daomaker.com/"
   },
-  // {
-  //   imgUri: logoAlpha,
-  //   url: "https://alphaventuredao.io/"
-  // },
+  {
+    imgUri: logoMorningstar,
+    url: "https://www.morningstar.com/"
+  },
   {
     imgUri: logoChainlink,
     url: "https://chain.link/"
@@ -433,6 +435,10 @@ export const ourPortfolio: Array<PartnerTypes> = [
   {
     imgUri: logoIntMax,
     url: "https://intmax.io/"
+  },
+  {
+    imgUri: logoShare,
+    url: "https://share.formless.xyz/"
   },
   {
     imgUri: logoAether,

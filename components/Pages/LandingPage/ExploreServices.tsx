@@ -49,7 +49,7 @@ const ExploreServices = () => {
     <div id="services" className={styles.bgServices}>
       <div
         className={clsx(
-          "max-w-[1320px] pt-20 px-8 w-full mx-auto bg-black flex flex-col",
+          "max-w-[1320px] pt-20 px-5 lg:px-8 w-full mx-auto bg-black flex flex-col",
           "md:mt-[170px] sm:px-20 py-[100px]"
         )}
       >

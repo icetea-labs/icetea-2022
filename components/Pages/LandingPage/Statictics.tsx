@@ -31,19 +31,19 @@ const Statictics = () => {
         "lg:pt-[200px]"
       )}
     >
-      <p className="text-24/32 md:text-40/52 lg:text-48/60 text-center max-w-[1000px] px-12 md:px-0">
+      <p className="text-24/32 md:text-40/52 lg:text-48/60 text-center max-w-[1000px] px-5 lg:px-12 md:px-0">
         We build the leading game discovery and user engagement layer in{" "}
         <span className="text-main font-bevn700">Southeast Asia</span>
       </p>
       <div
         className={clsx(
-          "grid grid-cols-2 mt-10 gap-5 px-[60px]",
+          "grid grid-cols-2 mt-10 gap-5 px-5 lg:px-[60px]",
           "md:px-0 md:flex md:flex-wrap md:gap-[55px] md:mt-20 justify-center"
         )}
       >
         {stats.map((item: any, index: number) => (
           <div className="flex flex-col" key={index}>
-            <p className="md:text-56/60 text-40/52 font-bevn600 flex items-start">
+            <p className="md:text-56/60 text-32/40 font-bevn600 flex items-start">
               {item?.amount} <span className="text-36/40 font-bevn700">+</span>
             </p>
             <span className="text-teaGray mt-3 text-14/18 md:text-16/20">{item?.label}</span>

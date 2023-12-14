@@ -19,13 +19,13 @@ const HomeBanner = () => {
     >
       <div
         className={clsx(
-          "max-w-screen-main w-full mx-auto px-12 justify-center z-[1]",
+          "max-w-screen-main w-full mx-auto px-5 lg:px-12 justify-center z-[1]",
           "md:px-20 lg:pl-[140px]"
         )}
       >
         <p
           className={clsx(
-            "text-40/52 font-bevn500 text-center m-0 md:max-w-[500px]",
+            "text-28/40 sm:text-40/52 font-bevn500 text-center m-0 md:max-w-[500px]",
             "md:text-left lg:text-60/72 lg:max-w-[720px]"
           )}
         >

@@ -6,7 +6,7 @@ import styles from "./landing.module.scss"
 
 const OurPortfolio = () => {
   return (
-    <div id="portfolio" className="flex max-w-screen-main mx-auto px-8 md:px-[140px] pt-[120px]">
+    <div id="portfolio" className="flex max-w-screen-main mx-auto px-5 lg:px-8 md:px-[140px] pt-[120px]">
       <div className="flex flex-col w-full justify-center text-center">
         <p className="text-32/40 md:text-40/52">Our Portfolio</p>
         <span className="mt-3 text-teaGray text-16/20 md:text-20/28">
@@ -33,7 +33,7 @@ const OurPortfolio = () => {
                 className={clsx(styles.cardPartner, "flex w-full h-full")}
               >
                 <div className="w-full h-full p-5 flex justify-center items-center">
-                  <Image src={partner.imgUri} alt="" />
+                  <Image src={partner.imgUri} className="max-w-full max-h-full object-contain" alt="" />
                 </div>
               </Link>
             </div>

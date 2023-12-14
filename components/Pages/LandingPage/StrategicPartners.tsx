@@ -6,7 +6,7 @@ import styles from "./landing.module.scss"
 
 const StrategicPartners = () => {
   return (
-    <div id="partners" className="flex max-w-screen-main mx-auto px-8 md:px-[140px] pt-[120px]">
+    <div id="partners" className="flex max-w-screen-main mx-auto px-5 lg:px-8 md:px-[140px] pt-[120px]">
       <div className="flex flex-col w-full justify-center text-center">
         <p className="text-32/40 md:text-40/52">Strategic Partners</p>
 

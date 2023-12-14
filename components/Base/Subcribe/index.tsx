@@ -21,7 +21,7 @@ const Subcribe = () => {
     <div className={clsx(styles.bgSubscribe, "w-full")}>
       <div
         className={clsx(
-          "w-full max-w-screen-main mx-auto px-8 pt-10 flex flex-col items-center justify-between",
+          "w-full max-w-screen-main mx-auto px-5 lg:px-8 pt-10 flex flex-col items-center justify-between",
           "md:px-20 lg:px-[140px] md:h-[380px] md:flex-row md:pt-0"
         )}
       >
@@ -43,7 +43,10 @@ const Subcribe = () => {
                 value={inputEmail}
                 onChange={handleChangeEmail}
               />
-              <div className={styles.btnSubcribe} onClick={handleSubscribe}>
+              <div
+                className={clsx(styles.btnSubcribe, "!hidden md:!flex")}
+                onClick={handleSubscribe}
+              >
                 <Image src={arrowRight} alt="" />
               </div>
             </div>
