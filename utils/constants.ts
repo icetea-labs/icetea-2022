@@ -45,6 +45,7 @@ import logoIceteaSoftware from "/public/images/logo/logo-icetea-software.svg"
 import logoChainlink from "/public/images/partners/chainlink.svg"
 import logoKlaytn from "/public/images/partners/klaytn.svg"
 import logoMorningstar from "/public/images/partners/morningstar.svg"
+import logoCryptoBanter from "/public/images/partners/crypto-banter.png"
 
 //startup
 import logoGameFi from "/public/images/startup/gamefi.svg"
@@ -103,7 +104,7 @@ import logoPolytrade from "/public/images/portfolio/polytrade.svg"
 import logoWinr from "/public/images/portfolio/winr.svg"
 // import logoPrism from "/public/images/portfolio/prism.png"
 import logoUnkjd from "/public/images/portfolio/unkjd.png"
-import logoShare from "/public/images/portfolio/share.png"
+import logoFormless from "/public/images/portfolio/formless.png"
 
 export const URLS = {
   HOME: "/",
@@ -424,7 +425,11 @@ export const partners: Array<PartnerTypes> = [
   {
     imgUri: logoFuntap,
     url: "https://corp.funtap.vn/"
-  }
+  },
+  {
+    imgUri: logoCryptoBanter,
+    url: "https://www.cryptobanter.com/"
+  },
 ]
 
 export const ourPortfolio: Array<PartnerTypes> = [
@@ -437,7 +442,7 @@ export const ourPortfolio: Array<PartnerTypes> = [
     url: "https://intmax.io/"
   },
   {
-    imgUri: logoShare,
+    imgUri: logoFormless,
     url: "https://share.formless.xyz/"
   },
   {
