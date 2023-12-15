@@ -104,7 +104,7 @@ import logoPolytrade from "/public/images/portfolio/polytrade.svg"
 import logoWinr from "/public/images/portfolio/winr.svg"
 // import logoPrism from "/public/images/portfolio/prism.png"
 import logoUnkjd from "/public/images/portfolio/unkjd.png"
-import logoFormless from "/public/images/portfolio/formless.png"
+import logoFormless from "/public/images/portfolio/formless.svg"
 
 export const URLS = {
   HOME: "/",
