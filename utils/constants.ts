@@ -17,6 +17,7 @@ import imgIcetea from "/public/images/services/icetea-labs.png"
 import imgIceteaSoftware from "/public/images/services/its.png"
 import imgRedkite from "/public/images/services/redkite.png"
 import imgGamefi from "/public/images/services/gamefi.png"
+import imgDlancer from "/public/images/services/dlancer.png"
 // import imgFirebird from "/public/images/services/firebird.png"
 // import imgDesport from "/public/images/services/desport.png"
 import DMission from "/public/images/services/DMission.png"
@@ -307,6 +308,12 @@ export const services: Array<ServiceTypes> = [
         description: "Deliver Bespoke Solutions With Expertise",
         thumbnail: imgIceteaSoftware,
         url: "https://www.icetea-software.com/"
+      },
+      {
+        title: "DLancer",
+        description: "Blockchain-powered Freelancer Marketplace",
+        thumbnail: imgDlancer,
+        url: "https://dlancer.io/"
       }
     ]
   },
