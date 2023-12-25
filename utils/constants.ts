@@ -92,7 +92,7 @@ import logoSidus from "/public/images/portfolio/sidus.png"
 // import logoSinVerse from "/public/images/portfolio/sin-verse.png"
 // import logoSolice from "/public/images/portfolio/solice.png"
 // import logoTitanHunters from "/public/images/portfolio/titan-hunters.png"
-// import logoUnfettered from "/public/images/portfolio/unfettered.png"
+import logoUnfettered from "/public/images/portfolio/unfettered.png"
 // import logoWam from "/public/images/portfolio/wam.png"
 // import logoWarena from "/public/images/portfolio/warena.png"
 // import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
@@ -497,6 +497,10 @@ export const ourPortfolio: Array<PartnerTypes> = [
   //  url: "https://froyo.games/"
   //},
   {
+    imgUri: logoUnfettered,
+    url: "https://theunfettered.io/"
+  },
+  {
     imgUri: logoDarkFrontiers,
     url: "https://www.darkfrontiers.com/"
   }
@@ -522,10 +526,6 @@ export const ourPortfolio: Array<PartnerTypes> = [
   //}
 
   ////////////////////////////////
-  // {
-  //   imgUri: logoUnfettered,
-  //   url: "https://theunfettered.io/"
-  // },
   // {
   //   imgUri: logoErtha,
   //   url: "https://ertha.io/"
