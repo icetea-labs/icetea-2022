@@ -18,6 +18,7 @@ import imgIceteaSoftware from "/public/images/services/its.png"
 import imgRedkite from "/public/images/services/redkite.png"
 import imgGamefi from "/public/images/services/gamefi.png"
 import imgDlancer from "/public/images/services/dlancer.png"
+import imgCockroach from "/public/images/services/cockroach.svg"
 // import imgFirebird from "/public/images/services/firebird.png"
 // import imgDesport from "/public/images/services/desport.png"
 import DMission from "/public/images/services/DMission.png"
@@ -288,6 +289,12 @@ export const services: Array<ServiceTypes> = [
         description: "Launch hand-picked projects and help them shine",
         thumbnail: imgRedkite,
         url: "https://redkitepad.com/"
+      },
+      {
+        title: "Cockroach",
+        description: "Unlocking possibilities in the Bitcoin ecosystem",
+        thumbnail: imgCockroach,
+        url: "https://cockroach.redkitepad.com/"
       }
     ]
   },
