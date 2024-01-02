@@ -37,6 +37,7 @@ import logoAlpha from "/public/images/partners/alpha-venture.png"
 import logoAnimoca from "/public/images/partners/animoca.png"
 import logoBnbChain from "/public/images/partners/bnb-chain.png"
 import logoDAO from "/public/images/partners/dao.png"
+import logoApeTerminal from "/public/images/partners/ape-terminal.svg"
 import logoFilecoin from "/public/images/partners/filecoin.png"
 import logoFuntap from "/public/images/partners/funtap.png"
 import logoHashed from "/public/images/partners/hashed.png"
@@ -54,6 +55,7 @@ import logoRedKite from "/public/images/startup/redkite.svg"
 import logoDMission from "/public/images/startup/DMission.svg"
 import logoTaskfi from "/public/images/startup/TaskFi.png"
 import logoDLancer from "/public/images/startup/Dlancer.svg"
+import logoCockroach from "/public/images/startup/cockroach.svg"
 
 // product images
 import productTaskfi from "/public/images/products/taskFi-cover.png"
@@ -390,6 +392,10 @@ export const startups: Array<PartnerTypes> = [
   {
     imgUri: logoRedKite,
     url: "https://redkitepad.com/#/"
+  },
+  {
+    imgUri: logoCockroach,
+    url: "https://cockroach.redkitepad.com/"
   }
 ]
 export const partners: Array<PartnerTypes> = [
@@ -404,6 +410,10 @@ export const partners: Array<PartnerTypes> = [
   {
     imgUri: logoDAO,
     url: "https://daomaker.com/"
+  },
+  {
+    imgUri: logoApeTerminal,
+    url: "https://apeterminal.io/"
   },
   {
     imgUri: logoMorningstar,

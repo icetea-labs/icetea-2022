@@ -16,7 +16,7 @@ const Startup = () => {
         <div
           className={clsx(
             "mt-10 grid grid-cols-2 justify-center items-center gap-5",
-            "md:flex md:flex-wrap "
+            "md:grid-cols-3"
           )}
         >
           {startups.map((partner: PartnerTypes, index: number) => (
