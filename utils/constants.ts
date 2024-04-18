@@ -15,10 +15,12 @@ import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
 import imgIcetea from "/public/images/services/icetea-labs.png"
 import imgIceteaSoftware from "/public/images/services/its.png"
+import imgConcha from "/public/images/services/concha.png"
 import imgRedkite from "/public/images/services/redkite.png"
 import imgGamefi from "/public/images/services/gamefi.png"
 import imgDlancer from "/public/images/services/dlancer.png"
 import imgCockroach from "/public/images/services/cockroach.png"
+import imgCatia from "/public/images/services/catia.svg"
 // import imgFirebird from "/public/images/services/firebird.png"
 // import imgDesport from "/public/images/services/desport.png"
 import DMission from "/public/images/services/DMission.png"
@@ -293,6 +295,12 @@ export const services: Array<ServiceTypes> = [
         url: "https://redkitepad.com/"
       },
       {
+        title: "Catia",
+        description: "First-Of-Its-Kind Asset Publishing Protocol",
+        thumbnail: imgCatia,
+        url: "https://catia.co/"
+      },
+      {
         title: "Cockroach",
         description: "Unlocking possibilities in the Bitcoin ecosystem",
         thumbnail: imgCockroach,
@@ -319,6 +327,12 @@ export const services: Array<ServiceTypes> = [
         description: "Deliver Bespoke Solutions With Expertise",
         thumbnail: imgIceteaSoftware,
         url: "https://www.icetea-software.com/"
+      },
+      {
+        title: "Concha",
+        description: "A modular consumer L3 on Bitcoin, designed for decentralized consumer apps",
+        thumbnail: imgConcha,
+        url: "https://concha.network/"
       },
       {
         title: "DLancer",
