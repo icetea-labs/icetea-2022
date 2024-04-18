@@ -56,6 +56,8 @@ import logoRedKite from "/public/images/startup/redkite.svg"
 import logoDMission from "/public/images/startup/DMission.svg"
 import logoTaskfi from "/public/images/startup/TaskFi.png"
 import logoDLancer from "/public/images/startup/Dlancer.svg"
+import logoConcha from "/public/images/startup/concha.svg"
+import logoCatia from "/public/images/startup/catia.svg"
 import logoCockroach from "/public/images/startup/cockroach_white.png"
 
 // product images
@@ -384,10 +386,11 @@ export const startups: Array<PartnerTypes> = [
     imgUri: logoTaskfi,
     url: "https://taskfi.io/"
   },
-  {
-    imgUri: logoDLancer,
-    url: "https://dlancer.io/"
-  },
+  // {
+  //   imgUri: logoDLancer,
+  //   url: "https://dlancer.io/"
+  // },
+
   {
     imgUri: logoGameFi,
     url: "https://gamefi.org/"
@@ -400,9 +403,17 @@ export const startups: Array<PartnerTypes> = [
     imgUri: logoRedKite,
     url: "https://redkitepad.com/#/"
   },
+  // {
+  //   imgUri: logoCockroach,
+  //   url: "https://cockroach.redkitepad.com/"
+  // }
   {
-    imgUri: logoCockroach,
-    url: "https://cockroach.redkitepad.com/"
+    imgUri: logoConcha,
+    url: "https://concha.network/"
+  },
+  {
+    imgUri: logoCatia,
+    url: "https://catia.co/"
   }
 ]
 export const partners: Array<PartnerTypes> = [
