@@ -61,6 +61,7 @@ import logoDLancer from "/public/images/startup/Dlancer.svg"
 import logoConcha from "/public/images/startup/concha.svg"
 import logoCatia from "/public/images/startup/catia.svg"
 import logoCockroach from "/public/images/startup/cockroach_white.png"
+import logoPlayable from "/public/images/startup/playable.png"
 
 // product images
 import productTaskfi from "/public/images/products/taskFi-cover.png"
@@ -396,10 +397,10 @@ export type PartnerTypes = {
 }
 
 export const startups: Array<PartnerTypes> = [
-  {
-    imgUri: logoTaskfi,
-    url: "https://taskfi.io/"
-  },
+  // {
+  //   imgUri: logoTaskfi,
+  //   url: "https://taskfi.io/"
+  // },
   // {
   //   imgUri: logoDLancer,
   //   url: "https://dlancer.io/"
@@ -409,26 +410,31 @@ export const startups: Array<PartnerTypes> = [
     imgUri: logoGameFi,
     url: "https://gamefi.org/"
   },
+
   {
-    imgUri: logoDMission,
-    url: "https://dmission.me/"
+    imgUri: logoPlayable,
+    url: "https://playable.gg/"
   },
-  {
-    imgUri: logoRedKite,
-    url: "https://redkitepad.com/#/"
-  },
+  // {
+  //   imgUri: logoDMission,
+  //   url: "https://dmission.me/"
+  // },
+  // {
+  //   imgUri: logoRedKite,
+  //   url: "https://redkitepad.com/#/"
+  // },
   // {
   //   imgUri: logoCockroach,
   //   url: "https://cockroach.redkitepad.com/"
   // }
-  {
-    imgUri: logoConcha,
-    url: "https://concha.network/"
-  },
-  {
-    imgUri: logoCatia,
-    url: "https://catia.co/"
-  }
+  // {
+  //   imgUri: logoConcha,
+  //   url: "https://concha.network/"
+  // },
+  // {
+  //   imgUri: logoCatia,
+  //   url: "https://catia.co/"
+  // }
 ]
 export const partners: Array<PartnerTypes> = [
   {
