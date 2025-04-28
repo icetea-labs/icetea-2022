@@ -3,39 +3,6 @@
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@font-face {
-  font-family: "BeVietnamPro";
-  src: url(/fonts/BeVietnamPro-Light.ttf) format("woff"),
-    url(/fonts/BeVietnamPro-Light.ttf) format("woff2"),
-    url(/fonts/BeVietnamPro-Light.ttf) format("truetype"),
-    url(/fonts/BeVietnamPro-Light.ttf) format("svg"),
-    url(/fonts/BeVietnamPro-Light.ttf) format("embedded-opentype");
-}
-@font-face {
-  font-family: "BeVietnamPro Regular";
-  src: url(/fonts/BeVietnamPro-Regular.ttf) format("woff"),
-    url(/fonts/BeVietnamPro-Regular.ttf) format("woff2"),
-    url(/fonts/BeVietnamPro-Regular.ttf) format("truetype"),
-    url(/fonts/BeVietnamPro-Regular.ttf) format("svg"),
-    url(/fonts/BeVietnamPro-Regular.ttf) format("embedded-opentype");
-}
-@font-face {
-  font-family: "BeVietnamPro Medium";
-  src: url(/fonts/BeVietnamPro-Medium.ttf) format("woff"),
-    url(/fonts/BeVietnamPro-Medium.ttf) format("woff2"),
-    url(/fonts/BeVietnamPro-Medium.ttf) format("truetype"),
-    url(/fonts/BeVietnamPro-Medium.ttf) format("svg"),
-    url(/fonts/BeVietnamPro-Medium.ttf) format("embedded-opentype");
-}
-@font-face {
-  font-family: "BeVietnamPro Bold";
-  src: url(/fonts/BeVietnamPro-Bold.ttf) format("woff"),
-    url(/fonts/BeVietnamPro-Bold.ttf) format("woff2"),
-    url(/fonts/BeVietnamPro-Bold.ttf) format("truetype"),
-    url(/fonts/BeVietnamPro-Bold.ttf) format("svg"),
-    url(/fonts/BeVietnamPro-Bold.ttf) format("embedded-opentype");
-}
-
 html,
 body {
   padding: 0;
