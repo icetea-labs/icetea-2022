@@ -141,7 +141,7 @@ export const blogs: Array<BlogTypes> = [
     link: [],
     tags: ["Infrastructure", "Partnership"],
     show: true,
-    highlight: false
+    highlight: true
   },
   {
     id: "12",
@@ -170,7 +170,7 @@ export const blogs: Array<BlogTypes> = [
     link: [],
     tags: ["Filecoin", "Partnership"],
     show: true,
-    highlight: false
+    highlight: true
   },
   {
     id: "13",
