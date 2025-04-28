@@ -5,11 +5,6 @@ import imgTokenNft from "/public/images/services/token.png"
 import imgGame from "/public/images/services/game.png"
 import imgUser from "/public/images/services/user.png"
 
-import imgEngagement from "/public/images/service-engagement.png"
-import imgGaming from "/public/images/service-gaming.png"
-import imgReputable from "/public/images/service-reputable.png"
-import imgTechnical from "/public/images/service-technical.png"
-
 // services
 import imgIlap from "/public/images/services/initiation-ilap.png"
 import imgMirai from "/public/images/services/mirai.png"
@@ -25,18 +20,14 @@ import imgCatia from "/public/images/services/catia.svg"
 // import imgDesport from "/public/images/services/desport.png"
 import DMission from "/public/images/services/DMission.png"
 
-import logoDesport from "/public/images/logo/logo-desport.png"
 import logoFirebird from "/public/images/logo/logo-firebird.png"
 import logoGamefi from "/public/images/logo/logo-gamefi.png"
 import logoIcetea from "/public/images/logo/logo-icetea.png"
-import logoIfo from "/public/images/logo/logo-ifo.png"
 import logoIlap from "/public/images/logo/logo-ilap.png"
-import logoMirai from "/public/images/logo/logo-mirai.png"
 import logoRedkite from "/public/images/logo/logo-redkite.png"
 import logoDmission from "/public/images/logo/logo-dmission.svg"
 
 // partners
-import logoAlpha from "/public/images/partners/alpha-venture.png"
 import logoAnimoca from "/public/images/partners/animoca.png"
 import logoBnbChain from "/public/images/partners/bnb-chain.png"
 import logoDAO from "/public/images/partners/dao.png"
@@ -55,12 +46,7 @@ import logoCryptoBanter from "/public/images/partners/crypto-banter.png"
 //startup
 import logoGameFi from "/public/images/startup/gamefi.svg"
 import logoRedKite from "/public/images/startup/redkite.svg"
-import logoDMission from "/public/images/startup/DMission.svg"
-import logoTaskfi from "/public/images/startup/TaskFi.png"
 import logoDLancer from "/public/images/startup/Dlancer.svg"
-import logoConcha from "/public/images/startup/concha.svg"
-import logoCatia from "/public/images/startup/catia.svg"
-import logoCockroach from "/public/images/startup/cockroach_white.png"
 import logoPlayable from "/public/images/startup/playable.png"
 
 // product images
@@ -71,47 +57,19 @@ import productDesport from "/public/images/products/desport.png"
 import { HTMLAttributeAnchorTarget } from "react"
 
 // partner logo
-// import logoAspo from "/public/images/portfolio/aspo.png"
 import logoBlocktopia from "/public/images/portfolio/blocktopia.png"
 import logoDarkFrontiers from "/public/images/portfolio/dark-frontiers.png"
 import logoDerace from "/public/images/portfolio/derace.png"
-// import logoDreamsQuest from "/public/images/portfolio/dreams-quest.png"
-// import logoErtha from "/public/images/portfolio/ertha.png"
-// import logoFaraLand from "/public/images/portfolio/fara-land.png"
-// import logoFroyo from "/public/images/portfolio/froyo.png"
-// import logoFtribe from "/public/images/portfolio/ftribe.png"
 import logoFury from "/public/images/portfolio/fury.png"
-// import logoGoldFever from "/public/images/portfolio/gold-fever.png"
-// import logoGunstar from "/public/images/portfolio/gunstar.png"
-// import logoHeroesEmpire from "/public/images/portfolio/heroes-empire.png"
 // import logoKryptomoon from "/public/images/portfolio/kryptomoon.png"
-// import logoLabel from "/public/images/portfolio/label.png"
-// import logoMetagods from "/public/images/portfolio/metagods.png"
-// import logoMetawars from "/public/images/portfolio/metawars.png"
-// import logoMonkeyBall from "/public/images/portfolio/monkey-ball.png"
-// import logoMyMasterWar from "/public/images/portfolio/my-master-war.png"
-// import logoNftTrade from "/public/images/portfolio/nft-trade.png"
-// import logoPlacewar from "/public/images/portfolio/placewar.png"
-// import logoPlanetSandbox from "/public/images/portfolio/planetsandbox.png"
-// import logoProjectSeed from "/public/images/portfolio/project-seed.png"
-// import logoRog from "/public/images/portfolio/rog.png"
-// import logoShopnext from "/public/images/portfolio/shopnext.png"
 import logoSidus from "/public/images/portfolio/sidus.png"
-// import logoSinVerse from "/public/images/portfolio/sin-verse.png"
-// import logoSolice from "/public/images/portfolio/solice.png"
-// import logoTitanHunters from "/public/images/portfolio/titan-hunters.png"
 import logoUnfettered from "/public/images/portfolio/unfettered.png"
-// import logoWam from "/public/images/portfolio/wam.png"
-// import logoWarena from "/public/images/portfolio/warena.png"
-// import logoWonderHero from "/public/images/portfolio/wonder-hero.png"
-// import logoMonsterra from "/public/images/portfolio/monsterra.png"
 import logoClay from "/public/images/portfolio/clay.svg"
 import logoIntMax from "/public/images/portfolio/IntMax.svg"
 import logoAether from "/public/images/portfolio/aether.png"
 import logoWicrypt from "/public/images/portfolio/wicrypt.png"
 import logoPolytrade from "/public/images/portfolio/polytrade.svg"
 import logoWinr from "/public/images/portfolio/winr.svg"
-// import logoPrism from "/public/images/portfolio/prism.png"
 import logoUnkjd from "/public/images/portfolio/unkjd.png"
 import logoFormless from "/public/images/portfolio/formless.svg"
 
@@ -133,31 +91,6 @@ export type RouteTypes = {
   target?: HTMLAttributeAnchorTarget | string
 }
 export const routes: Array<RouteTypes> = [
-  // {
-  //   label: "Services",
-  //   uri: URLS.SERVICES
-  // },
-  // {
-  //   label: "Products",
-  //   uri: URLS.PRODUCT
-  // },
-  // {
-  //   label: "Portfolio",
-  //   uri: URLS.PORTFOLIO
-  // },
-  // {
-  //   label: "Blog",
-  //   uri: URLS.BLOG
-  // },
-  // {
-  //   label: "About",
-  //   uri: URLS.ABOUT
-  // },
-  // {
-  //   label: "Careers",
-  //   uri: URLS.CAREER,
-  //   target: "_blank"
-  // }
   {
     label: "Startups",
     uri: "",
@@ -357,12 +290,6 @@ export const services: Array<ServiceTypes> = [
         thumbnail: imgGamefi,
         url: "https://gamefi.org/"
       }
-      // {
-      //   title: "Firebird",
-      //   description: "Build scalable and frictionless Web3 games with Firebird",
-      //   thumbnail: imgFirebird,
-      //   url: "https://firebirdchain.com/"
-      // }
     ]
   },
   {
@@ -373,13 +300,6 @@ export const services: Array<ServiceTypes> = [
     detailUrl: "",
     imgUri: imgUser,
     programs: [
-      // {
-      //   title: "DESports",
-      //   description:
-      //     "The first eSports platform with integrated blockchain technology and play-to-earn model built for gamers around the world",
-      //   thumbnail: imgDesport,
-      //   url: "https://desports.gg/"
-      // },
       {
         title: "DMission",
         description:
@@ -397,15 +317,6 @@ export type PartnerTypes = {
 }
 
 export const startups: Array<PartnerTypes> = [
-  // {
-  //   imgUri: logoTaskfi,
-  //   url: "https://taskfi.io/"
-  // },
-  // {
-  //   imgUri: logoDLancer,
-  //   url: "https://dlancer.io/"
-  // },
-
   {
     imgUri: logoGameFi,
     url: "https://gamefi.org/"
@@ -415,26 +326,6 @@ export const startups: Array<PartnerTypes> = [
     imgUri: logoPlayable,
     url: "https://playable.gg/"
   },
-  // {
-  //   imgUri: logoDMission,
-  //   url: "https://dmission.me/"
-  // },
-  // {
-  //   imgUri: logoRedKite,
-  //   url: "https://redkitepad.com/#/"
-  // },
-  // {
-  //   imgUri: logoCockroach,
-  //   url: "https://cockroach.redkitepad.com/"
-  // }
-  // {
-  //   imgUri: logoConcha,
-  //   url: "https://concha.network/"
-  // },
-  // {
-  //   imgUri: logoCatia,
-  //   url: "https://catia.co/"
-  // }
 ]
 export const partners: Array<PartnerTypes> = [
   {
@@ -536,14 +427,6 @@ export const ourPortfolio: Array<PartnerTypes> = [
     imgUri: logoDerace,
     url: "https://derace.com/"
   },
-  //{
-  //  imgUri: logoPrism,
-  //  url: "https://www.prism.rmg.io/"
-  //},
-  //{
-  //  imgUri: logoFroyo,
-  //  url: "https://froyo.games/"
-  //},
   {
     imgUri: logoUnfettered,
     url: "https://theunfettered.io/"
@@ -552,112 +435,6 @@ export const ourPortfolio: Array<PartnerTypes> = [
     imgUri: logoDarkFrontiers,
     url: "https://www.darkfrontiers.com/"
   }
-  //{
-  //  imgUri: logoLabel,
-  //  url: "https://label.community/"
-  //},
-  //{
-  //  imgUri: logoWam,
-  //  url: "https://wam.app/"
-  //},
-  //{
-  //  imgUri: logoKryptomoon,
-  //  url: "https://kryptomon.co/"
-  //},
-  //{
-  //  imgUri: logoMonsterra,
-  //  url: "https://monsterra.io/"
-  //},
-  //{
-  //  imgUri: logoFaraLand,
-  //  url: "https://faraland.io/"
-  //}
-
-  ////////////////////////////////
-  // {
-  //   imgUri: logoErtha,
-  //   url: "https://ertha.io/"
-  // },
-  // {
-  //   imgUri: logoSolice,
-  //   url: "https://solice.io/"
-  // },
-  // {
-  //   imgUri: logoRog,
-  //   url: "https://rmg.io/"
-  // },
-  // {
-  //   imgUri: logoGoldFever,
-  //   url: "https://goldfever.io/"
-  // },
-  // {
-  //   imgUri: logoMetawars,
-  //   url: "https://metawars.gg/"
-  // },
-  // {
-  //   imgUri: logoMetagods,
-  //   url: "https://metagods.gg/"
-  // },
-  // {
-  //   imgUri: logoWonderHero,
-  //   url: "https://www.wonderhero.io/"
-  // },
-  // {
-  //   imgUri: logoProjectSeed,
-  //   url: "https://projectseed.io/"
-  // },
-  // {
-  //   imgUri: logoDreamsQuest,
-  //   url: "https://dreams.quest/"
-  // },
-  // {
-  //   imgUri: logoNftTrade,
-  //   url: "https://nftrade.com/"
-  // },
-  // {
-  //   imgUri: logoWarena,
-  //   url: "https://www.warena.io/"
-  // },
-  // {
-  //   imgUri: logoTitanHunters,
-  //   url: "https://www.titanhunters.io/"
-  // },
-  // {
-  //   imgUri: logoMyMasterWar,
-  //   url: "https://mymasterwar.com/"
-  // },
-  // {
-  //   imgUri: logoSinVerse,
-  //   url: "https://www.sin-city.io/home"
-  // },
-  // {
-  //   imgUri: logoAspo,
-  //   url: "https://aspo.world/"
-  // },
-  // {
-  //   imgUri: logoPlacewar,
-  //   url: "https://placewar.io/#/"
-  // },
-  // {
-  //   imgUri: logoHeroesEmpire,
-  //   url: "https://heroesempires.com/"
-  // },
-  // {
-  //   imgUri: logoFtribe,
-  //   url: "https://f2nft.games/"
-  // },
-  // {
-  //   imgUri: logoGunstar,
-  //   url: "https://gunstar.io/"
-  // },
-  // {
-  //   imgUri: logoShopnext,
-  //   url: "https://shopnext.io/"
-  // },
-  // {
-  //   imgUri: logoPlanetSandbox,
-  //   url: "https://planetsandbox.io/"
-  // }
 ]
 
 export type ProviderTypes = {
@@ -670,127 +447,14 @@ export type ServiceDetailTypes = {
   providers: Array<ProviderTypes>
   imgUri: StaticImageData
 }
-export const serviceDetails: Array<ServiceDetailTypes> = [
-  {
-    title: "Reputable Incubation",
-    description:
-      "We will accompany your project on the journey from building a strategic plan, raising funds, marketing, product development to implementation in real life, providing a clear picture of the status quo to take the next step towards fully harnessing the future potential of your project.",
-    imgUri: imgReputable,
-    providers: [
-      {
-        services: ["Icetea Labs Accelerator Program"],
-        poweredByUri: logoIlap
-      },
-      {
-        services: ["Game Economics & Operational Advisory"],
-        poweredByUri: logoIcetea
-      }
-    ]
-  },
-  {
-    title: "Technical Excellence",
-    description:
-      "We are backed by a network of strategic technology partners with more than 1,200 experienced and qualified programmers as well as a wide range of programming tools and utilities to help blockchain development become simpler and easier than ever.",
-    imgUri: imgTechnical,
-    providers: [
-      {
-        services: [
-          "Security Audit, Pentest & Incident Response",
-          "Blockchain Game and App Development",
-          "Whitelabel",
-          "Community Building",
-        ],
-        poweredByUri: logoIcetea
-      }
-    ]
-  },
-  {
-    title: "Experienced in Launching",
-    description:
-      "We own one of the most reputable Game Hubs to help the project reach a large community of quality players. Our top-tier launchpads integrate the top popular networks to bring users the best experience and enable diverse projects listed on its platform.",
-    imgUri: imgGaming,
-    providers: [
-      //{
-      //  services: ["Blockchain Infrastructure"],
-      //  poweredByUri: logoFirebird
-      //},
-      {
-        services: ["IDO (Initial DEX Offering)"],
-        poweredByUri: logoRedkite
-      },
-      {
-        services: [
-          "IGO (Initial Gaming Offering)",
-          "INO (Initial NFT Offering)",
-          "Game Hub Listing"
-        ],
-        poweredByUri: logoGamefi
-      }
-    ]
-  },
-  {
-    title: "Proficient in User Engagement",
-    description:
-      "We are going along with potential projects by connecting with our extensive network of KOLs to raise brand awareness and offer our tools and platforms to manage and build communities and players. We have a team of experienced and passionate enthusiasts in marketing who have supported over 130+ projects having a strong foothold in the competitive market.",
-    imgUri: imgEngagement,
-    providers: [
-      {
-        services: ["Mission Tool for Community and User Growth Hacking"],
-        poweredByUri: logoDmission
-      //},
-      //{
-      //  services: ["In-game Advertising for Web2 and Web3 Games"],
-      //  poweredByUri: logoMirai
-      }
-      // {
-      //   services: ["eSports Tournament Organizing"],
-      //   poweredByUri: logoDesport
-      // },
-      // {
-      //   services: ["GameFi Party (Real Player Growth Hacking System)"],
-      //   poweredByUri: logoGamefi
-      // }
-    ]
-  }
-]
+export const serviceDetails: Array<ServiceDetailTypes> = []
 
 export type SocialItemTypes = {
   label: string
   username?: string
   url: string
 }
-export const socialsData: Array<SocialItemTypes> = [
-  {
-    label: "Official Twitter",
-    url: "https://twitter.com/Firebirdchain",
-    username: "@Firebirdchain"
-  },
-  {
-    label: "Github",
-    url: "https://github.com/firebird"
-    // username: "@Firebird"
-  },
-  {
-    label: "Medium",
-    url: "https://medium.com/firebirdchain",
-    username: "@Firebirdchain"
-  },
-  {
-    label: "Reddit",
-    url: "https://www.reddit.com/r/firebirdchain",
-    username: "r/firebirdchain"
-  },
-  {
-    label: "Announcement Channel",
-    url: "https://t.me/FirebirdANN",
-    username: "@FirebirdANN"
-  },
-  {
-    label: "Telegram Group",
-    url: "https://t.me/Firebird_en",
-    username: "@Firebird_en"
-  }
-]
+export const socialsData: Array<SocialItemTypes> = []
 
 type HeadDefaultTypes = {
   image: string
