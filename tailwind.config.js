@@ -62,11 +62,7 @@ module.exports = {
       "56/60": ["56px", { lineHeight: "60px" }],
       "60/72": ["60px", { lineHeight: "72px" }],
       "64/48": ["64px", { lineHeight: "48px" }],
-      "80/80": ["80px", { lineHeight: "80px" }],
-    },
-
-    fontFamily: {
-      bevn: ["Be Vietnam Pro"],
+      "80/80": ["80px", { lineHeight: "80px" }]
     },
     extend: {}
   },
