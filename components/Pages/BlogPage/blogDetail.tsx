@@ -45,7 +45,7 @@ const BlogDetailPage = ({ data, lastestNews }: Props) => {
           <BlogTypeTag type={data?.type} className={styles.blogTypeTag} />
         </div>
         <h2 className="mt-5 text-center text-32/40 xl:text-40/52">{data?.title}</h2>
-        <p className="mt-5 xl:mt-8 text-14/18 xl:text-16/24 text-center uppercase text-teaGray tracking-widest font-bevn700">
+        <p className="mt-5 xl:mt-8 text-14/18 xl:text-16/24 text-center uppercase text-teaGray tracking-widest font-bevn font-bold">
           {displayDateTimeFormat(data?.date)}
         </p>
         <div className="relative">

@@ -24,7 +24,7 @@ const BlogItemInList = ({ data }: BlogItemProps) => {
           />
           <BlogTypeTag type={data?.type} />
         </div>
-        <h2 className="mt-[5px] xl:mt-[9px] xl:text-20/28 font-bevn600 text-ellipse text-2-line">
+        <h2 className="mt-[5px] xl:mt-[9px] xl:text-20/28 font-bevn font-semibold text-ellipse text-2-line">
           {data?.title}
         </h2>
         <p className="opacity-60 font-bold text-14/18 uppercase tracking-widest mt-[5px] xl:text-16/20 xl:mt-2">

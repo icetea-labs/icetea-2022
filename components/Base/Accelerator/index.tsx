@@ -15,7 +15,7 @@ const Accelerator = () => {
         )}
       >
         <span className="">Icetea Labs</span>
-        <div className={clsx(styles.textGradientRight, "font-bevn600 w-fit")}>
+        <div className={clsx(styles.textGradientRight, "font-bevn font-semibold w-fit")}>
           Accelerator Program
         </div>
         <ButtonLink

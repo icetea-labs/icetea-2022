@@ -66,11 +66,7 @@ module.exports = {
     },
 
     fontFamily: {
-      inter: ["Inter"],
-      bevn400: ["BeVietnamPro"],
-      bevn500: ["BeVietnamPro Regular"],
-      bevn600: ["BeVietnamPro Medium"],
-      bevn700: ["BeVietnamPro Bold"],
+      bevn: ["BeVietnamPro"],
     },
     extend: {}
   },

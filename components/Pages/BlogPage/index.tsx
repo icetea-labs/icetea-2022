@@ -29,8 +29,8 @@ const BlogHighLight = ({ data }: BlogItemProps) => {
           <BlogTypeTag type={data?.type} />
         </div>
         <div className="pt-5">
-          <h2 className="text-20/28 xl:text-28/36 font-bevn600">{data?.title}</h2>
-          <p className="mt-[6px] uppercase text-14/24 xl:text-16/20 font-bevn700 tracking-widest xl:mt-3 text-teaGray">
+          <h2 className="text-20/28 xl:text-28/36 font-bevn font-semibold">{data?.title}</h2>
+          <p className="mt-[6px] uppercase text-14/24 xl:text-16/20 font-bevn font-bold tracking-widest xl:mt-3 text-teaGray">
             {displayDateTimeFormat(data?.date)}
           </p>
           <p className="mt-[6px] text-14/24 xl:text-16/28 xl:mt-5 text-teaGray">{data?.intro}</p>
@@ -67,7 +67,7 @@ const BlogPage = () => {
   return (
     <div className={clsx(styles.blogBg, "pt-[120px] xl:pt-[180px]")}>
       <div className="max-w-[760px] xl:max-w-[1200px] px-5 mx-auto pb-[120px]">
-        <div className="font-bevn500 text-40/52 xl:text-60/72 text-center">Insight</div>
+        <div className="font-bevn font-medium text-40/52 xl:text-60/72 text-center">Insight</div>
         <BlogHighLight data={blogHighLight} />
         <div className="my-5 xl:my-10 h-[1px] bg-white opacity-20" />
         <div className="flex gap-2 flex-wrap justify-center uppercase tracking-widest md:justify-start">

@@ -88,7 +88,7 @@ const ExploreServices = () => {
               <div className="flex md:flex-1 justify-center px-5 md:p-0 min-w-[140px]">
                 <Image src={item.imgUri} alt="" className="object-contain" />
               </div>
-              <p className="text-14/18 md:text-18/24 font-bevn600 mt-2 text-center">{item.title}</p>
+              <p className="text-14/18 md:text-18/24 font-bevn font-semibold mt-2 text-center">{item.title}</p>
             </div>
           ))}
         </div>
@@ -100,10 +100,10 @@ const ExploreServices = () => {
             onMouseLeave={() => setIsReading(false)}
           >
             <div className="flex flex-col md:max-w-[50%] lg:max-w-[440px] w-full ">
-              <p className="text-28/36 font-bevn600">{activedService.title}</p>
+              <p className="text-28/36 font-bevn font-semibold">{activedService.title}</p>
               <span className="text-teaGray mt-2">{activedService.description}</span>
               <Link href={URLS.SERVICES} className="flex text-18/24 mt-5">
-                <span className="text-teaBlue font-bevn700">See more</span>
+                <span className="text-teaBlue font-bevn font-bold">See more</span>
                 <Image src={arrowRight} alt="" className="ml-2" />
               </Link>
             </div>
@@ -124,7 +124,7 @@ const ExploreServices = () => {
                     className="object-contain"
                   />
                   <div className="flex flex-col flex-1">
-                    <p className="text-14/18 md:text-18/24 font-bevn600">{item.title}</p>
+                    <p className="text-14/18 md:text-18/24 font-bevn font-semibold">{item.title}</p>
                     <p
                       className={clsx(
                         "text-teaGray text-14/18 md:text-16/20 mt-1",

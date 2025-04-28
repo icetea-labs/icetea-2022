@@ -20,7 +20,7 @@ const BlogTypeTag = ({ type, className }: any) => {
     <div
       className={clsx(
         getTypeColor(type),
-        "absolute top-3 uppercase text-16/20 font-bevn700 tracking-widest left-3 px-3 py-[6px] rounded",
+        "absolute top-3 uppercase text-16/20 font-bevn font-bold tracking-widest left-3 px-3 py-[6px] rounded",
         className
       )}
     >

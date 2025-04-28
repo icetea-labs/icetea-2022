@@ -77,7 +77,7 @@ const Product = () => {
             {navProduct.map((item: any) => (
               <div
                 className={clsx(
-                  "flex items-center rounded px-3 py-[6px] uppercase font-bevn700 cursor-pointer text-center text-14/18 md:text-16/20",
+                  "flex items-center rounded px-3 py-[6px] uppercase font-bevn font-bold cursor-pointer text-center text-14/18 md:text-16/20",
                   activedNavId === item?.value ? "bg-teaBlue text-black" : "bg-teaBlack text-white"
                 )}
                 key={item.value}

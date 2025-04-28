@@ -25,7 +25,7 @@ const HomeBanner = () => {
       >
         <p
           className={clsx(
-            "text-28/40 sm:text-40/52 font-bevn500 text-center m-0 md:max-w-[500px]",
+            "text-28/40 sm:text-40/52 font-bevn font-medium text-center m-0 md:max-w-[500px]",
             "md:text-left lg:text-60/72 lg:max-w-[720px]"
           )}
         >
@@ -36,7 +36,7 @@ const HomeBanner = () => {
           className={clsx(
             styles.btnLink,
             "duration-500 hover:tracking-wide",
-            "flex w-fit px-8 h-14 rounded-[40px] items-center tracking-normal text-lg font-bevn600 cursor-pointer",
+            "flex w-fit px-8 h-14 rounded-[40px] items-center tracking-normal text-lg font-bevn font-semibold cursor-pointer",
             "mt-8 mx-auto md:mx-0"
           )}
           onClick={() => scrollIntoViewById()}

@@ -19,7 +19,7 @@ const ButtonLink = (props: ButtonProps) => {
       className={clsx(
         styles.btnLink,
         "duration-500 hover:tracking-wide",
-        "flex w-fit px-8 h-14 rounded-[40px] items-center tracking-normal text-lg font-bevn600 cursor-pointer",
+        "flex w-fit px-8 h-14 rounded-[40px] items-center tracking-normal text-lg font-bevn font-semibold cursor-pointer",
         className
       )}
       target={target ?? "_self"}
