@@ -12,12 +12,11 @@ import BlogTypeTag from "./blogTypeTag"
 import { Facebook, LinkedIn, LinkIcon, Telegram, Twitter } from "./social"
 
 interface Props {
-  host: any
   data: BlogTypes | undefined
   lastestNews: BlogTypes[] | undefined
 }
 
-const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
+const BlogDetailPage = ({ data, lastestNews }: Props) => {
   const [content, setContent] = useState<string>("")
 
   const CopyClipboard = dynamic(() => import("./social").then((mod) => mod.LinkIcon), {
@@ -82,7 +81,7 @@ const BlogDetailPage = ({ host, data, lastestNews }: Props) => {
               </Link>
               <CopyClipboard
                 className={styles.social}
-                content={`${host}${URLS.BLOG}/${data?.slug}`}
+                content={`https://icetea.io${URLS.BLOG}/${data?.slug}`}
               />
             </div>
             <div

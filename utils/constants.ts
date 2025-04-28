@@ -83,7 +83,7 @@ export const URLS = {
   CAREER: "https://careers.icetea.io/",
   ILAP: "https://ilap.icetea.io/",
   SEND_GMAIL: "https://mail.google.com/mail/u/0/?fs=1&to=recruitment@icetea.io&tf=cm"
-}
+} as const
 
 export type RouteTypes = {
   label: string
