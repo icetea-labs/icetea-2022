@@ -42,6 +42,8 @@ const DefaultLayout = (props: LayoutProps) => {
         <meta name="twitter:title" content={title || defaultTitle} />
         <meta name="twitter:description" content={description || defaultDescription} />
         <meta name="twitter:image" content={image || defaultImage} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Head>
 
       <HeaderDefaultLayout />
