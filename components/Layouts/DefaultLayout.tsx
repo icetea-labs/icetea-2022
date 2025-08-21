@@ -25,7 +25,7 @@ const DefaultLayout = (props: LayoutProps) => {
       <Head>
         <title>{title || defaultTitle}</title>
         <meta charSet="utf-8" />
-        <link rel="shortcut icon" href="/logo-blue.svg" />
+        <link rel="icon" href="/logo-blue.svg" type="image/svg+xml" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content={title || defaultTitle} key="title" />
         <meta
