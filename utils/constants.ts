@@ -466,7 +466,7 @@ type HeadDefaultTypes = {
 export const headDefault: HeadDefaultTypes = {
   description:
     "We support visionary founders and energetic teams to create a long-lasting positive impact through decentralization technologies.",
-  image: "https://d1j2c9jkfhu70p.cloudfront.net/Frame_1000002310_1_42ae31ee69.png",
+  image: "https://assets.icetea.io/Frame_1000002310_1_42ae31ee69.png",
   title:
     "The laboratory incubating and nurturing Polkadot projects, the trusted companion of visionary founders.",
   keywords: "icetea, icetea labs, crypto, chain, firebird"

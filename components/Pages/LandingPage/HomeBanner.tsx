@@ -55,7 +55,7 @@ const HomeBanner = () => {
           poster="/images/home/video_preview_mobile.png"
         >
           <source
-            src="https://d1j2c9jkfhu70p.cloudfront.net/icetea/videos/BG_Mobile_1.mp4"
+            src="https://assets.icetea.io/BG_Mobile_1.mp4"
             type="video/mp4"
           />
         </video>
@@ -68,7 +68,7 @@ const HomeBanner = () => {
           poster="/images/home/video_preview.png"
         >
           <source
-            src="https://d1j2c9jkfhu70p.cloudfront.net/icetea/videos/BG_PC_1.mp4"
+            src="https://assets.icetea.io/BG_PC_1.mp4"
             type="video/mp4"
           />
         </video>
