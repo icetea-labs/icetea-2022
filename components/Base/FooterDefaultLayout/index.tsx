@@ -1,11 +1,9 @@
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import { routes, RouteTypes, URLS } from "../../../utils/constants"
-import GradientBorder from "../GradientBorder"
+import { routes, RouteTypes } from "../../../utils/constants"
 import styles from "./footer.module.scss"
 
-import arrowRight from "/public/images/arrow-right-blue.svg"
 import logoText from "/public/images/logo-text.svg"
 
 const buyPkfExchanges = [
@@ -45,14 +43,6 @@ const FooterDefaultLayout = () => {
                 <Image src={logoText} alt="" />
               </div>
               <p className="text-sm mt-6 md:mt-3">68 Circular Road, #02-01, Singapore 049422</p>
-              <div className="flex gap-3 mt-3">
-                <Link href={URLS.SEND_GMAIL} target="_blank" className="flex">
-                  <GradientBorder className="rounded-[40px] h-10 px-5 flex items-center">
-                    <div className={styles.textGradientBottom}>recruitment@icetea.io</div>
-                    <Image src={arrowRight} alt="" className="ml-1" />
-                  </GradientBorder>
-                </Link>
-              </div>
             </div>
 
             <div className="md:mt-auto md:ml-auto md:flex grid grid-cols-2 mt-10">

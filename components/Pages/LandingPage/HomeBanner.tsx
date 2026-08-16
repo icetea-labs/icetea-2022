@@ -34,7 +34,6 @@ const HomeBanner = () => {
         <button
           style={{ background: "linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%)" }}
           className={clsx(
-            styles.btnLink,
             "duration-500 hover:tracking-wide",
             "flex w-fit px-8 h-14 rounded-[40px] items-center tracking-normal text-lg font-bevn font-semibold cursor-pointer",
             "mt-8 mx-auto md:mx-0"
@@ -51,7 +50,7 @@ const HomeBanner = () => {
           loop
           playsInline
           muted
-          className={clsx(styles.videoMobile, "")}
+          className={styles.videoMobile}
           poster="/images/home/video_preview_mobile.png"
         >
           <source
@@ -64,7 +63,7 @@ const HomeBanner = () => {
           loop
           playsInline
           muted
-          className={clsx(styles.videoDesktop, "")}
+          className={styles.videoDesktop}
           poster="/images/home/video_preview.png"
         >
           <source
